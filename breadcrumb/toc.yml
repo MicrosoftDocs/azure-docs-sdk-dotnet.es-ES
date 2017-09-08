@@ -1,0 +1,67 @@
+- name: Azure
+  tocHref: /azure/
+  topicHref: /azure/index
+  items:
+    - name: Azure para desarrolladores de .NET
+      tocHref: /dotnet/
+      topicHref: /dotnet/azure/index
+      items:
+        - name: Información general
+          tocHref: /dotnet/azure/dotnet-tools
+          topicHref: /dotnet/azure/dotnet-tools
+        - name: Herramientas
+          tocHref: /dotnet/azure/dotnet-tools
+          topicHref: /dotnet/azure/dotnet-tools
+        - name: Bibliotecas
+          tocHref: /dotnet/azure/dotnet-sdk-azure-install
+          topicHref: /dotnet/azure/dotnet-sdk-azure-install
+        - name: Autenticación
+          tocHref: /dotnet/azure/dotnet-sdk-azure-authenticate
+          topicHref: /dotnet/azure/dotnet-sdk-azure-authenticate
+        - name: Inicios rápidos
+          items:
+            - name: Introducción
+              tocHref: /dotnet/azure/dotnet-sdk-azure-get-started
+              topicHref: /dotnet/azure/dotnet-sdk-azure-get-started
+            - name: Web Apps
+              tocHref: /azure/app-service-web/app-service-web-get-started-dotnet
+              topicHref: /azure/app-service-web/app-service-web-get-started-dotnet
+            - name: SQL Database
+              tocHref: /azure/sql-database/sql-database-connect-query-dotnet
+              topicHref: /azure/sql-database/sql-database-connect-query-dotnet
+            - name: CosmosDB
+              tocHref: /azure/cosmos-db/documentdb-dotnet-application
+              topicHref: /azure/cosmos-db/documentdb-dotnet-application
+        - name: Tutoriales
+          items:
+            - name: Azure Storage
+              tocHref: /azure/storage/storage-dotnet-how-to-use-blob-storage
+              topicHref: /azure/storage/storage-dotnet-how-to-use-blob-storage
+            - name: Redis Cache
+              tocHref: /azure/redis-cache/cache-web-app-howto
+              topicHref: /azure/redis-cache/cache-web-app-howto
+        - name: Procedimiento
+          items:
+            - name: Implementación con Visual Studio
+              tocHref: /dotnet/azure/dotnet-quickstart-vs
+              topicHref: /dotnet/azure/dotnet-quickstart-vs
+            - name: Implementación de herramientas de línea de comandos
+              tocHref: /dotnet/azure/dotnet-quickstart-xplat
+              topicHref: /dotnet/azure/dotnet-quickstart-xplat
+        - name: Muestras
+          items:
+            - name: Instrucciones
+              tocHref: /dotnet/azure/dotnet-sdk-azure-sample-readme
+              topicHref: /dotnet/azure/dotnet-sdk-azure-sample-readme
+            - name: Máquinas virtuales
+              tocHref: /dotnet/azure/dotnet-sdk-azure-virtual-machine-samples
+              topicHref: /dotnet/azure/dotnet-sdk-azure-virtual-machine-samples
+            - name: Aplicaciones web
+              tocHref: /dotnet/azure/dotnet-sdk-azure-web-apps-samples
+              topicHref: /dotnet/azure/dotnet-sdk-azure-web-apps-samples
+            - name: SQL Database
+              tocHref: /dotnet/azure/dotnet-sdk-azure-sql-database-samples
+              topicHref: /dotnet/azure/dotnet-sdk-azure-sql-database-samples
+        - name: Conceptos clave
+          tocHref: /dotnet/azure/dotnet-sdk-azure-concepts
+          topicHref: /dotnet/azure/dotnet-sdk-azure-concepts
