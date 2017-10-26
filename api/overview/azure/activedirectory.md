@@ -4,18 +4,19 @@ description: Referencia de las bibliotecas de Azure Active Directory para .NET
 keywords: Azure, .NET, SDK, API, AAD, Active Directory
 author: camsoper
 ms.author: casoper
-manager: douge
-ms.date: 07/17/2017
-ms.topic: article
+manager: wpickett
+ms.date: 10/19/2017
+ms.topic: reference
 ms.prod: azure
 ms.technology: azure
 ms.devlang: dotnet
-ms.service: multiple
-ms.openlocfilehash: adbe907888e49066b6d67a4fb26410a6f6b3b095
-ms.sourcegitcommit: d95a6ad3774a49b16f652e40e7860e47636c7ad0
+ms.service: active-directory
+ms.custom: devcenter, svc-overview
+ms.openlocfilehash: aa20715fb62b1d4b714245c404f1a7c142caf586
+ms.sourcegitcommit: 2c08a778353ed743b9e437ed85f2e1dfb21b9427
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 10/26/2017
 ---
 # <a name="azure-active-directory-libraries-for-net"></a>Bibliotecas de Azure Active Directory para .NET
 
@@ -23,7 +24,7 @@ ms.lasthandoff: 08/28/2017
 
 Proporcione inicio de sesión a los usuarios y controle el acceso a aplicaciones y API con Azure Active Directory.
 
-Para empezar a trabajar con Azure Active Directory, consulte [Inicio y cierre de sesión de la aplicación web de ASP.NET con Azure AD](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-devquickstarts-webapp-dotnet).
+Para empezar a trabajar con Azure Active Directory, consulte [Inicio y cierre de sesión de la aplicación web de ASP.NET con Azure AD](/azure/active-directory/develop/active-directory-devquickstarts-webapp-dotnet).
 
 ## <a name="client-library"></a>Biblioteca de cliente
 
@@ -77,7 +78,7 @@ catch (AdalException ex)
 * [Uso de Oauth2 para llamar a una API web con permisos de aplicación](https://github.com/Azure-Samples/active-directory-dotnet-webapp-webapi-oauth2-appidentity)
 * [Uso del control de acceso basado en rol (RBAC) en una aplicación](https://github.com/Azure-Samples/active-directory-dotnet-webapp-roleclaims)
 
-Explore la colección completa de [ejemplos de código de Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-code-samples).
+Explore la colección completa de [ejemplos de código de Azure Active Directory](/azure/active-directory/develop/active-directory-code-samples).
 
 [PackageManager]: https://docs.microsoft.com/nuget/tools/package-manager-console
-[DotNetCLI]: https://docs.microsoft.com/en-us/dotnet/core/tools/dotnet-add-package
+[DotNetCLI]: https://docs.microsoft.com/dotnet/core/tools/dotnet-add-package
