@@ -4,40 +4,41 @@ description: Referencia de las bibliotecas de Power BI Embedded para .NET
 keywords: Azure, .NET, SDK, API, Power BI Embedded
 author: camsoper
 ms.author: casoper
-manager: douge
-ms.date: 08/07/2017
+manager: wpickett
+ms.date: 10/19/2017
 ms.topic: reference
 ms.prod: azure
 ms.technology: azure
 ms.devlang: dotnet
 ms.service: multiple
-ms.openlocfilehash: f9a6aac8dbb3c284948e9140ad87aff5e415d9fb
-ms.sourcegitcommit: d95a6ad3774a49b16f652e40e7860e47636c7ad0
+ms.custom: devcenter, svc-overview
+ms.openlocfilehash: f61c931d930fce75d038af8b8f1355f1de9cde7c
+ms.sourcegitcommit: fe3e1475208ba47d4630788bac88b952cc3fe61f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 10/23/2017
 ---
-# <a name="power-bi-embedded-libraries-for-net"></a><span data-ttu-id="00875-104">Bibliotecas de Power BI Embedded para .NET</span><span class="sxs-lookup"><span data-stu-id="00875-104">Power BI Embedded libraries for .NET</span></span>
+# <a name="power-bi-embedded-libraries-for-net"></a><span data-ttu-id="b0d4b-104">Bibliotecas de Power BI Embedded para .NET</span><span class="sxs-lookup"><span data-stu-id="b0d4b-104">Power BI Embedded libraries for .NET</span></span>
 
-<span data-ttu-id="00875-105">[Power BI](https://powerbi.microsoft.com/) es un servicio de análisis empresarial basado en la nube que ofrece una vista única de sus datos empresariales más importantes.</span><span class="sxs-lookup"><span data-stu-id="00875-105">[Power BI](https://powerbi.microsoft.com/) is a cloud-based business analytics service that gives you a single view of your most critical business data.</span></span>
+<span data-ttu-id="b0d4b-105">[Power BI](https://powerbi.microsoft.com/) es un servicio de análisis empresarial basado en la nube que ofrece una vista única de sus datos empresariales más importantes.</span><span class="sxs-lookup"><span data-stu-id="b0d4b-105">[Power BI](https://powerbi.microsoft.com/) is a cloud-based business analytics service that gives you a single view of your most critical business data.</span></span>
 
-<span data-ttu-id="00875-106">Para más información sobre el uso de Power BI con .NET, consulte [Inserción con Power BI](https://powerbi.microsoft.com/en-us/documentation/powerbi-developer-embedding/).</span><span class="sxs-lookup"><span data-stu-id="00875-106">To learn more about using Power BI with .NET, see [Embedding with Power BI](https://powerbi.microsoft.com/en-us/documentation/powerbi-developer-embedding/).</span></span>
+<span data-ttu-id="b0d4b-106">Para más información sobre el uso de Power BI con .NET, consulte [Inserción con Power BI](https://powerbi.microsoft.com/en-us/documentation/powerbi-developer-embedding/).</span><span class="sxs-lookup"><span data-stu-id="b0d4b-106">To learn more about using Power BI with .NET, see [Embedding with Power BI](https://powerbi.microsoft.com/en-us/documentation/powerbi-developer-embedding/).</span></span>
 
-## <a name="client-library"></a><span data-ttu-id="00875-107">Biblioteca de cliente</span><span class="sxs-lookup"><span data-stu-id="00875-107">Client library</span></span>
+## <a name="client-library"></a><span data-ttu-id="b0d4b-107">Biblioteca de cliente</span><span class="sxs-lookup"><span data-stu-id="b0d4b-107">Client library</span></span>
 
-<span data-ttu-id="00875-108">Use la biblioteca de cliente para conectarse con las API de Power BI para acceder e interactuar con conjuntos de datos e informes.</span><span class="sxs-lookup"><span data-stu-id="00875-108">Use the client library to connect with Power BI APIs to access and interact with data sets and reports.</span></span>
+<span data-ttu-id="b0d4b-108">Use la biblioteca de cliente para conectarse con las API de Power BI para acceder e interactuar con conjuntos de datos e informes.</span><span class="sxs-lookup"><span data-stu-id="b0d4b-108">Use the client library to connect with Power BI APIs to access and interact with data sets and reports.</span></span>
 
-<span data-ttu-id="00875-109">Instale el [paquete NuGet](https://www.nuget.org/packages/Microsoft.PowerBI.Api) directamente desde la [Consola del Administrador de paquetes][PackageManager] de Visual Studio.</span><span class="sxs-lookup"><span data-stu-id="00875-109">Install the [NuGet package](https://www.nuget.org/packages/Microsoft.PowerBI.Api) directly from the Visual Studio [Package Manager console][PackageManager].</span></span>
+<span data-ttu-id="b0d4b-109">Instale el [paquete NuGet](https://www.nuget.org/packages/Microsoft.PowerBI.Api) directamente desde la [Consola del Administrador de paquetes][PackageManager] de Visual Studio.</span><span class="sxs-lookup"><span data-stu-id="b0d4b-109">Install the [NuGet package](https://www.nuget.org/packages/Microsoft.PowerBI.Api) directly from the Visual Studio [Package Manager console][PackageManager].</span></span>
 
-#### <a name="visual-studio-package-manager"></a><span data-ttu-id="00875-110">Administrador de paquetes de Visual Studio</span><span class="sxs-lookup"><span data-stu-id="00875-110">Visual Studio Package Manager</span></span>
+#### <a name="visual-studio-package-manager"></a><span data-ttu-id="b0d4b-110">Administrador de paquetes de Visual Studio</span><span class="sxs-lookup"><span data-stu-id="b0d4b-110">Visual Studio Package Manager</span></span>
 
 ```powershell
 Install-Package Microsoft.PowerBI.Api
 ```
 
-### <a name="example"></a><span data-ttu-id="00875-111">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="00875-111">Example</span></span>
+### <a name="example"></a><span data-ttu-id="b0d4b-111">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="b0d4b-111">Example</span></span>
 
-<span data-ttu-id="00875-112">En el ejemplo siguiente se recupera y se muestra una lista de conjuntos de datos e informes.</span><span class="sxs-lookup"><span data-stu-id="00875-112">The following example retrieves and displays a list of datasets and reports.</span></span>
+<span data-ttu-id="b0d4b-112">En el ejemplo siguiente se recupera y se muestra una lista de conjuntos de datos e informes.</span><span class="sxs-lookup"><span data-stu-id="b0d4b-112">The following example retrieves and displays a list of datasets and reports.</span></span>
 
 ```csharp
 /* Include these'using' directive:
@@ -70,13 +71,13 @@ using (PowerBIClient client = new PowerBIClient(new Uri(apiUrl), tokenCredential
 ```
 
 > [!div class="nextstepaction"]
-> [<span data-ttu-id="00875-113">Explorar las API de cliente</span><span class="sxs-lookup"><span data-stu-id="00875-113">Explore the client APIs</span></span>](https://powerbi.microsoft.com/documentation/powerbi-developer-rest-api-reference/)
+> [<span data-ttu-id="b0d4b-113">Explorar las API de cliente</span><span class="sxs-lookup"><span data-stu-id="b0d4b-113">Explore the client APIs</span></span>](https://powerbi.microsoft.com/documentation/powerbi-developer-rest-api-reference/)
 
-## <a name="samples"></a><span data-ttu-id="00875-114">Muestras</span><span class="sxs-lookup"><span data-stu-id="00875-114">Samples</span></span>
+## <a name="samples"></a><span data-ttu-id="b0d4b-114">Muestras</span><span class="sxs-lookup"><span data-stu-id="b0d4b-114">Samples</span></span>
 
-* [<span data-ttu-id="00875-115">Ejemplos para desarrolladores de Power BI</span><span class="sxs-lookup"><span data-stu-id="00875-115">Power BI Developer Samples</span></span>](https://github.com/Microsoft/PowerBI-Developer-Samples)
-* [<span data-ttu-id="00875-116">Repositorio de GitHub de .NET de Power BI</span><span class="sxs-lookup"><span data-stu-id="00875-116">Power BI .NET GitHub repo</span></span>](https://github.com/Microsoft/PowerBI-CSharp)
+* [<span data-ttu-id="b0d4b-115">Ejemplos para desarrolladores de Power BI</span><span class="sxs-lookup"><span data-stu-id="b0d4b-115">Power BI Developer Samples</span></span>](https://github.com/Microsoft/PowerBI-Developer-Samples)
+* [<span data-ttu-id="b0d4b-116">Repositorio de GitHub de .NET de Power BI</span><span class="sxs-lookup"><span data-stu-id="b0d4b-116">Power BI .NET GitHub repo</span></span>](https://github.com/Microsoft/PowerBI-CSharp)
 
-<span data-ttu-id="00875-117">Explore más [código de .NET de ejemplo](https://azure.microsoft.com/resources/samples/?platform=dotnet) que puede usar en sus aplicaciones.</span><span class="sxs-lookup"><span data-stu-id="00875-117">Explore more [sample .NET code](https://azure.microsoft.com/resources/samples/?platform=dotnet) you can use in your apps.</span></span>
+<span data-ttu-id="b0d4b-117">Explore más [código de .NET de ejemplo](https://azure.microsoft.com/resources/samples/?platform=dotnet) que puede usar en sus aplicaciones.</span><span class="sxs-lookup"><span data-stu-id="b0d4b-117">Explore more [sample .NET code](https://azure.microsoft.com/resources/samples/?platform=dotnet) you can use in your apps.</span></span>
 
 [PackageManager]: https://docs.microsoft.com/nuget/tools/package-manager-console
