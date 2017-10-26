@@ -4,19 +4,19 @@ description: "Obtenga código de ejemplo para crear y actualizar aplicaciones we
 keywords: Azure, .NET, SDK, API, SQL, base de datos
 author: camsoper
 ms.author: casoper
-manager: douge
-ms.date: 07/24/2017
-ms.topic: article
+manager: wpickett
+ms.date: 10/19/2017
+ms.topic: reference
 ms.prod: azure
 ms.technology: azure
 ms.devlang: dotnet
 ms.service: multiple
-ms.assetid: 
-ms.openlocfilehash: 8edbdd1e12c18598929eb4172d0ca8be4cee192b
-ms.sourcegitcommit: d95a6ad3774a49b16f652e40e7860e47636c7ad0
+ms.custom: devcenter
+ms.openlocfilehash: 0a163e63592b5ae9fea3de38e894b5a5ce7aa7bd
+ms.sourcegitcommit: fe3e1475208ba47d4630788bac88b952cc3fe61f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 10/23/2017
 ---
 # <a name="sample-code-for-building-azure-web-and-mobile-apps-with-net"></a>Código de ejemplo para la compilación de aplicaciones web y móviles de Azure con .NET
 

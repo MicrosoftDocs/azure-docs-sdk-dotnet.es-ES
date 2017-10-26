@@ -2,18 +2,20 @@
 title: Tutoriales de .NET para proteger las aplicaciones de Azure
 description: "Tutoriales para la seguridad de las aplicaciones y la administración de identidades en las aplicaciones .NET que se ejecutan en Azure."
 author: camsoper
-manager: douge
-ms.devlang: dotnet
-ms.topic: article
-ms.service: Azure
-ms.technology: Azure
-ms.date: 06/09/2017
 ms.author: casoper
-ms.openlocfilehash: 1ac3b8168f8c2b11082536b635fc32b607354711
-ms.sourcegitcommit: d95a6ad3774a49b16f652e40e7860e47636c7ad0
+manager: wpickett
+ms.date: 10/19/2017
+ms.topic: reference
+ms.prod: azure
+ms.technology: azure
+ms.devlang: dotnet
+ms.service: multiple
+ms.custom: devcenter
+ms.openlocfilehash: 0cd530ef5f70778571e2f702aebc4a8b43c40e93
+ms.sourcegitcommit: fe3e1475208ba47d4630788bac88b952cc3fe61f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 10/23/2017
 ---
 # <a name="tutorials-for-authenticating-users-in-your-net-apps-running-on-azure"></a>Tutoriales para la autenticación de usuarios en las aplicaciones .NET que se ejecutan en Azure
 
@@ -27,7 +29,7 @@ Para el código fuente de ejemplo, consulte la lista de [ejemplos de servicios d
 | [Inicio y cierre de sesión de aplicación web con Azure AD][1] | Inicio y cierre de sesión de usuarios en ASP.NET con la biblioteca ADAL.
 | [Autenticación de la aplicación de escritorio con Azure AD][2]| Integración de Azure AD en una aplicación WPF de escritorio de Windows mediante ADAL. | 
 | [Autenticación de API Web con Azure AD][3] | Proteja una API web con tokens de portador de Azure AD. |
-|**Key Vault**||
+|**Almacén de claves**||
 | [Uso de Azure Key Vault desde una aplicación web][4] | Acceda a un secreto de una instancia de Azure Key Vault para que se pueda usar en su aplicación web. | 
 
 [1]: /azure/active-directory/develop/active-directory-devquickstarts-webapp-dotnet

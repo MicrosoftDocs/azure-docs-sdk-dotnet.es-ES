@@ -2,18 +2,20 @@
 title: Tutoriales de las aplicaciones .NET de Azure
 description: "Tutoriales para compilar y agregar características a las aplicaciones .NET web y móviles con servicios de Azure."
 author: camsoper
-manager: douge
-ms.devlang: dotnet
-ms.topic: article
-ms.service: Azure
-ms.technology: Azure
-ms.date: 06/29/2017
 ms.author: casoper
-ms.openlocfilehash: 96130a65fb9c435483ed35aeb4109dbeb295cf0e
-ms.sourcegitcommit: d95a6ad3774a49b16f652e40e7860e47636c7ad0
+manager: wpickett
+ms.date: 10/19/2017
+ms.topic: reference
+ms.prod: azure
+ms.technology: azure
+ms.devlang: dotnet
+ms.service: multiple
+ms.custom: devcenter
+ms.openlocfilehash: 9d07d84275593e405656471dd4fd7c1234eb6906
+ms.sourcegitcommit: fe3e1475208ba47d4630788bac88b952cc3fe61f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 10/23/2017
 ---
 # <a name="tutorials-for-building-net-apps-in-azure"></a>Tutoriales para la compilación de aplicaciones .NET de Azure
 
@@ -29,7 +31,7 @@ Para el código fuente de ejemplo, consulte la lista de [ejemplos de servicios d
 | [Creación e implementación de una API web][3] | Cree e implemente una API web de .NET con Swagger. | 
 | **Azure Container Service** ||
 | [Introducción a los contenedores de Kubernetes y Windows][4] | Cree un clúster de Kubernetes en Azure Container Service mediante un contenedor IIS.
-| **SQL Database** ||
+| **Base de datos SQL** ||
 | [Uso de .NET para conectarse a los datos y consultarlos][5] | Use ADO.NET para conectarse a una instancia de Azure SQL Database, para después usar las instrucciones Transact-SQL para consultar, insertar, actualizar y eliminar datos en la base de datos. | 
 | **Azure Database para PostgreSQL** ||
 | [Uso de .NET para conectarse a los datos y consultarlos][6] | Use instrucciones SQL para consultar, insertar, actualizar y eliminar datos en la base de datos. | 

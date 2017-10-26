@@ -2,18 +2,20 @@
 title: "Tutoriales para la compilación de aplicaciones .NET web y móviles en Azure"
 description: "Tutoriales para compilar y agregar características a las aplicaciones .NET web y móviles con servicios de Azure."
 author: camsoper
-manager: douge
-ms.devlang: dotnet
-ms.topic: article
-ms.service: Azure
-ms.technology: Azure
-ms.date: 06/09/2017
 ms.author: casoper
-ms.openlocfilehash: fd0744e8cd7a777d39c656e379b53fc2ac0949f8
-ms.sourcegitcommit: d95a6ad3774a49b16f652e40e7860e47636c7ad0
+manager: wpickett
+ms.date: 10/19/2017
+ms.topic: reference
+ms.prod: azure
+ms.technology: azure
+ms.devlang: dotnet
+ms.service: multiple
+ms.custom: devcenter
+ms.openlocfilehash: 1995f7a13e941a6178ed209b6c072c6142abba4f
+ms.sourcegitcommit: fe3e1475208ba47d4630788bac88b952cc3fe61f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 10/23/2017
 ---
 # <a name="tutorials-for-building-web-and-mobile-apps-with-net-in-azure"></a>Tutoriales para la compilación de aplicaciones web y móviles con .NET en Azure
 
@@ -28,7 +30,7 @@ Para el código fuente de ejemplo, consulte la lista de [ejemplos de servicios d
 | [Creación de una aplicación web ASP.NET con CosmosDB][2] | Cree una aplicación web mediante DocumentDB API de CosmosDB. | 
 | **Aplicaciones de API**||
 | [Creación e implementación de una API web][3] | Cree e implemente una API web de .NET con Swagger. | 
-| **Media Services** | |
+| **Servicios multimedia** | |
 | [Desarrollo de Media Services con .NET][6] | Aprenda a empezar a desarrollar aplicaciones de Media Services con .NET. |
 | [Conexión con una cuenta de Media Services][7] | Obtenga una conexión mediante programación a Azure Media Services. |
 | [Entrega de vídeo bajo demanda][4] | Cree un servicio de entrega de contenido de vídeo bajo demanda en .NET. | 

@@ -4,18 +4,19 @@ description: Referencia de las bibliotecas de Azure Service Bus Relay para .NET
 keywords: Azure, .NET, SDK, API, Service Bus Relay
 author: camsoper
 ms.author: casoper
-manager: douge
-ms.date: 07/14/2017
+manager: wpickett
+ms.date: 10/19/2017
 ms.topic: reference
 ms.prod: azure
 ms.technology: azure
 ms.devlang: dotnet
-ms.service: multiple
-ms.openlocfilehash: 13a875b837648a05401453e975c9cd70d5e203a1
-ms.sourcegitcommit: d95a6ad3774a49b16f652e40e7860e47636c7ad0
+ms.service: service-bus
+ms.custom: devcenter, svc-overview
+ms.openlocfilehash: 1a869d5939e357c98ec417e6474f711b9ac8c466
+ms.sourcegitcommit: 2c08a778353ed743b9e437ed85f2e1dfb21b9427
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 10/26/2017
 ---
 # <a name="azure-service-bus-relay-libraries-for-net"></a>Bibliotecas de Azure Service Bus Relay para .NET
 
@@ -23,7 +24,7 @@ ms.lasthandoff: 08/28/2017
 
 El servicio Azure Relay crea aplicaciones híbridas, ya que permite exponer de forma segura los servicios que se encuentran en una red corporativa en la nube pública sin tener que abrir una conexión de firewall y sin que sea necesario realizar cambios intrusivos en una infraestructura de red corporativa. Relay admite diversos protocolos de transporte y estándares de servicios web.
           
-Más información acerca de [Azure Relay](https://docs.microsoft.com/en-us/azure/service-bus-relay/relay-what-is-it).
+Más información acerca de [Azure Relay](/azure/service-bus-relay/relay-what-is-it).
 
 ## <a name="client-library"></a>Biblioteca de cliente
 
@@ -47,4 +48,4 @@ dotnet add package Microsoft.Azure.Relay
 Explore más [código de .NET de ejemplo](https://azure.microsoft.com/resources/samples/?platform=dotnet) que puede usar en sus aplicaciones.
 
 [PackageManager]: https://docs.microsoft.com/nuget/tools/package-manager-console
-[DotNetCLI]: https://docs.microsoft.com/en-us/dotnet/core/tools/dotnet-add-package
+[DotNetCLI]: https://docs.microsoft.com/dotnet/core/tools/dotnet-add-package

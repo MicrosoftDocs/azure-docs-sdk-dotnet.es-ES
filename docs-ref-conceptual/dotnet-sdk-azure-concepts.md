@@ -4,19 +4,19 @@ description:
 keywords: Azure, .NET, SDK, API, patrones, conceptos, fluidez, registro
 author: camsoper
 ms.author: casoper
-manager: douge
-ms.date: 06/20/2017
-ms.topic: article
+manager: wpickett
+ms.date: 10/19/2017
+ms.topic: reference
 ms.prod: azure
 ms.technology: azure
 ms.devlang: dotnet
 ms.service: multiple
-ms.assetid: 
-ms.openlocfilehash: b2e6849f06c36de18471e55c468e984f4205f646
-ms.sourcegitcommit: d95a6ad3774a49b16f652e40e7860e47636c7ad0
+ms.custom: devcenter
+ms.openlocfilehash: 9a67edadc6e91d2ead82f41601e561809d6a811c
+ms.sourcegitcommit: fe3e1475208ba47d4630788bac88b952cc3fe61f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 10/23/2017
 ---
 # <a name="azure-management-library-for-net-fluent-concepts"></a>Biblioteca de administración de Azure para conceptos fluidos de .NET
 
@@ -79,7 +79,7 @@ Los métodos de colección de recursos con verbos en sus nombres realizan una ac
 | Obtener    | `var vm  = azure.VirtualMachines.GetByResourceGroup(group, vmName)` |
 
 >[!NOTE]
-> `Define()` y `Update()` son verbos pero no bloquean a menos que vayan seguidos por `Create()` o `Apply()`.
+> `Define()` y `Update()` son verbos, pero no producen bloqueos a menos que vayan seguidos por `Create()` o `Apply()`.
  
 Algunos objetos de recursos tienen verbos que cambian el estado del recurso en Azure. Por ejemplo:
 

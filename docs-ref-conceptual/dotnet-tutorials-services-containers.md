@@ -2,18 +2,20 @@
 title: "Tutoriales de .NET para la implementación de contenedores en Azure"
 description: "Implemente aplicaciones .NET en contenedores de Docker en Azure y escálelos con DC/OS, Mesos o Kubernetes."
 author: camsoper
-manager: douge
-ms.devlang: dotnet
-ms.topic: article
-ms.service: Azure
-ms.technology: Azure
-ms.date: 06/09/2017
 ms.author: casoper
-ms.openlocfilehash: 1a40d07fc6a1ce07002f46c47dc3768e02e93118
-ms.sourcegitcommit: d95a6ad3774a49b16f652e40e7860e47636c7ad0
+manager: wpickett
+ms.date: 10/19/2017
+ms.topic: reference
+ms.prod: azure
+ms.technology: azure
+ms.devlang: dotnet
+ms.service: multiple
+ms.custom: devcenter
+ms.openlocfilehash: 3aba76da46418d4c741280b1b97dee0ccbcf546c
+ms.sourcegitcommit: fe3e1475208ba47d4630788bac88b952cc3fe61f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 10/23/2017
 ---
 # <a name="container-deployment-tutorials-with-net-on-azure"></a>Tutoriales de implementación de contenedor con .NET en Azure
 

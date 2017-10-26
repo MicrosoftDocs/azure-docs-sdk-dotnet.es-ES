@@ -4,18 +4,19 @@ description: Referencia de las bibliotecas de Azure SQL Database para .NET
 keywords: Azure, .NET, SDK, API, SQL, base de datos
 author: camsoper
 ms.author: casoper
-manager: douge
-ms.date: 07/31/2017
-ms.topic: article
+manager: wpickett
+ms.date: 10/19/2017
+ms.topic: reference
 ms.prod: azure
 ms.technology: azure
 ms.devlang: dotnet
 ms.service: sql
-ms.openlocfilehash: 110b7e554666a4fa6386d6715919684e121441a3
-ms.sourcegitcommit: d95a6ad3774a49b16f652e40e7860e47636c7ad0
+ms.custom: devcenter, svc-overview
+ms.openlocfilehash: 61b98b3096123b509b5c9f08bfc654aa37cf2149
+ms.sourcegitcommit: 2c08a778353ed743b9e437ed85f2e1dfb21b9427
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 10/26/2017
 ---
 # <a name="azure-sql-database-apis-for-net"></a>API de Azure SQL Database para .NET
 
@@ -29,7 +30,7 @@ Para aprender más sobre el uso de SQL Database con .NET, consulte [Uso de .NET 
 
 Use la biblioteca de SQL para .NET para conectarse a su base de datos y autenticarse en ella y ejecutar instrucciones y procedimientos almacenados T-SQL ad-hoc.
 
-Instale el [paquete NuGet]( https://www.nuget.org/packages/System.Data.SqlClient) directamente desde la [Consola del Administrador de paquetes](https://docs.microsoft.com/nuget/tools/package-manager-console) de Visual Studio o con la [CLI de .NET Core](https://docs.microsoft.com/en-us/dotnet/core/tools/dotnet-add-package).
+Instale el [paquete NuGet]( https://www.nuget.org/packages/System.Data.SqlClient) directamente desde la [Consola del Administrador de paquetes](https://docs.microsoft.com/nuget/tools/package-manager-console) de Visual Studio o con la [CLI de .NET Core](https://docs.microsoft.com/dotnet/core/tools/dotnet-add-package).
 
 #### <a name="visual-studio-package-manager"></a>Administrador de paquetes de Visual Studio
 

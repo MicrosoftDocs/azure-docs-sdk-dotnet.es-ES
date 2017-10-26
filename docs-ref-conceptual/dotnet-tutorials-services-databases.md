@@ -2,18 +2,20 @@
 title: Tutoriales de .NET para usar bases de datos de Azure
 description: Tutoriales para conectarse a bases de datos de Azure y utilizarlas en las aplicaciones .NET.
 author: camsoper
-manager: douge
-ms.devlang: dotnet
-ms.topic: article
-ms.service: Azure
-ms.technology: Azure
-ms.date: 06/09/2017
 ms.author: casoper
-ms.openlocfilehash: 0a6d84efab9789090e6780504a39cb83893035d8
-ms.sourcegitcommit: d95a6ad3774a49b16f652e40e7860e47636c7ad0
+manager: wpickett
+ms.date: 10/19/2017
+ms.topic: reference
+ms.prod: azure
+ms.technology: azure
+ms.devlang: dotnet
+ms.service: multiple
+ms.custom: devcenter
+ms.openlocfilehash: 6b1160e20f44b822791deb1ad467ed984a80438b
+ms.sourcegitcommit: fe3e1475208ba47d4630788bac88b952cc3fe61f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 10/23/2017
 ---
 # <a name="tutorials-for-using-net-with-azure-databases"></a>Tutoriales para usar .NET con bases de datos de Azure
 
@@ -23,7 +25,7 @@ Para el código fuente de ejemplo, consulte la lista de [ejemplos de servicios d
 
 | | |
 |---|---|
-| **SQL Database** ||
+| **Base de datos SQL** ||
 | [Uso de .NET para conectarse a los datos y consultarlos][1] | Use ADO.NET para conectarse a una instancia de Azure SQL Database, para después usar las instrucciones Transact-SQL para consultar, insertar, actualizar y eliminar datos en la base de datos. | 
 | **Azure Database para PostgreSQL** ||
 | [Uso de .NET para conectarse a los datos y consultarlos][2] | Use instrucciones SQL para consultar, insertar, actualizar y eliminar datos en la base de datos. | 

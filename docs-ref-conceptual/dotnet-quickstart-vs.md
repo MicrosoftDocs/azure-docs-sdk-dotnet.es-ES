@@ -11,11 +11,11 @@ ms.prod: azure
 ms.technology: azure
 ms.devlang: dotnet
 ms.assetid: 
-ms.openlocfilehash: 1defed888972ae2f9d60d57bc34c518df9b5867c
-ms.sourcegitcommit: d95a6ad3774a49b16f652e40e7860e47636c7ad0
+ms.openlocfilehash: eb7aa364cae9deea4ed2052eefdbd51c85379afa
+ms.sourcegitcommit: 2c08a778353ed743b9e437ed85f2e1dfb21b9427
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 10/26/2017
 ---
 # <a name="get-started-with-net-for-azure-developers"></a>Introducción a .NET para los desarrolladores de Azure
 
@@ -74,7 +74,7 @@ Vamos a obtener el código de ejemplo de este tutorial y enlazarlo con su cuenta
 
 4. Presione **F5** para restaurar los paquetes de NuGet del proyecto, compile el proyecto y ejecútelo de forma local.
 
-La aplicación web debe ejecutarse localmente en el explorador.  Puede agregar nuevos elementos a la lista de tareas; para ello, haga clic en **Crear nuevo**.  Tenga en cuenta que se van a almacenar los datos especificados en la aplicación en la cuenta de CosmosDB.  También puede [ver los datos en Azure Portal](https://docs.microsoft.com/en-us/azure/documentdb/documentdb-view-json-document-explorer).
+La aplicación web debe ejecutarse localmente en el explorador.  Puede agregar nuevos elementos a la lista de tareas; para ello, haga clic en **Crear nuevo**.  Tenga en cuenta que se van a almacenar los datos especificados en la aplicación en la cuenta de CosmosDB.  También puede [ver los datos en Azure Portal](/azure/documentdb/documentdb-view-json-document-explorer).
 
 ## <a name="deploying-the-application-as-an-azure-web-app"></a>Implementación de la aplicación como aplicación web de Azure
 
@@ -100,7 +100,7 @@ Ha compilado correctamente una aplicación que utiliza servicios de Azure como D
 
 ## <a name="clean-up"></a>Limpieza
 
-Cuando haya terminado de probar la aplicación y examinar el código y los recursos, puede eliminar la aplicación web y la cuenta de CosmosDB; para ello, elimine el grupo de recursos de Cloud Shell.
+Cuando haya terminado de probar la aplicación y examinar el código y los recursos, puede eliminar la aplicación web y la cuenta de CosmosDB; para ello, elimine el grupo de recursos. de Cloud Shell.
 
 ```azurecli-interactive
 az group delete -n DotNetAzureTutorial
