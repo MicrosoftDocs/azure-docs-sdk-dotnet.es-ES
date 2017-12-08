@@ -78,7 +78,7 @@ var account = CloudStorageAccount.Parse(storageConnectionString);
 
 <span data-ttu-id="8eaf2-112">Otras bibliotecas requieren que la aplicación se ejecute con una [entidad de servicio](https://docs.microsoft.com/azure/active-directory/develop/active-directory-application-objects) que autoriza la ejecución de la aplicación con las credenciales otorgadas.</span><span class="sxs-lookup"><span data-stu-id="8eaf2-112">Other libraries require your application to run with a [service principal](https://docs.microsoft.com/azure/active-directory/develop/active-directory-application-objects) authorizing the application to run with granted credentials.</span></span> <span data-ttu-id="8eaf2-113">Esta configuración es similar a los pasos de la autenticación basada en objetos para la biblioteca de administración que se enumeran a continuación.</span><span class="sxs-lookup"><span data-stu-id="8eaf2-113">This configuration is similar to the object-based authentication steps for the management library listed below.</span></span>
 
-## <span data-ttu-id="8eaf2-114"><a name="mgmt-auth"></a>Bibliotecas de administración de Azure para .NET y Java</span><span class="sxs-lookup"><span data-stu-id="8eaf2-114"><a name="mgmt-auth"></a>Azure management libraries for .NET authentication</span></span>
+## <a name="mgmt-auth"></a><span data-ttu-id="8eaf2-114">Bibliotecas de administración de Azure para .NET y Java</span><span class="sxs-lookup"><span data-stu-id="8eaf2-114">Azure management libraries for .NET authentication</span></span>
 
 [!include[Create service principal](includes/create-sp.md)]
 
@@ -116,7 +116,7 @@ var azure = Microsoft.Azure.Management.Fluent.Azure
     .WithDefaultSubscription();
 ```
 
-### <span data-ttu-id="8eaf2-124"><a name="mgmt-file"></a>Autenticación basada en archivo</span><span class="sxs-lookup"><span data-stu-id="8eaf2-124"><a name="mgmt-file"></a>File-based authentication</span></span>
+### <a name="mgmt-file"></a><span data-ttu-id="8eaf2-124">Autenticación basada en archivo</span><span class="sxs-lookup"><span data-stu-id="8eaf2-124">File-based authentication</span></span>
 
 <span data-ttu-id="8eaf2-125">La autenticación basada en archivo permite colocar las credenciales de la entidad de servicio en un archivo de texto sin formato y protegerlo en el sistema de archivos.</span><span class="sxs-lookup"><span data-stu-id="8eaf2-125">File-based authentication allows you to put the service principal credentials in a plain text file and secure it within the file system.</span></span>
 
