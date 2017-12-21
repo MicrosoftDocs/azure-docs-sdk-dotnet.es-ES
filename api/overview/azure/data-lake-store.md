@@ -12,27 +12,60 @@ ms.technology: azure
 ms.devlang: dotnet
 ms.service: data-lake-store
 ms.custom: devcenter, svc-overview
-ms.openlocfilehash: 2b1c51575872b12a94eb44c7c082996bb879bcc9
-ms.sourcegitcommit: 2c08a778353ed743b9e437ed85f2e1dfb21b9427
+ms.openlocfilehash: e8380c4a9ebf86f03fe87fc800dffda10e48e60a
+ms.sourcegitcommit: 3e904e6e4f04f1c92d729459434c85faff32e386
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/26/2017
+ms.lasthandoff: 12/09/2017
 ---
-# <a name="azure-data-lake-store-libraries-for-net"></a><span data-ttu-id="491fd-104">Bibliotecas de Azure Data Lake Store para .NET</span><span class="sxs-lookup"><span data-stu-id="491fd-104">Azure Data Lake Store libraries for .NET</span></span>
+# <a name="azure-data-lake-store-libraries-for-net"></a><span data-ttu-id="73e4a-104">Bibliotecas de Azure Data Lake Store para .NET</span><span class="sxs-lookup"><span data-stu-id="73e4a-104">Azure Data Lake Store libraries for .NET</span></span>
 
-## <a name="overview"></a><span data-ttu-id="491fd-105">Información general</span><span class="sxs-lookup"><span data-stu-id="491fd-105">Overview</span></span>
+## <a name="overview"></a><span data-ttu-id="73e4a-105">Información general</span><span class="sxs-lookup"><span data-stu-id="73e4a-105">Overview</span></span>
 
-<span data-ttu-id="491fd-106">El Almacén de Azure Data Lake es un repositorio de gran escala en toda la empresa para cargas de trabajo de análisis de macrodatos.</span><span class="sxs-lookup"><span data-stu-id="491fd-106">Azure Data Lake Store is an enterprise-wide hyper-scale repository for big data analytic workloads.</span></span> <span data-ttu-id="491fd-107">Azure Data Lake permite capturar datos de cualquier tamaño, tipo y velocidad de ingesta en un único lugar para realizar análisis exploratorios y operativos.</span><span class="sxs-lookup"><span data-stu-id="491fd-107">Azure Data Lake enables you to capture data of any size, type, and ingestion speed in one single place for operational and exploratory analytics.</span></span>
+<span data-ttu-id="73e4a-106">El Almacén de Azure Data Lake es un repositorio de gran escala en toda la empresa para cargas de trabajo de análisis de macrodatos.</span><span class="sxs-lookup"><span data-stu-id="73e4a-106">Azure Data Lake Store is an enterprise-wide hyper-scale repository for big data analytic workloads.</span></span> <span data-ttu-id="73e4a-107">Azure Data Lake permite capturar datos de cualquier tamaño, tipo y velocidad de ingesta en un único lugar para realizar análisis exploratorios y operativos.</span><span class="sxs-lookup"><span data-stu-id="73e4a-107">Azure Data Lake enables you to capture data of any size, type, and ingestion speed in one single place for operational and exploratory analytics.</span></span>
 
-<span data-ttu-id="491fd-108">Para más información, consulte [Información general de Azure Data Lake Store](/azure/data-lake-store/data-lake-store-overview).</span><span class="sxs-lookup"><span data-stu-id="491fd-108">To learn more, see [Overview of Azure Data Lake Store](/azure/data-lake-store/data-lake-store-overview).</span></span>
+<span data-ttu-id="73e4a-108">Para más información, consulte [Información general de Azure Data Lake Store](/azure/data-lake-store/data-lake-store-overview).</span><span class="sxs-lookup"><span data-stu-id="73e4a-108">To learn more, see [Overview of Azure Data Lake Store](/azure/data-lake-store/data-lake-store-overview).</span></span>
 
-## <a name="management-library"></a><span data-ttu-id="491fd-109">Biblioteca de administración</span><span class="sxs-lookup"><span data-stu-id="491fd-109">Management library</span></span>
+## <a name="client-library"></a><span data-ttu-id="73e4a-109">Biblioteca de cliente</span><span class="sxs-lookup"><span data-stu-id="73e4a-109">Client library</span></span>
 
-<span data-ttu-id="491fd-110">Utilice la biblioteca de administración para conectarse a sus repositorios de macrodatos y administrarlos.</span><span class="sxs-lookup"><span data-stu-id="491fd-110">Use the management library to connect to and manage your big data repositories.</span></span>
+<span data-ttu-id="73e4a-110">Utilice la biblioteca de cliente para realizar operaciones del sistema de archivos en Data Lake Store, como crear carpetas en una cuenta de Data Lake Store, cargar archivos y descargar archivos.</span><span class="sxs-lookup"><span data-stu-id="73e4a-110">Use the client library to perform filesystem operations on Data Lake Store, such as creating folders in a Data Lake Store account, uploading files, and downloading files.</span></span>  <span data-ttu-id="73e4a-111">Para obtener un tutorial completo sobre el uso de Data Lake Store con .NET, consulte [Operaciones del sistema de archivos en Azure Data Lake Store con .NET SDK](/azure/data-lake-store/data-lake-store-data-operations-net-sdk).</span><span class="sxs-lookup"><span data-stu-id="73e4a-111">For a full tutorial on using Data Lake Store with .NET, see [Filesystem operations on Azure Data Lake Store using .NET SDK](/azure/data-lake-store/data-lake-store-data-operations-net-sdk).</span></span>
 
-<span data-ttu-id="491fd-111">Instale el [paquete NuGet](https://www.nuget.org/packages/Microsoft.Azure.Management.DataLake.Store) directamente desde la [Consola del Administrador de paquetes][PackageManager] de Visual Studio o con la [CLI de .NET Core][DotNetCLI].</span><span class="sxs-lookup"><span data-stu-id="491fd-111">Install the [NuGet package](https://www.nuget.org/packages/Microsoft.Azure.Management.DataLake.Store) directly from the Visual Studio [Package Manager console][PackageManager] or with the [.NET Core CLI][DotNetCLI].</span></span>
+<span data-ttu-id="73e4a-112">Instale el [paquete NuGet](https://www.nuget.org/packages/Microsoft.Azure.Management.DataLake.Store) directamente desde la [Consola del Administrador de paquetes][PackageManager] de Visual Studio o con la [CLI de .NET Core][DotNetCLI].</span><span class="sxs-lookup"><span data-stu-id="73e4a-112">Install the [NuGet package](https://www.nuget.org/packages/Microsoft.Azure.Management.DataLake.Store) directly from the Visual Studio [Package Manager console][PackageManager] or with the [.NET Core CLI][DotNetCLI].</span></span>
 
-#### <a name="visual-studio-package-manager"></a><span data-ttu-id="491fd-112">Administrador de paquetes de Visual Studio</span><span class="sxs-lookup"><span data-stu-id="491fd-112">Visual Studio Package Manager</span></span>
+#### <a name="visual-studio-package-manager"></a><span data-ttu-id="73e4a-113">Administrador de paquetes de Visual Studio</span><span class="sxs-lookup"><span data-stu-id="73e4a-113">Visual Studio Package Manager</span></span>
+
+```powershell
+Install-Package Microsoft.Azure.DataLake.Store
+```
+
+```bash
+dotnet add package Microsoft.Azure.DataLake.Store
+```
+### <a name="authentication"></a><span data-ttu-id="73e4a-114">Autenticación</span><span class="sxs-lookup"><span data-stu-id="73e4a-114">Authentication</span></span>
+
+* <span data-ttu-id="73e4a-115">Para la autenticación del usuario final para la aplicación, consulte el artículo sobre la [autenticación del usuario final con Data Lake Store mediante el SDK de .NET](/azure/data-lake-store/data-lake-store-end-user-authenticate-net-sdk).</span><span class="sxs-lookup"><span data-stu-id="73e4a-115">For end-user authentication for your application, see [End-user authentication with Data Lake Store using .NET SDK](/azure/data-lake-store/data-lake-store-end-user-authenticate-net-sdk).</span></span>
+* <span data-ttu-id="73e4a-116">Para la autenticación entre servicios para la aplicación, consulte el artículo sobre la [autenticación entre servicios con Data Lake Store mediante el SDK de .NET](/azure/data-lake-store/data-lake-store-service-to-service-authenticate-net-sdk).</span><span class="sxs-lookup"><span data-stu-id="73e4a-116">For service-to-service authentication for your application, see [Service-to-service authentication with Data Lake Store using .NET SDK](/azure/data-lake-store/data-lake-store-service-to-service-authenticate-net-sdk).</span></span>
+
+### <a name="code-example"></a><span data-ttu-id="73e4a-117">Ejemplo de código</span><span class="sxs-lookup"><span data-stu-id="73e4a-117">Code Example</span></span>
+
+<span data-ttu-id="73e4a-118">El fragmento de código siguiente crea los objetos de cliente del sistema de archivos de Data Lake Store, que se usan para emitir solicitudes al servicio.</span><span class="sxs-lookup"><span data-stu-id="73e4a-118">The following snippet creates the Data Lake Store filesystem client object, which is used to issue requests to the service.</span></span>
+
+```csharp
+// Create client objects
+AdlsClient client = AdlsClient.CreateClient(_adlsAccountName, adlCreds);
+```
+
+> [!div class="nextstepaction"]
+> [<span data-ttu-id="73e4a-119">Explorar las API de cliente</span><span class="sxs-lookup"><span data-stu-id="73e4a-119">Explore the client APIs</span></span>](/dotnet/api/overview/azure/datalakestore/client)
+
+
+## <a name="management-library"></a><span data-ttu-id="73e4a-120">Biblioteca de administración</span><span class="sxs-lookup"><span data-stu-id="73e4a-120">Management library</span></span>
+
+<span data-ttu-id="73e4a-121">Utilice la biblioteca de administración para conectarse a sus repositorios de macrodatos y administrarlos.</span><span class="sxs-lookup"><span data-stu-id="73e4a-121">Use the management library to connect to and manage your big data repositories.</span></span>
+
+<span data-ttu-id="73e4a-122">Instale el [paquete NuGet](https://www.nuget.org/packages/Microsoft.Azure.Management.DataLake.Store) directamente desde la [Consola del Administrador de paquetes][PackageManager] de Visual Studio o con la [CLI de .NET Core][DotNetCLI].</span><span class="sxs-lookup"><span data-stu-id="73e4a-122">Install the [NuGet package](https://www.nuget.org/packages/Microsoft.Azure.Management.DataLake.Store) directly from the Visual Studio [Package Manager console][PackageManager] or with the [.NET Core CLI][DotNetCLI].</span></span>
+
+#### <a name="visual-studio-package-manager"></a><span data-ttu-id="73e4a-123">Administrador de paquetes de Visual Studio</span><span class="sxs-lookup"><span data-stu-id="73e4a-123">Visual Studio Package Manager</span></span>
 
 ```powershell
 Install-Package Microsoft.Azure.Management.DataLake.Store
@@ -42,36 +75,15 @@ Install-Package Microsoft.Azure.Management.DataLake.Store
 dotnet add package Microsoft.Azure.Management.DataLake.Store
 ```
 
-### <a name="code-example"></a><span data-ttu-id="491fd-113">Ejemplo de código</span><span class="sxs-lookup"><span data-stu-id="491fd-113">Code Example</span></span>
-
-<span data-ttu-id="491fd-114">En este ejemplo se realiza la autenticación en una cuenta y almacén de Analytics, y se crean los clientes necesarios para la administración.</span><span class="sxs-lookup"><span data-stu-id="491fd-114">This example authenticates to an analytics account and store and creates the clients necessary for management.</span></span>
-
-```csharp
-/*
-using AdlClient
-using AdlClient.Models 
-*/
-
-// Setup authentication 
-Authentication auth = new Authentication("microsoft.onmicrosoft.com"); // change this to YOUR tenant
-auth.Authenticate();
-
-// Identify the accounts
-StoreAccountRef adls_account = new StoreAccountRef(subscriptionId, resourceGroup, userName);
-
-// Create the clients
-AzureClient az = new AzureClient(auth);
-StoreClient adls = new StoreClient(auth, adls_account);
-```
-
 > [!div class="nextstepaction"]
-> [<span data-ttu-id="491fd-115">Explorar las API de administración</span><span class="sxs-lookup"><span data-stu-id="491fd-115">Explore the management APIs</span></span>](/dotnet/api/overview/azure/datalakestore/management)
+> [<span data-ttu-id="73e4a-124">Explorar las API de cliente</span><span class="sxs-lookup"><span data-stu-id="73e4a-124">Explore the client APIs</span></span>](/dotnet/api/overview/azure/datalakestore/management)
 
-## <a name="samples"></a><span data-ttu-id="491fd-116">Muestras</span><span class="sxs-lookup"><span data-stu-id="491fd-116">Samples</span></span>
 
-* [<span data-ttu-id="491fd-117">Ejemplo de cliente de .NET de Azure Data Lake</span><span class="sxs-lookup"><span data-stu-id="491fd-117">Azure Data Lake .NET Client Example</span></span>](https://azure.microsoft.com/en-us/resources/samples/data-lake-dotnet-client/)
+## <a name="samples"></a><span data-ttu-id="73e4a-125">Muestras</span><span class="sxs-lookup"><span data-stu-id="73e4a-125">Samples</span></span>
 
-<span data-ttu-id="491fd-118">Explore más [código de .NET de ejemplo](https://azure.microsoft.com/resources/samples/?platform=dotnet) que puede usar en sus aplicaciones.</span><span class="sxs-lookup"><span data-stu-id="491fd-118">Explore more [sample .NET code](https://azure.microsoft.com/resources/samples/?platform=dotnet) you can use in your apps.</span></span>
+* [<span data-ttu-id="73e4a-126">Ejemplo de cliente de .NET de Azure Data Lake</span><span class="sxs-lookup"><span data-stu-id="73e4a-126">Azure Data Lake .NET Client Example</span></span>](https://azure.microsoft.com/en-us/resources/samples/data-lake-dotnet-client/)
+
+<span data-ttu-id="73e4a-127">Explore más [código de .NET de ejemplo](https://azure.microsoft.com/resources/samples/?platform=dotnet) que puede usar en sus aplicaciones.</span><span class="sxs-lookup"><span data-stu-id="73e4a-127">Explore more [sample .NET code](https://azure.microsoft.com/resources/samples/?platform=dotnet) you can use in your apps.</span></span>
 
 [PackageManager]: https://docs.microsoft.com/nuget/tools/package-manager-console
 [DotNetCLI]: https://docs.microsoft.com/dotnet/core/tools/dotnet-add-package
