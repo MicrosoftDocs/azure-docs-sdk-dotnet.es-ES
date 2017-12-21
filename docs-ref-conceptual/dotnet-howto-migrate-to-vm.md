@@ -6,20 +6,34 @@ author: camsoper
 manager: wpickett
 ms.author: casoper
 ms.date: 11/15/2017
-ms.topic: article
+layout: LandingPage
+ms.topic: landing-page
 ms.technology: azure
 ms.devlang: dotnet
 ms.service: virtual-machines
 ms.custom: devcenter
-ms.openlocfilehash: 718d91b98180a7584f78a2383d430c4700743306
-ms.sourcegitcommit: c360a22d5bff6eedd714b28b847d2f26b06665f4
+ms.openlocfilehash: 98f24553961793623f8a6aba10dcf45b930101fe
+ms.sourcegitcommit: 3e904e6e4f04f1c92d729459434c85faff32e386
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 12/09/2017
 ---
 # <a name="migrate-an-aspnet-web-application-to-an-azure-virtual-machine"></a>Migración de una aplicación web ASP.NET a una máquina virtual de Azure
 
 En este documento se describe cómo migrar una aplicación web ASP.NET de un entorno local a una máquina virtual de Azure.
+
+## <a name="quickstart"></a>Guía de inicio rápido
+
+Obtenga información acerca de cómo crear una máquina virtual y publicar la aplicación en ella:
+
+<div class="ico48Case">
+    <div class="ico48Link">
+        <a href="https://tutorials.visualstudio.com/aspnet-vm/intro">
+            <img width="48" height="48" alt="Publish to an Azure VM" src="https://docs.microsoft.com/azure/media/index/virtualmachine.svg">
+            <span>Publicar en una máquina virtual de Azure</span>
+        </a>
+    </div>
+</div>
 
 ## <a name="get-started"></a>Introducción
 
@@ -45,7 +59,7 @@ Elija el tamaño y el tipo de máquina virtual más adecuados para la carga de t
 
 ### <a name="maintenance"></a>Mantenimiento
 
-Al igual que una máquina local, es su responsabilidad de mantener y actualizar la máquina virtual<sup>&#42;</sup>.  Si la aplicación puede ejecutarse en un entorno de Plataforma como servicio (PaaS), por ejemplo, [Azure App Service](https://docs.microsoft.com/azure/app-service/) o en un [contenedor](https://docs.microsoft.com/azure/app-service/containers/), esto ya no será necesario.
+Al igual que en una máquina local, es su responsabilidad mantener y actualizar la máquina virtual<sup>&#42;</sup>.  Si la aplicación puede ejecutarse en un entorno de Plataforma como servicio (PaaS), por ejemplo, [Azure App Service](https://docs.microsoft.com/azure/app-service/) o en un [contenedor](https://docs.microsoft.com/azure/app-service/containers/), esto ya no será necesario.
 
 *<sup>&#42;</sup>[Las actualizaciones automáticas del sistema operativo para los conjuntos de escalado de máquinas virtuales](https://docs.microsoft.com/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-automatic-upgrade) están disponibles en versión preliminar.*
 
