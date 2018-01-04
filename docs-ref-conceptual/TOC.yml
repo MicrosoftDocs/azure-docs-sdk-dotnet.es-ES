@@ -14,6 +14,8 @@
           href: 'https://docs.microsoft.com/azure/cosmos-db/create-documentdb-dotnet'
         - name: Service Fabric
           href: 'https://docs.microsoft.com/azure/service-fabric/service-fabric-quickstart-dotnet'
+        - name: Blob Storage
+          href: 'https://docs.microsoft.com/azure/storage/blobs/storage-quickstart-blobs-dotnet'
     - name: Introducción a .NET
       href: dotnet-sdk-azure-get-started.md
     - name: Herramientas
@@ -35,7 +37,7 @@
           href: /azure/postgresql/connect-csharp
         - name: Introducción a la API de CosmosDB DocumentDB
           href: /azure/cosmos-db/documentdb-dotnetcore-get-started
-    - name: Cómo
+    - name: Procedimientos
       items:
         - name: Migración
           items:
