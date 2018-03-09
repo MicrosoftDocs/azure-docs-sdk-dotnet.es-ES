@@ -7,22 +7,21 @@ ms.author: casoper
 manager: wpickett
 ms.date: 10/19/2017
 ms.topic: reference
-ms.prod: azure
 ms.technology: azure
 ms.devlang: dotnet
 ms.service: multiple
 ms.custom: devcenter
-ms.openlocfilehash: 80f796493362a84474f5913a26ad6802f68a4906
-ms.sourcegitcommit: 2c08a778353ed743b9e437ed85f2e1dfb21b9427
+ms.openlocfilehash: a3733898f948dbb2ec07da20aa61724e07f23e73
+ms.sourcegitcommit: 3ba0ff4463338a0ab0f3f15a7601b89417c06970
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/26/2017
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="get-started-with-the-azure-net-apis"></a>Comience a trabajar con las API de .NET de Azure
 
 En este tutorial se demuestra el uso de varias [API de Azure para .NET](/dotnet/api/overview/azure/).  Configurará la autenticación, creará y usará una cuenta de Azure Storage, creará y usará una instancia de Azure SQL Database, implementará algunas máquinas virtuales e implementará una aplicación web de Azure App Service desde GitHub.
 
-## <a name="prerequisites"></a>Requisitos previos
+## <a name="prerequisites"></a>requisitos previos
 
 - Una cuenta de Azure. Si no tiene una, [consiga una evaluación gratuita](https://azure.microsoft.com/free/).
 - [Azure PowerShell](/powershell/azure/install-azurerm-ps)
@@ -33,7 +32,7 @@ En este tutorial se demuestra el uso de varias [API de Azure para .NET](/dotnet/
 
 [!include[File-based authentication](includes/file-based-auth.md)]
 
-## <a name="create-a-new-project"></a>Crear un nuevo proyecto 
+## <a name="create-a-new-project"></a>Creación de un nuevo proyecto 
 
 Cree un nuevo proyecto de aplicación de consola.  En Visual Studio, haga clic en **Archivo**, **Nuevo** y luego haga clic en **Proyecto...** .  En las plantillas de Visual C#, seleccione **Aplicación de consola (.NET Core)**, asigne un nombre a su proyecto y luego haga clic en **Aceptar**.
 

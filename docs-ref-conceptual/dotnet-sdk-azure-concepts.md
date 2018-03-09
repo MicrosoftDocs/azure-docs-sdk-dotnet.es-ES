@@ -7,16 +7,15 @@ ms.author: casoper
 manager: wpickett
 ms.date: 10/19/2017
 ms.topic: reference
-ms.prod: azure
 ms.technology: azure
 ms.devlang: dotnet
 ms.service: multiple
 ms.custom: devcenter
-ms.openlocfilehash: 9a67edadc6e91d2ead82f41601e561809d6a811c
-ms.sourcegitcommit: fe3e1475208ba47d4630788bac88b952cc3fe61f
+ms.openlocfilehash: b817216e114e5ab3ff22c1c5adb0f892c7874147
+ms.sourcegitcommit: 3ba0ff4463338a0ab0f3f15a7601b89417c06970
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2017
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="azure-management-library-for-net-fluent-concepts"></a>Biblioteca de administración de Azure para conceptos fluidos de .NET
 
@@ -81,7 +80,7 @@ Los métodos de colección de recursos con verbos en sus nombres realizan una ac
 >[!NOTE]
 > `Define()` y `Update()` son verbos, pero no producen bloqueos a menos que vayan seguidos por `Create()` o `Apply()`.
  
-Algunos objetos de recursos tienen verbos que cambian el estado del recurso en Azure. Por ejemplo:
+Algunos objetos de recursos tienen verbos que cambian el estado del recurso en Azure. Por ejemplo: 
 
 ```csharp
 var vmToRestart = azure.VirtualMachines.GetById(id);

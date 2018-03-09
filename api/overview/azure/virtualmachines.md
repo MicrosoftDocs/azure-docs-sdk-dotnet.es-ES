@@ -12,11 +12,11 @@ ms.technology: azure
 ms.devlang: dotnet
 ms.service: virtual-machines
 ms.custom: devcenter, svc-overview
-ms.openlocfilehash: d3bad2e94ec8b08bad2a014fb25d400625a3590d
-ms.sourcegitcommit: 2d08f2815fa7fab55e09d294fc4d74897df7951d
+ms.openlocfilehash: cac6dde85a7b0db2c98d0888cb0ee5c60ee31836
+ms.sourcegitcommit: dbec35008347b581dd238b882354300e427bec70
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="azure-virtual-machine-libraries-for-net"></a>Bibliotecas de Azure Virtual Machines para .NET
 
@@ -24,13 +24,13 @@ ms.lasthandoff: 11/07/2017
 
 Recursos informáticos bajo demanda y escalables que se ejecutan en Linux o Windows.
 
-Para empezar a trabajar con Azure Virtual Machines, consulte [Creación de una máquina virtual Linux con Azure Portal](https://review.docs.microsoft.com/en-us/azure/virtual-machines/linux/quick-create-portal).
+Para empezar a trabajar con Azure Virtual Machines, consulte [Creación de una máquina virtual Linux con Azure Portal](https://review.docs.microsoft.com/azure/virtual-machines/linux/quick-create-portal).
 
 ## <a name="management-apis"></a>API de administración
 
 Cree, configure y escale horizontalmente máquinas virtuales Windows y Linux de Azure desde código con la API de administración.
 
-Instale el [paquete NuGet](https://www.nuget.org/packages/Microsoft.Azure.Management.Compute.Fluent) directamente desde la [Consola del Administrador de paquetes][PackageManager] de Visual Studio o con la [CLI de .NET Core][DotNetCLI].
+Instale el [paquete NuGet](https://www.nuget.org/packages/Microsoft.Azure.Management.Compute.Fluent) directamente desde la [Consola del Administración de paquetes][PackageManager] de Visual Studio o con la [CLI de .NET Core][DotNetCLI].
 
 #### <a name="visual-studio-package-manager"></a>Administrador de paquetes de Visual Studio
 
@@ -69,14 +69,14 @@ IVirtualMachine windowsVM = azure.VirtualMachines.Define("MyVirtualMachine")
 ```
 
 > [!div class="nextstepaction"]
-> [Explorar las API de administración](https://docs.microsoft.com/en-us/dotnet/api/overview/azure/virtualmachines/management?view=azure-dotnet)
+> [Explorar las API de administración](https://docs.microsoft.com/dotnet/api/overview/azure/virtualmachines/management?view=azure-dotnet)
 
-### <a name="samples"></a>Muestras
+### <a name="samples"></a>Ejemplos
 
 * [Creación y administración de máquinas virtuales](/dotnet/azure/dotnet-sdk-azure-virtual-machine-samples)
-* [Implementación de una máquina virtual habilitada para SSH con una plantilla con .NET](https://azure.microsoft.com/en-us/resources/samples/resource-manager-dotnet-template-deployment/)
+* [Implementación de una máquina virtual habilitada para SSH con una plantilla con .NET](https://azure.microsoft.com/resources/samples/resource-manager-dotnet-template-deployment/)
 
-Ver el [lista completa](https://azure.microsoft.com/en-us/resources/samples/?platform=dotnet&term=VM) de ejemplos de máquina virtual.
+Ver el [lista completa](https://azure.microsoft.com/resources/samples/?platform=dotnet&term=VM) de ejemplos de máquina virtual.
 
 [PackageManager]: https://docs.microsoft.com/nuget/tools/package-manager-console
 [DotNetCLI]: https://docs.microsoft.com/dotnet/core/tools/dotnet-add-package

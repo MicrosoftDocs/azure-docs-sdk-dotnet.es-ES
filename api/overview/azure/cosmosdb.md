@@ -12,11 +12,11 @@ ms.technology: azure
 ms.devlang: dotnet
 ms.service: cosmos-db
 ms.custom: devcenter, svc-overview
-ms.openlocfilehash: 9f29e53e7f202e48ade12e28f08487bbacd2833c
-ms.sourcegitcommit: 9cc5f8da9e9a15ba07fd67fe8b9a2d4ee6b57c73
+ms.openlocfilehash: 4791e00c18d00fbed13bdf2c626a24fed2ff2863
+ms.sourcegitcommit: dbec35008347b581dd238b882354300e427bec70
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/18/2017
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="azure-cosmosdb-libraries-for-net"></a>Bibliotecas de Azure CosmosDB para .NET
 
@@ -30,7 +30,7 @@ ms.lasthandoff: 11/18/2017
 
 Utilice la biblioteca de cliente de CosmosDB para .NET para y almacenar datos y acceder a ellos en un almacén de datos de CosmosDB.  Para automatizar la creación de una nueva cuenta de CosmosDB, use Azure Portal, la CLI o PowerShell.
 
-Instale el [paquete NuGet](https://www.nuget.org/packages/Microsoft.Azure.DocumentDB.Core) directamente desde la [Consola del Administrador de paquetes][PackageManager] de Visual Studio o con la [CLI de .NET Core][DotNetCLI].
+Instale el [paquete NuGet](https://www.nuget.org/packages/Microsoft.Azure.DocumentDB.Core) directamente desde la [Consola del Administración de paquetes][PackageManager] de Visual Studio o con la [CLI de .NET Core][DotNetCLI].
 
 #### <a name="visual-studio-package-manager"></a>Administrador de paquetes de Visual Studio
 
@@ -61,11 +61,11 @@ SomeClass myObject = client.ReadDocumentAsync<SomeClass>(documentUri).ToString()
 > [!div class="nextstepaction"]
 > [Explorar las API de cliente](/dotnet/api/overview/azure/cosmosdb/client)
 
-## <a name="samples"></a>Muestras
+## <a name="samples"></a>Ejemplos
 
-* [Desarrollo de una aplicación .NET con la API de MongoDB de Azure Cosmos DB](https://azure.microsoft.com/en-us/resources/samples/azure-cosmos-db-mongodb-dotnet-getting-started/)
+* [Desarrollo de una aplicación .NET con la API de MongoDB de Azure Cosmos DB](https://azure.microsoft.com/resources/samples/azure-cosmos-db-mongodb-dotnet-getting-started/)
 
-Consulte la [lista completa](https://azure.microsoft.com/en-us/resources/samples/?platform=dotnet&term=cosmosdb) de ejemplos de Azure Cosmos DB.
+Consulte la [lista completa](https://azure.microsoft.com/resources/samples/?platform=dotnet&term=cosmosdb) de ejemplos de Azure Cosmos DB.
 
 [PackageManager]: https://docs.microsoft.com/nuget/tools/package-manager-console
 [DotNetCLI]: https://docs.microsoft.com/dotnet/core/tools/dotnet-add-package

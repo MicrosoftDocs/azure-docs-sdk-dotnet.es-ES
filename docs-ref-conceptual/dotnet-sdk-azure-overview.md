@@ -7,16 +7,15 @@ ms.author: casoper
 manager: wpickett
 ms.date: 10/19/2017
 ms.topic: reference
-ms.prod: azure
 ms.technology: azure
 ms.devlang: dotnet
 ms.service: multiple
 ms.custom: devcenter
-ms.openlocfilehash: cd0f8d6e0572fc9211af637e60d1a4f19e1ee1e8
-ms.sourcegitcommit: fe3e1475208ba47d4630788bac88b952cc3fe61f
+ms.openlocfilehash: 26360a516220ca9d3e8901e60cb23ecbd02863cd
+ms.sourcegitcommit: 3ba0ff4463338a0ab0f3f15a7601b89417c06970
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2017
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="azure-net-apis"></a>API de Azure .NET
 
@@ -48,13 +47,13 @@ Revise la [lista de servicios de .NET](/dotnet/api/overview/azure/) para empezar
 
 Además de usar las API de .NET para crear y administrar mediante programación los recursos dentro de Azure, también puede usar las API de .NET para conectar sus aplicaciones a estos recursos y utilizarlos en tiempo de ejecución.  Por ejemplo, puede conectarse a SQL Database o almacenar datos en Azure Storage.  Puede identificar qué paquete NuGet debe usar para un determinado servicio de Azure explorando nuestra [lista completa de API de servicio](/dotnet/api/overview/azure/).  
 
-## <a name="samples"></a>Muestras
+## <a name="samples"></a>Ejemplos
 
 Los ejemplos siguientes tratan tareas comunes de automatización con bibliotecas de Azure para .NET:
 
 - [Máquinas virtuales](dotnet-sdk-azure-virtual-machine-samples.md)
 - [Aplicaciones web](dotnet-sdk-azure-web-apps-samples.md)
-- [Base de datos SQL](dotnet-sdk-azure-sql-database-samples.md)
+- [SQL Database](dotnet-sdk-azure-sql-database-samples.md)
 
 Hay disponible una [referencia](/dotnet/api/overview/azure/?view=azure-dotnet) unificada para todos los paquetes tanto del servicio como de las bibliotecas de administración. Las nuevas características, cambios importantes e instrucciones de migración están disponibles en las [notas de la versión](dotnet-sdk-azure-release-notes.md).
 

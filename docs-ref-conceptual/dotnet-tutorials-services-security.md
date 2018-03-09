@@ -6,16 +6,15 @@ ms.author: casoper
 manager: wpickett
 ms.date: 10/19/2017
 ms.topic: reference
-ms.prod: azure
 ms.technology: azure
 ms.devlang: dotnet
 ms.service: multiple
 ms.custom: devcenter
-ms.openlocfilehash: 0cd530ef5f70778571e2f702aebc4a8b43c40e93
-ms.sourcegitcommit: fe3e1475208ba47d4630788bac88b952cc3fe61f
+ms.openlocfilehash: f7f71e15dcd58473a61cfdf163a10dbc5f4f8d80
+ms.sourcegitcommit: 3ba0ff4463338a0ab0f3f15a7601b89417c06970
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2017
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="tutorials-for-authenticating-users-in-your-net-apps-running-on-azure"></a>Tutoriales para la autenticación de usuarios en las aplicaciones .NET que se ejecutan en Azure
 
@@ -29,7 +28,7 @@ Para el código fuente de ejemplo, consulte la lista de [ejemplos de servicios d
 | [Inicio y cierre de sesión de aplicación web con Azure AD][1] | Inicio y cierre de sesión de usuarios en ASP.NET con la biblioteca ADAL.
 | [Autenticación de la aplicación de escritorio con Azure AD][2]| Integración de Azure AD en una aplicación WPF de escritorio de Windows mediante ADAL. | 
 | [Autenticación de API Web con Azure AD][3] | Proteja una API web con tokens de portador de Azure AD. |
-|**Almacén de claves**||
+|**Key Vault**||
 | [Uso de Azure Key Vault desde una aplicación web][4] | Acceda a un secreto de una instancia de Azure Key Vault para que se pueda usar en su aplicación web. | 
 
 [1]: /azure/active-directory/develop/active-directory-devquickstarts-webapp-dotnet

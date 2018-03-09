@@ -6,16 +6,15 @@ ms.author: casoper
 manager: wpickett
 ms.date: 10/19/2017
 ms.topic: reference
-ms.prod: azure
 ms.technology: azure
 ms.devlang: dotnet
 ms.service: multiple
 ms.custom: devcenter
-ms.openlocfilehash: 6b1160e20f44b822791deb1ad467ed984a80438b
-ms.sourcegitcommit: fe3e1475208ba47d4630788bac88b952cc3fe61f
+ms.openlocfilehash: 31023bc25b73c0d02f768aeb357d7c7b5ccf88d0
+ms.sourcegitcommit: 3ba0ff4463338a0ab0f3f15a7601b89417c06970
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2017
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="tutorials-for-using-net-with-azure-databases"></a>Tutoriales para usar .NET con bases de datos de Azure
 
@@ -25,7 +24,7 @@ Para el código fuente de ejemplo, consulte la lista de [ejemplos de servicios d
 
 | | |
 |---|---|
-| **Base de datos SQL** ||
+| **SQL Database** ||
 | [Uso de .NET para conectarse a los datos y consultarlos][1] | Use ADO.NET para conectarse a una instancia de Azure SQL Database, para después usar las instrucciones Transact-SQL para consultar, insertar, actualizar y eliminar datos en la base de datos. | 
 | **Azure Database para PostgreSQL** ||
 | [Uso de .NET para conectarse a los datos y consultarlos][2] | Use instrucciones SQL para consultar, insertar, actualizar y eliminar datos en la base de datos. | 

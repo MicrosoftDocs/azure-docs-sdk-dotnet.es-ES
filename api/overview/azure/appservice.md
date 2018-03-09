@@ -12,11 +12,11 @@ ms.technology: azure
 ms.devlang: dotnet
 ms.service: app-service
 ms.custom: devcenter, svc-overview
-ms.openlocfilehash: 9f54fb6aca934f07c6ae23a4ae40dc29fa48ec8b
-ms.sourcegitcommit: 2c08a778353ed743b9e437ed85f2e1dfb21b9427
+ms.openlocfilehash: 356a86e8fa70512b6f31c6e237173a74d1c6f60a
+ms.sourcegitcommit: dbec35008347b581dd238b882354300e427bec70
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/26/2017
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="azure-app-service-libraries-for-net"></a>Bibliotecas de Azure App Service para .NET
 
@@ -28,7 +28,7 @@ ms.lasthandoff: 10/26/2017
 
 Implemente, administre y escale elementos hospedados en Azure App Service con la API de administración.
 
-Instale el [paquete NuGet](https://www.nuget.org/packages/Microsoft.Azure.Management.AppService.Fluent) directamente desde la [Consola del Administrador de paquetes][PackageManager] de Visual Studio o con la [CLI de .NET Core][DotNetCLI].
+Instale el [paquete NuGet](https://www.nuget.org/packages/Microsoft.Azure.Management.AppService.Fluent) directamente desde la [Consola del Administración de paquetes][PackageManager] de Visual Studio o con la [CLI de .NET Core][DotNetCLI].
 
 
 #### <a name="visual-studio-package-manager"></a>Administrador de paquetes de Visual Studio
@@ -64,12 +64,12 @@ IWebApp app1 = azure.WebApps
 > [!div class="nextstepaction"]
 > [Explorar las API de administración](/dotnet/api/overview/azure/appservice/management)
 
-### <a name="samples"></a>Muestras
+### <a name="samples"></a>Ejemplos
 
-* [Administración de aplicaciones web con el SDK de .NET de Azure](https://azure.microsoft.com/en-us/resources/samples/app-service-web-dotnet-manage/)
-* [Ejemplo de ASP.NET para Azure App Service](https://azure.microsoft.com/en-us/resources/samples/app-service-web-dotnet-get-started/)
+* [Administración de aplicaciones web con el SDK de .NET de Azure](https://azure.microsoft.com/resources/samples/app-service-web-dotnet-manage/)
+* [Ejemplo de ASP.NET para Azure App Service](https://azure.microsoft.com/resources/samples/app-service-web-dotnet-get-started/)
 
-Consulte la [lista completa](https://azure.microsoft.com/en-us/resources/samples/?platform=dotnet&term=app%20service) de ejemplos de Azure App Service.
+Consulte la [lista completa](https://azure.microsoft.com/resources/samples/?platform=dotnet&term=app%20service) de ejemplos de Azure App Service.
 
 [PackageManager]: https://docs.microsoft.com/nuget/tools/package-manager-console
 [DotNetCLI]: https://docs.microsoft.com/dotnet/core/tools/dotnet-add-package

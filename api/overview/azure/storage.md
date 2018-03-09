@@ -12,17 +12,17 @@ ms.technology: azure
 ms.devlang: dotnet
 ms.service: storage
 ms.custom: devcenter, svc-overview
-ms.openlocfilehash: f9928736fa024258bcf19ba5ad91f0a328aa05a8
-ms.sourcegitcommit: 2c08a778353ed743b9e437ed85f2e1dfb21b9427
+ms.openlocfilehash: 8f6e0414b54698d0a1dbe3d4c074456a6ad7b7be
+ms.sourcegitcommit: dbec35008347b581dd238b882354300e427bec70
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/26/2017
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="azure-storage-apis-for-net"></a>API de Azure Storage para .NET
 
 ## <a name="overview"></a>Información general
 
-Lea y escriba archivos, datos de blob (objeto), pares de clave-valor y mensajes desde las aplicaciones .NET con [Azure Storage](https://review.docs.microsoft.com/en-us/azure/storage/storage-introduction).
+Lea y escriba archivos, datos de blob (objeto), pares de clave-valor y mensajes desde las aplicaciones .NET con [Azure Storage](https://review.docs.microsoft.com/azure/storage/storage-introduction).
 
 Para comenzar a usar Azure Storage, consulte [Introducción a Azure Blob Storage mediante .NET](/azure/storage/storage-dotnet-how-to-use-blobs).
 
@@ -79,7 +79,7 @@ blob.UploadTextAsync("Hello, World!").Wait();
 
 Cree y administre cuentas y claves de conexión de Azure Storage con la API de administración.
 
-Instale el [paquete NuGet](https://www.nuget.org/packages/Microsoft.Azure.Management.Storage.Fluent) directamente desde la [Consola del Administrador de paquetes][PackageManager] de Visual Studio o con la [CLI de .NET Core][DotNetCLI].
+Instale el [paquete NuGet](https://www.nuget.org/packages/Microsoft.Azure.Management.Storage.Fluent) directamente desde la [Consola del Administración de paquetes][PackageManager] de Visual Studio o con la [CLI de .NET Core][DotNetCLI].
 
 #### <a name="visual-studio-package-manager"></a>Administrador de paquetes de Visual Studio
 
@@ -111,7 +111,7 @@ IStorageAccount storage = azure.StorageAccounts.Define(storageAccountName)
 > [!div class="nextstepactions"]
 > [Explorar las API de administración](/dotnet/api/overview/azure/storage/management)
 
-## <a name="samples"></a>Muestras
+## <a name="samples"></a>Ejemplos
 
 * [Introducción a Azure Blob Storage en .NET](https://azure.microsoft.com/resources/samples/storage-blob-dotnet-getting-started/) 
 * [Introducción a Azure Queue Storage en .NET](https://azure.microsoft.com/resources/samples/storage-queue-dotnet-getting-started/)
