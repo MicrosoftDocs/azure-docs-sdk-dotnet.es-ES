@@ -66,8 +66,8 @@
   },
   "dependent_repositories": [
     {
-      "url": "https://github.com/Microsoft/templates.docs.msft",
-      "branch_mapping": {},
+      "url": "https://github.com/Microsoft/templates.docs.msft.es-ES", 
+      "branch_mapping": {}, 
       "branch": "master",
       "path_to_root": "_themes"
     },
