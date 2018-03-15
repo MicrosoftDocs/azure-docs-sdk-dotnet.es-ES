@@ -12,11 +12,11 @@ ms.technology: azure
 ms.devlang: dotnet
 ms.service: data-lake-analytics
 ms.custom: devcenter, svc-overview
-ms.openlocfilehash: aa99608ec5568450a90cc2b93c3f1c5d0e38bfb1
-ms.sourcegitcommit: 2c08a778353ed743b9e437ed85f2e1dfb21b9427
+ms.openlocfilehash: 063513d8c523330276cdfc222d3ca00a9629f63a
+ms.sourcegitcommit: dbec35008347b581dd238b882354300e427bec70
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/26/2017
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="azure-data-lake-analytics-libraries-for-net"></a>Bibliotecas de Azure Data Lake Analytics para .NET
 
@@ -30,7 +30,7 @@ Para más información, consulte [Información general de Microsoft Azure Data L
 
 Use la biblioteca de administración para conectarse al servicio y administrar trabajos de análisis.
 
-Instale el [paquete NuGet](https://www.nuget.org/packages/Microsoft.Azure.Management.DataLake.Analytics) directamente desde la [Consola del Administrador de paquetes][PackageManager] de Visual Studio o con la [CLI de .NET Core][DotNetCLI].
+Instale el [paquete NuGet](https://www.nuget.org/packages/Microsoft.Azure.Management.DataLake.Analytics) directamente desde la [Consola del Administración de paquetes][PackageManager] de Visual Studio o con la [CLI de .NET Core][DotNetCLI].
 
 #### <a name="visual-studio-package-manager"></a>Administrador de paquetes de Visual Studio
 
@@ -66,8 +66,8 @@ AnalyticsClient adla = new AnalyticsClient(auth, adla_account);
 > [!div class="nextstepaction"]
 > [Explorar las API de administración](/dotnet/api/overview/azure/datalakeanalytics/management)
 
-## <a name="samples"></a>Muestras
-* [Ejemplo de cliente de .NET de Azure Data Lake](https://azure.microsoft.com/en-us/resources/samples/data-lake-dotnet-client/)
+## <a name="samples"></a>Ejemplos
+* [Ejemplo de cliente de .NET de Azure Data Lake](https://azure.microsoft.com/resources/samples/data-lake-dotnet-client/)
 
 Explore más [código de .NET de ejemplo](https://azure.microsoft.com/resources/samples/?platform=dotnet) que puede usar en sus aplicaciones.
 

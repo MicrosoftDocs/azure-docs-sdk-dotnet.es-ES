@@ -6,16 +6,15 @@ ms.author: casoper
 manager: wpickett
 ms.date: 10/19/2017
 ms.topic: reference
-ms.prod: azure
 ms.technology: azure
 ms.devlang: dotnet
 ms.service: multiple
 ms.custom: devcenter
-ms.openlocfilehash: d733a7e76585e95b7618ad3defd4712a31192c2d
-ms.sourcegitcommit: fe3e1475208ba47d4630788bac88b952cc3fe61f
+ms.openlocfilehash: a6c50af1678c785c6a3fcd3f4f3689171069b2ee
+ms.sourcegitcommit: 3ba0ff4463338a0ab0f3f15a7601b89417c06970
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2017
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="net-tutorials-for-enterprise-messaging-and-internet-of-things-iot"></a>Tutoriales de .NET para la mensajería empresarial e Internet de las cosas (IoT)
 
@@ -26,11 +25,11 @@ Para el código fuente de ejemplo, consulte la lista de [ejemplos de servicios d
 
 | | |
 |---|---|
-| **Bus de servicio** | |
+| **Service Bus** | |
 | [Utilización de las colas de Service Bus][1] | Cree colas, envíe y reciba mensajes, y elimine colas. | 
 | [Uso de temas y suscripciones de Service Bus][2] | Aprenda a usar el modelo de comunicación de publicación y suscripción con Service Bus.
 | [Uso de Service Bus desde .NET con AMQP 1.0][3] | Aprenda a usar AMQP en aplicaciones de Service Bus.
-|**Centro de IoT**|
+|**IoT Hub**|
 | [Conexión de un dispositivo simulado a IoT Hub][4] | Cree una identidad de dispositivo, envíe mensajes y procese la telemetría de IoT Hub. |   
 | [Procesamiento de mensajes de dispositivo a la nube][5] | Envíe mensajes desde un dispositivo simulado y procéselos en la nube. |
 |**Event Hubs**|
