@@ -1,7 +1,7 @@
 ---
-title: "Introducción a las API de .NET de Azure"
-description: "Adéntrese en el uso básico de las bibliotecas de Azure para .NET con su propia suscripción de Azure."
-keywords: "Azure, .NET, SDK, API ,autenticación, introducción"
+title: Introducción a las API de .NET de Azure
+description: Adéntrese en el uso básico de las bibliotecas de Azure para .NET con su propia suscripción de Azure.
+keywords: Azure, .NET, SDK, API ,autenticación, introducción
 author: camsoper
 ms.author: casoper
 manager: wpickett

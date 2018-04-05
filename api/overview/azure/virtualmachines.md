@@ -1,7 +1,7 @@
 ---
 title: Bibliotecas de Azure Compute para .NET
 description: Referencia de las bibliotecas Azure Compute para .NET
-keywords: "Azure, .NET, SDK, API, VM, máquinas virtuales, Compute"
+keywords: Azure, .NET, SDK, API, VM, máquinas virtuales, Compute
 author: camsoper
 ms.author: casoper
 manager: wpickett

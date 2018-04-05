@@ -1,6 +1,6 @@
 ---
-title: "Tutoriales de mensajería e IoT con .NET en Azure | Microsoft Docs"
-description: "Envíe mensajes entre aplicaciones en la nube y entre los dispositivos y la nube con .NET y los servicios de Azure."
+title: Tutoriales de mensajería e IoT con .NET en Azure | Microsoft Docs
+description: Envíe mensajes entre aplicaciones en la nube y entre los dispositivos y la nube con .NET y los servicios de Azure.
 author: camsoper
 ms.author: casoper
 manager: wpickett

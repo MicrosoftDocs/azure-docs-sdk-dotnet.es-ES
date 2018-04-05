@@ -1,7 +1,7 @@
 ---
-title: "Migración de una aplicación web ASP.NET a Azure App Service"
-description: "Aprenda a migrar una aplicación web ASP.NET de un entorno local a Azure App Service."
-keywords: "Azure. NET, ASP.NET, App Service, aplicación web, migrar, migración"
+title: Migración de una aplicación web ASP.NET a Azure App Service
+description: Aprenda a migrar una aplicación web ASP.NET de un entorno local a Azure App Service.
+keywords: Azure. NET, ASP.NET, App Service, aplicación web, migrar, migración
 author: camsoper
 manager: wpickett
 ms.author: casoper

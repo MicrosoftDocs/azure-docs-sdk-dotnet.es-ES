@@ -1,6 +1,6 @@
 ---
 title: Tutoriales para administrar y supervisar aplicaciones .NET en Azure
-description: "Supervise el estado de mantenimiento y el rendimiento de su aplicación .NET que se ejecuta en Azure e instrumente la telemetría para guardar información sobre cómo se utiliza la aplicación."
+description: Supervise el estado de mantenimiento y el rendimiento de su aplicación .NET que se ejecuta en Azure e instrumente la telemetría para guardar información sobre cómo se utiliza la aplicación.
 author: camsoper
 ms.author: casoper
 manager: wpickett

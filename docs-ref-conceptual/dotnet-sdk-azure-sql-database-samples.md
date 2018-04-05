@@ -1,6 +1,6 @@
 ---
-title: "Código de ejemplo para el uso de bases de datos de Azure con .NET"
-description: "Obtención de código de ejemplo para crear aplicaciones mediante bases de datos de Azure con .NET"
+title: Código de ejemplo para el uso de bases de datos de Azure con .NET
+description: Obtención de código de ejemplo para crear aplicaciones mediante bases de datos de Azure con .NET
 keywords: Azure, .NET, SDK, API, SQL, base de datos
 author: camsoper
 ms.author: casoper
