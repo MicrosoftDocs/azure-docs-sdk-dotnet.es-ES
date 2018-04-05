@@ -1,6 +1,6 @@
 ---
-title: "Tutoriales de .NET para el análisis de datos en Azure | Microsoft Docs"
-description: "Desarrolle aplicaciones de análisis de datos con servicios de Microsoft Azure."
+title: Tutoriales de .NET para el análisis de datos en Azure | Microsoft Docs
+description: Desarrolle aplicaciones de análisis de datos con servicios de Microsoft Azure.
 author: camsoper
 ms.author: casoper
 manager: wpickett

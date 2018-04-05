@@ -1,7 +1,7 @@
 ---
 title: Bibliotecas de Azure App Service para .NET
 description: Referencia de las bibliotecas de Azure App Service para .NET
-keywords: "Azure, .NET, SDK, API, aplicaciones web, App Service, móvil, asp.net"
+keywords: Azure, .NET, SDK, API, aplicaciones web, App Service, móvil, asp.net
 author: camsoper
 ms.author: casoper
 manager: wpickett

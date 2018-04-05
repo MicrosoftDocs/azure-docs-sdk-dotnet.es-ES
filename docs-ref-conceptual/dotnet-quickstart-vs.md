@@ -1,6 +1,6 @@
 ---
-title: "Implementación en Azure desde Visual Studio"
-description: "Este tutorial le guiará a través de la compilación e implementación de una aplicación de Microsoft Azure con Visual Studio y .NET."
+title: Implementación en Azure desde Visual Studio
+description: Este tutorial le guiará a través de la compilación e implementación de una aplicación de Microsoft Azure con Visual Studio y .NET.
 keywords: Azure .NET, SDK, referencia de API de Azure .NET, biblioteca de clases de Azure .NET
 author: camsoper
 manager: douge

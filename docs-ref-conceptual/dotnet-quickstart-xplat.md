@@ -1,6 +1,6 @@
 ---
-title: "Implementación en Azure desde la línea de comandos con .NET Core"
-description: "En este artículo se describe cómo implementar una aplicación de ASP.NET Core en Azure App Service mediante herramientas de la línea de comandos."
+title: Implementación en Azure desde la línea de comandos con .NET Core
+description: En este artículo se describe cómo implementar una aplicación de ASP.NET Core en Azure App Service mediante herramientas de la línea de comandos.
 keywords: Azure .NET, SDK, referencia de API de Azure .NET, biblioteca de clases de Azure .NET
 author: camsoper
 manager: douge

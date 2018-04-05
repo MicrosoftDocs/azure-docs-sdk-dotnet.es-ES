@@ -1,6 +1,6 @@
 ---
-title: "Tutoriales de .NET para la implementación de contenedores en Azure"
-description: "Implemente aplicaciones .NET en contenedores de Docker en Azure y escálelos con DC/OS, Mesos o Kubernetes."
+title: Tutoriales de .NET para la implementación de contenedores en Azure
+description: Implemente aplicaciones .NET en contenedores de Docker en Azure y escálelos con DC/OS, Mesos o Kubernetes.
 author: camsoper
 ms.author: casoper
 manager: wpickett

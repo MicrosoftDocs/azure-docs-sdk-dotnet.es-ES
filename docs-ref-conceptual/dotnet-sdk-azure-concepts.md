@@ -1,6 +1,6 @@
 ---
-title: "Conceptos de uso y patrones de las bibliotecas de administración de Azure para .NET"
-description: 
+title: Conceptos de uso y patrones de las bibliotecas de administración de Azure para .NET
+description: ''
 keywords: Azure, .NET, SDK, API, patrones, conceptos, fluidez, registro
 author: camsoper
 ms.author: casoper

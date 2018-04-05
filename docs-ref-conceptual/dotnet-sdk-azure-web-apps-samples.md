@@ -1,6 +1,6 @@
 ---
-title: "Código de ejemplo para la compilación de aplicaciones web y móviles de Azure con .NET"
-description: "Obtenga código de ejemplo para crear y actualizar Web Apps mediante .NET."
+title: Código de ejemplo para la compilación de aplicaciones web y móviles de Azure con .NET
+description: Obtenga código de ejemplo para crear y actualizar Web Apps mediante .NET.
 keywords: Azure, .NET, SDK, API, SQL, base de datos
 author: camsoper
 ms.author: casoper

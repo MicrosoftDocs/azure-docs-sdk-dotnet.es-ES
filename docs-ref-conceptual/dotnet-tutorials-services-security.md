@@ -1,6 +1,6 @@
 ---
 title: Tutoriales de .NET para proteger las aplicaciones de Azure
-description: "Tutoriales para la seguridad de las aplicaciones y la administración de identidades en las aplicaciones .NET que se ejecutan en Azure."
+description: Tutoriales para la seguridad de las aplicaciones y la administración de identidades en las aplicaciones .NET que se ejecutan en Azure.
 author: camsoper
 ms.author: casoper
 manager: wpickett

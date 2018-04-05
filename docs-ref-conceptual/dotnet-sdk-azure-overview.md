@@ -1,6 +1,6 @@
 ---
 title: API de Azure .NET
-description: "Introducción a las API de Azure para .NET"
+description: Introducción a las API de Azure para .NET
 keywords: Azure, .NET, SDK, API, NuGet, bibliotecas, paquetes
 author: camsoper
 ms.author: casoper

@@ -1,6 +1,6 @@
 ---
-title: "Instrucciones de ejemplo de bibliotecas de administración de Azure para .NET"
-description: "Obtenga código de ejemplo para la creación y actualización de recursos mediante las bibliotecas de administración de Azure para .NET."
+title: Instrucciones de ejemplo de bibliotecas de administración de Azure para .NET
+description: Obtenga código de ejemplo para la creación y actualización de recursos mediante las bibliotecas de administración de Azure para .NET.
 keywords: Azure, .NET, SDK, API, ejemplo
 author: camsoper
 ms.author: casoper

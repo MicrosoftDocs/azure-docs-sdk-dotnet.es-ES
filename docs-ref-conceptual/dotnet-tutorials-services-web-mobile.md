@@ -1,6 +1,6 @@
 ---
-title: "Tutoriales para la compilación de aplicaciones .NET web y móviles en Azure"
-description: "Tutoriales para compilar y agregar características a las aplicaciones .NET web y móviles con servicios de Azure."
+title: Tutoriales para la compilación de aplicaciones .NET web y móviles en Azure
+description: Tutoriales para compilar y agregar características a las aplicaciones .NET web y móviles con servicios de Azure.
 author: camsoper
 ms.author: casoper
 manager: wpickett

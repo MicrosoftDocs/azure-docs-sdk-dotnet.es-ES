@@ -1,6 +1,6 @@
 ---
-title: "Notas de la versión de las bibliotecas de administración de Azure para .NET | Microsoft Docs"
-description: "Vea cuáles son las novedades y cambios importantes en las bibliotecas de administración de Azure para .NET."
+title: Notas de la versión de las bibliotecas de administración de Azure para .NET | Microsoft Docs
+description: Vea cuáles son las novedades y cambios importantes en las bibliotecas de administración de Azure para .NET.
 keywords: Azure, .NET, API, referencia, notas, actualizaciones, en desuso
 author: camsoper
 ms.author: casoper
