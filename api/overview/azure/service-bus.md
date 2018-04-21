@@ -12,11 +12,11 @@ ms.technology: azure
 ms.devlang: dotnet
 ms.service: service-bus
 ms.custom: devcenter, svc-overview
-ms.openlocfilehash: c2019fd39f42f9bc4a39dd4e642db9f90b7a917c
-ms.sourcegitcommit: fe3e1475208ba47d4630788bac88b952cc3fe61f
+ms.openlocfilehash: f2795a123a7b92237b0aea672298ce9339fd0830
+ms.sourcegitcommit: e1a0e91988bb849c75e9583a80e3e6d712083785
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2017
+ms.lasthandoff: 04/14/2018
 ---
 # <a name="azure-service-bus-libraries-for-net"></a>Bibliotecas de Azure Service Bus para .NET
 
@@ -26,12 +26,12 @@ ms.lasthandoff: 10/23/2017
 
 ## <a name="client-library"></a>Biblioteca de cliente
 
-Instale el [paquete NuGet](https://www.nuget.org/packages/WindowsAzure.ServiceBus) directamente desde la [Consola del Administrador de paquetes][PackageManager] de Visual Studio.
+Instale el [paquete NuGet](https://www.nuget.org/packages/Microsoft.Azure.ServiceBus) directamente desde la [Consola del Administrador de paquetes][PackageManager] de Visual Studio.
 
 #### <a name="visual-studio-package-manager"></a>Administrador de paquetes de Visual Studio
 
 ```powershell
-Install-Package WindowsAzure.ServiceBus
+Install-Package Microsoft.Azure.ServiceBus
 ```
 
 ### <a name="code-example"></a>Ejemplo de código
@@ -39,11 +39,13 @@ Install-Package WindowsAzure.ServiceBus
 En este ejemplo se envía un mensaje a una cola de Service Bus.
 
 ```csharp
-// using Microsoft.ServiceBus.Messaging;
+// using Microsoft.Azure.ServiceBus;
+// Microsoft.Azure.ServiceBus 2.0.0 (stable)
 
-QueueClient client = QueueClient.CreateFromConnectionString(connectionString, queueName);
-BrokeredMessage message = new BrokeredMessage("This is a test message!");
-client.Send(message);
+byte[] messageBody = System.Text.Encoding.Unicode.GetBytes("Hello, world!");
+ServiceBusConnectionStringBuilder builder = new ServiceBusConnectionStringBuilder(connectionString);
+QueueClient client = new QueueClient(builder, ReceiveMode.PeekLock);
+client.SendAsync(new Message(messageBody));
 ```
 
 > [!div class="nextstepaction"]
@@ -52,7 +54,7 @@ client.Send(message);
 
 ## <a name="management-library"></a>Biblioteca de administración
 
-Instale el [paquete NuGet](https://www.nuget.org/packages/Microsoft.Azure.Management.ServiceBus.Fluent) directamente desde la [Consola del Administrador de paquetes][PackageManager] de Visual Studio o con la [CLI de .NET Core][DotNetCLI].
+Instale el [paquete NuGet](https://www.nuget.org/packages/Microsoft.Azure.Management.ServiceBus.Fluent) directamente desde la [Consola del Administración de paquetes][PackageManager] de Visual Studio o con la [CLI de .NET Core][DotNetCLI].
 
 #### <a name="visual-studio-package-manager"></a>Administrador de paquetes de Visual Studio
 
@@ -88,7 +90,7 @@ using (ServiceBusManagementClient client = new ServiceBusManagementClient(creden
 > [!div class="nextstepaction"]
 > [Explorar las API de administración](/dotnet/api/overview/azure/servicebus/management)
 
-## <a name="samples"></a>Muestras
+## <a name="samples"></a>Ejemplos
 
 - [Conceptos básicos de la cola de Service Bus - .NET](https://azure.microsoft.com/resources/samples/service-bus-dotnet-manage-queue-with-basic-features/)
 - [Características avanzadas de la cola de Service Bus - .Net](https://azure.microsoft.com/resources/samples/service-bus-dotnet-manage-queue-with-advanced-features/)
