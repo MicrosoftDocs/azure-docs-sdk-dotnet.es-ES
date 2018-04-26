@@ -10,11 +10,11 @@ ms.technology: azure
 ms.devlang: dotnet
 ms.service: multiple
 ms.custom: devcenter
-ms.openlocfilehash: bb2aff01c8c6a07c6a5a05cd07bc3c3f4eb0688b
-ms.sourcegitcommit: 3ba0ff4463338a0ab0f3f15a7601b89417c06970
+ms.openlocfilehash: ad5a600f6d84c0bae7f4d0dd3f74910d980a9272
+ms.sourcegitcommit: e1a0e91988bb849c75e9583a80e3e6d712083785
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 04/14/2018
 ---
 # <a name="tutorials-for-building-net-apps-in-azure"></a>Tutoriales para la compilación de aplicaciones .NET de Azure
 
@@ -34,15 +34,15 @@ Para el código fuente de ejemplo, consulte la lista de [ejemplos de servicios d
 | [Uso de .NET para conectarse a los datos y consultarlos][5] | Use ADO.NET para conectarse a una instancia de Azure SQL Database, para después usar las instrucciones Transact-SQL para consultar, insertar, actualizar y eliminar datos en la base de datos. | 
 | **Azure Database para PostgreSQL** ||
 | [Uso de .NET para conectarse a los datos y consultarlos][6] | Use instrucciones SQL para consultar, insertar, actualizar y eliminar datos en la base de datos. | 
-| **Cosmos DB** ||
-| [Introducción a la API de DocumentDB][7] | Cree una aplicación de consola sencilla con la API de DocumentDB. | 
-| [Creación de una aplicación web ASP.NET con CosmosDB][8] | Cree una aplicación web mediante una base de datos NoSQL de DocumentDB en CosmosDB. | 
+| **Azure Cosmos DB** ||
+| [Introducción a SQL API de Azure Cosmos DB][7] | Cree una aplicación de consola sencilla con SQL API de Azure Cosmos DB. | 
+| [Creación de una aplicación web ASP.NET con SQL API de Azure Cosmos DB][8] | Cree una aplicación web con SQL API de Azure Cosmos DB. | 
 
 [1]: /azure/app-service-web/app-service-web-tutorial-dotnet-sqldatabase
-[2]: /azure/documentdb/documentdb-dotnet-application
+[2]: /azure/cosmos-db/sql-api-dotnet-application
 [3]: /azure/app-service-api/app-service-api-dotnet-get-started
 [4]: /azure/container-service/container-service-kubernetes-windows-walkthrough
 [5]: /azure/sql-database/sql-database-connect-query-dotnet
 [6]: /azure/postgresql/connect-csharp
-[7]: /azure/cosmos-db/documentdb-dotnetcore-get-started
-[8]: /azure/cosmos-db/documentdb-dotnet-application
+[7]: /azure/cosmos-db/sql-api-get-started
+[8]: /azure/cosmos-db/sql-api-dotnet-application
