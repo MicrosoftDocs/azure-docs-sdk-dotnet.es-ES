@@ -12,11 +12,11 @@ ms.technology: azure
 ms.devlang: dotnet
 ms.service: notification-hubs
 ms.custom: devcenter, svc-overview
-ms.openlocfilehash: 9fd49ccc8d02eff09a8a53e6f1b9baa6a7a59082
-ms.sourcegitcommit: 33732307162ddf6f272b0e9cc7f74eb8e6fdda1b
+ms.openlocfilehash: f863bf9d5d63129e04dd31ba96b3e803bead87bc
+ms.sourcegitcommit: 4c42de7e066b6aa0a5b5df02cce4d1d245aa558d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="azure-notification-hubs-libraries-for-net"></a>Bibliotecas de Azure Notification Hubs para .NET
 
@@ -24,7 +24,7 @@ Azure Notification Hubs proporciona un motor de inserción fácil de usar, multi
 
 ## <a name="client-library"></a>Biblioteca de cliente
 
-Instale el [paquete NuGet](https://www.nuget.org/packages/Microsoft.Azure.NotificationHubs) directamente desde la [Consola del Administrador de paquetes][PackageManager] de Visual Studio o con la [CLI de .NET Core][DotNetCLI].
+Instale el [paquete NuGet](https://www.nuget.org/packages/Microsoft.Azure.NotificationHubs) directamente desde la [Consola del Administración de paquetes][PackageManager] de Visual Studio o con la [CLI de .NET Core][DotNetCLI].
 
 > [!NOTE]
 > La [nueva versión preliminar del paquete NuGet](https://www.nuget.org/packages/Microsoft.Azure.NotificationHubs/2.0.0-preview1) ahora es compatible con .NET Standard, que permite usar .NET Core para el uso de back-end de Notification Hubs
@@ -41,7 +41,7 @@ dotnet add package Microsoft.Azure.NotificationHubs
 
 ### <a name="code-example"></a>Ejemplo de código
 
-En este ejemplo se conecta a una base de datos y se leen las filas de una tabla.
+En este ejemplo se conecta a Centro de notificaciones y se envía un mensaje de Servicios de notificaciones de inserción de Windows (WNS).
 
 ```csharp
 NotificationHubClient hub = NotificationHubClient
@@ -56,7 +56,7 @@ await hub.SendWindowsNativeNotificationAsync(toast);
 
 ## <a name="management-library"></a>Biblioteca de administración
 
-Instale el [paquete NuGet](https://www.nuget.org/packages/Microsoft.Azure.Management.NotificationHubs) directamente desde la [Consola del Administrador de paquetes][PackageManager] de Visual Studio o con la [CLI de .NET Core][DotNetCLI].
+Instale el [paquete NuGet](https://www.nuget.org/packages/Microsoft.Azure.Management.NotificationHubs) directamente desde la [Consola del Administración de paquetes][PackageManager] de Visual Studio o con la [CLI de .NET Core][DotNetCLI].
 
 #### <a name="visual-studio-package-manager"></a>Administrador de paquetes de Visual Studio
 
@@ -71,7 +71,7 @@ dotnet add package Microsoft.Azure.Management.NotificationHubs
 > [!div class="nextstepaction"]
 > [Explorar las API de administración](/dotnet/api/overview/azure/notificationhubs/management)
 
-## <a name="samples"></a>Muestras
+## <a name="samples"></a>Ejemplos
 
 - [Introducción a Windows Universal](https://github.com/Azure/azure-notificationhubs-samples/tree/master/dotnet/GetStartedWindowsUniversal)
 
