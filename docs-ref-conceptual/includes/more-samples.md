@@ -1,3 +1,3 @@
-## <a name="more-samples"></a><span data-ttu-id="18fcd-101">Más ejemplos</span><span class="sxs-lookup"><span data-stu-id="18fcd-101">More samples</span></span>
+## <a name="more-samples"></a>Más ejemplos
 
-<span data-ttu-id="18fcd-102">La colección completa de ejemplos de las bibliotecas de administración de Azure para .NET se puede encontrar en [GitHub](https://github.com/Azure/azure-sdk-for-net/blob/Fluent/README.md#sample-code).</span><span class="sxs-lookup"><span data-stu-id="18fcd-102">The full collection of samples for the Azure Management Libraries for .NET can be found on [GitHub](https://github.com/Azure/azure-sdk-for-net/blob/Fluent/README.md#sample-code).</span></span>
+La colección completa de ejemplos de las bibliotecas de administración de Azure para .NET se puede encontrar en [GitHub](https://github.com/Azure/azure-sdk-for-net/blob/Fluent/README.md#sample-code).
