@@ -15,6 +15,7 @@ ms.sourcegitcommit: 3ba0ff4463338a0ab0f3f15a7601b89417c06970
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 03/05/2018
+ms.locfileid: "29752847"
 ---
 # <a name="net-tutorials-for-enterprise-messaging-and-internet-of-things-iot"></a>Tutoriales de .NET para la mensajería empresarial e Internet de las cosas (IoT)
 

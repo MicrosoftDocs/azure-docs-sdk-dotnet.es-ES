@@ -17,6 +17,7 @@ ms.sourcegitcommit: dbec35008347b581dd238b882354300e427bec70
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 03/02/2018
+ms.locfileid: "29728416"
 ---
 # <a name="azure-data-lake-analytics-libraries-for-net"></a>Bibliotecas de Azure Data Lake Analytics para .NET
 
