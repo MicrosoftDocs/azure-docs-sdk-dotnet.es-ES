@@ -17,6 +17,7 @@ ms.sourcegitcommit: dbec35008347b581dd238b882354300e427bec70
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 03/02/2018
+ms.locfileid: "29728536"
 ---
 # <a name="azure-virtual-machine-libraries-for-net"></a><span data-ttu-id="0b90d-104">Bibliotecas de Azure Virtual Machines para .NET</span><span class="sxs-lookup"><span data-stu-id="0b90d-104">Azure virtual machine libraries for .NET</span></span>
 

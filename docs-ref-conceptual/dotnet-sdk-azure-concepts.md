@@ -16,6 +16,7 @@ ms.sourcegitcommit: 3ba0ff4463338a0ab0f3f15a7601b89417c06970
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 03/05/2018
+ms.locfileid: "29752867"
 ---
 # <a name="azure-management-library-for-net-fluent-concepts"></a><span data-ttu-id="85f75-103">Biblioteca de administración de Azure para conceptos fluidos de .NET</span><span class="sxs-lookup"><span data-stu-id="85f75-103">Azure management library for .NET fluent concepts</span></span>
 

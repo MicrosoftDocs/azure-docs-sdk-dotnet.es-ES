@@ -16,6 +16,7 @@ ms.sourcegitcommit: 3ba0ff4463338a0ab0f3f15a7601b89417c06970
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 03/05/2018
+ms.locfileid: "29752697"
 ---
 # <a name="azure-net-apis"></a><span data-ttu-id="60a18-104">API de Azure .NET</span><span class="sxs-lookup"><span data-stu-id="60a18-104">Azure .NET APIs</span></span>
 

@@ -16,6 +16,7 @@ ms.sourcegitcommit: 3ba0ff4463338a0ab0f3f15a7601b89417c06970
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 03/05/2018
+ms.locfileid: "29752777"
 ---
 # <a name="authenticate-with-the-azure-libraries-for-net"></a><span data-ttu-id="58600-104">Autenticación con las bibliotecas de Azure para .NET</span><span class="sxs-lookup"><span data-stu-id="58600-104">Authenticate with the Azure Libraries for .NET</span></span>
 
