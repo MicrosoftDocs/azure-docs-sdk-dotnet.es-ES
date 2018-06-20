@@ -1,7 +1,7 @@
 ---
-title: "Migración de una base de datos de SQL Server a Azure"
+title: Migración de una base de datos de SQL Server a Azure
 description: Aprenda a migrar una base de datos de SQL Server de un entorno local a Azure.
-keywords: "Azure .NET, ASP.NET, SQL, SQL Server, SQL Database, migrar, migración"
+keywords: Azure .NET, ASP.NET, SQL, SQL Server, SQL Database, migrar, migración
 author: camsoper
 manager: wpickett
 ms.author: casoper
@@ -16,6 +16,7 @@ ms.sourcegitcommit: dbec35008347b581dd238b882354300e427bec70
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 03/02/2018
+ms.locfileid: "29728496"
 ---
 ## <a name="migrate-a-sql-server-database-to-azure"></a>Migración de una base de datos de SQL Server a Azure
 

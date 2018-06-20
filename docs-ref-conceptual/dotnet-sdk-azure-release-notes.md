@@ -16,6 +16,7 @@ ms.sourcegitcommit: e1a0e91988bb849c75e9583a80e3e6d712083785
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/14/2018
+ms.locfileid: "31005912"
 ---
 # <a name="release-notes"></a>Notas de la versión 
 

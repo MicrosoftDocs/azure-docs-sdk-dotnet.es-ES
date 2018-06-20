@@ -17,6 +17,7 @@ ms.sourcegitcommit: 2c08a778353ed743b9e437ed85f2e1dfb21b9427
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 10/26/2017
+ms.locfileid: "23566166"
 ---
 # <a name="azure-service-bus-relay-libraries-for-net"></a>Bibliotecas de Azure Service Bus Relay para .NET
 

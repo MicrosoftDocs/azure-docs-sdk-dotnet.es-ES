@@ -15,6 +15,7 @@ ms.sourcegitcommit: e1a0e91988bb849c75e9583a80e3e6d712083785
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/14/2018
+ms.locfileid: "31005892"
 ---
 # <a name="deploy-to-azure-from-visual-studio"></a>Implementación en Azure desde Visual Studio
 
