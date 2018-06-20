@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3e904e6e4f04f1c92d729459434c85faff32e386
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 12/09/2017
+ms.locfileid: "26588478"
 ---
 # <a name="azure-data-lake-store-libraries-for-net"></a><span data-ttu-id="73e4a-104">Bibliotecas de Azure Data Lake Store para .NET</span><span class="sxs-lookup"><span data-stu-id="73e4a-104">Azure Data Lake Store libraries for .NET</span></span>
 

@@ -17,6 +17,7 @@ ms.sourcegitcommit: fe3e1475208ba47d4630788bac88b952cc3fe61f
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 10/23/2017
+ms.locfileid: "23486958"
 ---
 # <a name="azure-hdinsight-libraries-for-net"></a><span data-ttu-id="7ceab-104">Bibliotecas de Azure HDInsight para .NET</span><span class="sxs-lookup"><span data-stu-id="7ceab-104">Azure HDInsight libraries for .NET</span></span>
 

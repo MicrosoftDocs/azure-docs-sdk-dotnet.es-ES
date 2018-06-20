@@ -17,6 +17,7 @@ ms.sourcegitcommit: fe3e1475208ba47d4630788bac88b952cc3fe61f
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 10/23/2017
+ms.locfileid: "23487448"
 ---
 # <a name="azure-media-services-libraries-for-net"></a><span data-ttu-id="6f28b-104">Bibliotecas de Azure Media Services para .NET</span><span class="sxs-lookup"><span data-stu-id="6f28b-104">Azure Media Services libraries for .NET</span></span>
 

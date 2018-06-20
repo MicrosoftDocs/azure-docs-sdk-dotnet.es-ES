@@ -1,6 +1,6 @@
 ---
 title: Bibliotecas de Azure Database para PostgreSQL para .NET
-description: "Documentación de referencia para las bibliotecas de cliente de .NET para Azure Database para PostgreSQL"
+description: Documentación de referencia para las bibliotecas de cliente de .NET para Azure Database para PostgreSQL
 keywords: Azure, .NET ODBC, SDK, API, SQL, ADO.NET, base de datos, PostGres, PostgreSQL
 author: camsoper
 ms.author: casoper
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 4dba7cd869bddff3dee7315d258522dc4879abce
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 11/23/2017
+ms.locfileid: "25550815"
 ---
 # <a name="azure-database-for-postgresql-libraries-for-net"></a><span data-ttu-id="86d44-104">Bibliotecas de Azure Database para PostgreSQL para .NET</span><span class="sxs-lookup"><span data-stu-id="86d44-104">Azure Database for PostgreSQL libraries for .NET</span></span>
 

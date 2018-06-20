@@ -17,6 +17,7 @@ ms.sourcegitcommit: fe3e1475208ba47d4630788bac88b952cc3fe61f
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 10/23/2017
+ms.locfileid: "23487148"
 ---
 # <a name="azure-data-factory-libraries-for-net"></a><span data-ttu-id="a9176-104">Bibliotecas de Azure Data Factory para .NET</span><span class="sxs-lookup"><span data-stu-id="a9176-104">Azure Data Factory libraries for .NET</span></span>
 

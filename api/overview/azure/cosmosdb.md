@@ -17,6 +17,7 @@ ms.sourcegitcommit: e1a0e91988bb849c75e9583a80e3e6d712083785
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/14/2018
+ms.locfileid: "31005812"
 ---
 # <a name="azure-cosmos-db-libraries-for-net"></a><span data-ttu-id="35a3f-104">Bibliotecas de Azure Cosmos DB para .NET</span><span class="sxs-lookup"><span data-stu-id="35a3f-104">Azure Cosmos DB libraries for .NET</span></span>
 

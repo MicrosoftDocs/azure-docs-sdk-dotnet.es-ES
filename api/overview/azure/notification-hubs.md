@@ -17,6 +17,7 @@ ms.sourcegitcommit: 4c42de7e066b6aa0a5b5df02cce4d1d245aa558d
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31447642"
 ---
 # <a name="azure-notification-hubs-libraries-for-net"></a><span data-ttu-id="76d82-104">Bibliotecas de Azure Notification Hubs para .NET</span><span class="sxs-lookup"><span data-stu-id="76d82-104">Azure Notification Hubs libraries for .NET</span></span>
 
