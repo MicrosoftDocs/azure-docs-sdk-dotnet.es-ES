@@ -7,17 +7,15 @@ ms.author: casoper
 manager: wpickett
 ms.date: 10/19/2017
 ms.topic: reference
-ms.prod: azure
-ms.technology: azure
 ms.devlang: dotnet
 ms.service: batch
 ms.custom: devcenter, svc-overview
-ms.openlocfilehash: 79ca70e5d0f3d5555c8a691da6dbcc1e6a55ab0b
-ms.sourcegitcommit: fe3e1475208ba47d4630788bac88b952cc3fe61f
+ms.openlocfilehash: b6053e19d26247dd36ed7e38fc33030f96aecca8
+ms.sourcegitcommit: bfa1898c97798991215d08ce89dea87efff44157
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2017
-ms.locfileid: "23487268"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37065565"
 ---
 # <a name="azure-batch-libraries-for-net"></a>Bibliotecas de Azure Batch para .NET
 
@@ -84,7 +82,7 @@ using (BatchClient batchClient = await BatchClient.OpenAsync(credentials))
 
 Use la biblioteca de administración para administrar cuentas, cuotas y paquetes de aplicación de Batch mediante programación.
 
-Instale el [paquete NuGet](https://www.nuget.org/packages/Microsoft.Azure.Management.Batch) directamente desde la [Consola del Administrador de paquetes][PackageManager] de Visual Studio o con la [CLI de .NET Core][DotNetCLI].
+Instale el [paquete NuGet](https://www.nuget.org/packages/Microsoft.Azure.Management.Batch) directamente desde la [Consola del Administración de paquetes][PackageManager] de Visual Studio o con la [CLI de .NET Core][DotNetCLI].
 
 #### <a name="visual-studio-package-manager"></a>Administrador de paquetes de Visual Studio
 
@@ -129,7 +127,7 @@ using (BatchManagementClient batchManagementClient = new BatchManagementClient(n
 > [!div class="nextstepaction"]
 > [Explorar las API de administración](/dotnet/api/overview/azure/batch/management)
 
-## <a name="samples"></a>Muestras
+## <a name="samples"></a>Ejemplos
 
 * [Ejemplos de SDK de cliente y administración de Azure Batch para .NET](https://github.com/Azure/azure-batch-samples/tree/master/CSharp)
 

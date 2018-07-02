@@ -7,23 +7,21 @@ ms.author: casoper
 manager: wpickett
 ms.date: 10/19/2017
 ms.topic: reference
-ms.prod: azure
-ms.technology: azure
 ms.devlang: dotnet
 ms.service: key-vault
 ms.custom: devcenter, svc-overview
-ms.openlocfilehash: 3b8bcb9135794592f493db679e60fd40116d05e6
-ms.sourcegitcommit: 4114b8821f20e02f4185fcea7549d716f29b9c90
+ms.openlocfilehash: 037b80f60616a37665eddb0b7b212d15180700ba
+ms.sourcegitcommit: bfa1898c97798991215d08ce89dea87efff44157
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/24/2017
-ms.locfileid: "23489189"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37065455"
 ---
 # <a name="azure-key-vault-libraries-for-net"></a>Bibliotecas de Azure Key Vault para .NET
 
 ## <a name="overview"></a>Información general
 
-El Almacén de claves de Azure ayuda a proteger claves criptográficas y secretos usados por servicios y aplicaciones en la nube.
+Azure Key Vault ayuda a proteger claves criptográficas y secretos usados por servicios y aplicaciones en la nube.
 
 Consulte los artículos [¿Qué es Azure Key Vault?](/azure/key-vault/key-vault-whatis), [Introducción a Azure Key Vault](/azure/key-vault/key-vault-get-started) o [Uso de Azure Key Vault desde una aplicación web](/azure/key-vault/key-vault-use-from-web-application).
 
@@ -31,7 +29,7 @@ Consulte los artículos [¿Qué es Azure Key Vault?](/azure/key-vault/key-vault-
 
 Use la biblioteca de cliente para administrar las claves y los recursos relacionados, como certificados y secretos.
 
-Instale el [paquete NuGet](https://www.nuget.org/packages/Microsoft.Azure.KeyVault) directamente desde la [Consola del Administrador de paquetes][PackageManager] de Visual Studio o con la [CLI de .NET Core][DotNetCLI].
+Instale el [paquete NuGet](https://www.nuget.org/packages/Microsoft.Azure.KeyVault) directamente desde la [Consola del Administración de paquetes][PackageManager] de Visual Studio o con la [CLI de .NET Core][DotNetCLI].
 
 #### <a name="visual-studio-package-manager"></a>Administrador de paquetes de Visual Studio
 
@@ -62,7 +60,7 @@ SecretBundle sec = await kv.GetSecretAsync(WebConfigurationManager.AppSettings["
 
 Utilice la biblioteca de administración para crear, eliminar y consultar almacenes de claves.
 
-Instale el [paquete NuGet](https://www.nuget.org/packages/Microsoft.Azure.Management.KeyVault.Fluent) directamente desde la [Consola del Administrador de paquetes][PackageManager] de Visual Studio o con la [CLI de .NET Core][DotNetCLI].
+Instale el [paquete NuGet](https://www.nuget.org/packages/Microsoft.Azure.Management.KeyVault.Fluent) directamente desde la [Consola del Administración de paquetes][PackageManager] de Visual Studio o con la [CLI de .NET Core][DotNetCLI].
 
 #### <a name="visual-studio-package-manager"></a>Administrador de paquetes de Visual Studio
 
@@ -99,7 +97,7 @@ using (KeyVaultManagementClient client = new KeyVaultManagementClient(
 > [!div class="nextstepaction"]
 > [Explorar las API de administración](/dotnet/api/overview/azure/keyvault/management)
 
-## <a name="samples"></a>Muestras
+## <a name="samples"></a>Ejemplos
 
 * [Descargar los ejemplos de cliente Azure Key Vault](https://www.microsoft.com/download/details.aspx?id=45343)
 * [Getting Started with Azure Client Side Encryption in .NET](https://azure.microsoft.com/resources/samples/storage-dotnet-client-side-encryption/) (Introducción al cifrado del lado cliente de Azure en .NET)

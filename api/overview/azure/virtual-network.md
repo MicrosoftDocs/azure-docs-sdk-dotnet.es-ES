@@ -7,17 +7,15 @@ ms.author: casoper
 manager: wpickett
 ms.date: 10/19/2017
 ms.topic: reference
-ms.prod: azure
-ms.technology: azure
 ms.devlang: dotnet
 ms.service: virtual-network
 ms.custom: devcenter, svc-overview
-ms.openlocfilehash: b67415344ef9cbf8af598a1fd43b6b47023bb071
-ms.sourcegitcommit: fe3e1475208ba47d4630788bac88b952cc3fe61f
+ms.openlocfilehash: eb2300522e63339386bf08b5dfac3b803a1e5efd
+ms.sourcegitcommit: bfa1898c97798991215d08ce89dea87efff44157
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2017
-ms.locfileid: "23487008"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37065295"
 ---
 # <a name="azure-virtual-network-libraries-for-net"></a>Bibliotecas de Azure Virtual Network para .NET
 
@@ -26,7 +24,7 @@ El servicio [Azure Virtual Network](/azure/virtual-network/virtual-networks-over
 
 ## <a name="management-library"></a>Biblioteca de administración
 
-Instale el [paquete NuGet](https://www.nuget.org/packages/Microsoft.Azure.Management.Network.Fluent) directamente desde la [Consola del Administrador de paquetes][PackageManager] de Visual Studio o con la [CLI de .NET Core][DotNetCLI].
+Instale el [paquete NuGet](https://www.nuget.org/packages/Microsoft.Azure.Management.Network.Fluent) directamente desde la [Consola del Administración de paquetes][PackageManager] de Visual Studio o con la [CLI de .NET Core][DotNetCLI].
 
 #### <a name="visual-studio-package-manager"></a>Administrador de paquetes de Visual Studio
 
@@ -89,7 +87,7 @@ using (NetworkManagementClient client = new NetworkManagementClient(credentials)
 > [!div class="nextstepaction"]
 > [Explorar las API de administración](/dotnet/api/overview/azure/network/management)
 
-## <a name="samples"></a>Muestras
+## <a name="samples"></a>Ejemplos
 - [Administración de redes virtuales con subredes](https://github.com/Azure-Samples/network-dotnet-manage-virtual-network)
 
 Explore más [código de ejemplo de .NET](https://azure.microsoft.com/resources/samples/?platform=dotnet) que puede usar en sus aplicaciones.

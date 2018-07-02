@@ -7,17 +7,15 @@ ms.author: casoper
 manager: wpickett
 ms.date: 10/19/2017
 ms.topic: reference
-ms.prod: azure
-ms.technology: azure
 ms.devlang: dotnet
 ms.service: redis-cache
 ms.custom: devcenter, svc-overview
-ms.openlocfilehash: 64bb5a43cec8c82412b3dc7b60fea1e8566ab399
-ms.sourcegitcommit: 2c08a778353ed743b9e437ed85f2e1dfb21b9427
+ms.openlocfilehash: 879f42aa254103239fb0dceeb25cb99a7d5e9814
+ms.sourcegitcommit: bfa1898c97798991215d08ce89dea87efff44157
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/26/2017
-ms.locfileid: "23566346"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37065925"
 ---
 # <a name="azure-redis-cache-libraries-for-net"></a>Bibliotecas de Azure Redis Cache para .NET
 
@@ -29,7 +27,7 @@ Azure Redis Cache es un agente de mensajería y memoria caché de datos segura q
 
 Azure Redis Cache es compatible con cualquier API de cliente de Redis, incluida `StackExchange.Redis`.
 
-Instale el [paquete NuGet](https://www.nuget.org/packages/StackExchange.Redis) directamente desde la [Consola del Administrador de paquetes][PackageManager] de Visual Studio o con la [CLI de .NET Core][DotNetCLI].
+Instale el [paquete NuGet](https://www.nuget.org/packages/StackExchange.Redis) directamente desde la [Consola del Administración de paquetes][PackageManager] de Visual Studio o con la [CLI de .NET Core][DotNetCLI].
 
 #### <a name="visual-studio-package-manager"></a>Administrador de paquetes de Visual Studio
 
@@ -68,7 +66,7 @@ int key2 = (int)cache.StringGet("key2");
 
 La biblioteca de administración de Redis Cache permite administrar los recursos de Redis Cache y las claves de acceso.
 
-Instale el [paquete NuGet](https://www.nuget.org/packages/Microsoft.Azure.Management.Redis.Fluent) directamente desde la [Consola del Administrador de paquetes][PackageManager] de Visual Studio o con la [CLI de .NET Core][DotNetCLI].
+Instale el [paquete NuGet](https://www.nuget.org/packages/Microsoft.Azure.Management.Redis.Fluent) directamente desde la [Consola del Administración de paquetes][PackageManager] de Visual Studio o con la [CLI de .NET Core][DotNetCLI].
 
 #### <a name="visual-studio-package-manager"></a>Administrador de paquetes de Visual Studio
 
@@ -101,7 +99,7 @@ IRedisCache redisCache1 = azure.RedisCaches.Define("RedisCacheName")
 > [Explorar las API de administración](/dotnet/api/overview/azure/rediscache/management)
 
 
-## <a name="samples"></a>Muestras
+## <a name="samples"></a>Ejemplos
 
 * [Introducción a Redis: administrar Redis, en .NET](https://github.com/Azure-Samples/redis-cache-dotnet-manage-cache)
 

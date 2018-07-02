@@ -7,17 +7,15 @@ ms.author: casoper
 manager: wpickett
 ms.date: 10/19/2017
 ms.topic: reference
-ms.prod: azure
-ms.technology: azure
 ms.devlang: dotnet
 ms.service: iot-hub
 ms.custom: devcenter, svc-overview
-ms.openlocfilehash: 0fa4121becd0d5bd646077a9644a651903c43348
-ms.sourcegitcommit: fe3e1475208ba47d4630788bac88b952cc3fe61f
+ms.openlocfilehash: af823e910acedd4f204034b12a31ba61fd53e090
+ms.sourcegitcommit: bfa1898c97798991215d08ce89dea87efff44157
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2017
-ms.locfileid: "23487488"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37065275"
 ---
 # <a name="azure-iot-libraries-for-net"></a>Bibliotecas de Azure IoT para .NET
 
@@ -38,7 +36,7 @@ El SDK de servicio para .NET facilita la creación de aplicaciones de back-end q
 
 Utilice el cliente de dispositivos IoT de .NET para conectarse y enviar mensajes a su instancia de IoT Hub.
 
-Instale el [paquete NuGet]( https://www.nuget.org/packages/Microsoft.Azure.Devices.Client) directamente desde la [Consola del Administrador de paquetes][PackageManager] de Visual Studio o con la [CLI de .NET Core][DotNetCLI].
+Instale el [paquete NuGet]( https://www.nuget.org/packages/Microsoft.Azure.Devices.Client) directamente desde la [Consola del Administración de paquetes][PackageManager] de Visual Studio o con la [CLI de .NET Core][DotNetCLI].
 
 #### <a name="visual-studio-package-manager"></a>Administrador de paquetes de Visual Studio
 
@@ -88,7 +86,7 @@ while (true)
 > [!div class="nextstepaction"]
 > [Explorar las API de cliente](/dotnet/api/overview/azure/iot/client)
 
-## <a name="samples"></a>Muestras
+## <a name="samples"></a>Ejemplos
 
 - [Servicio web genérico al escenario de centro de eventos](https://azure.microsoft.com/resources/samples/event-hubs-dotnet-importfromweb/)
 

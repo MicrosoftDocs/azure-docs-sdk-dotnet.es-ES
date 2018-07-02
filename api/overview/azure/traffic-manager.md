@@ -7,17 +7,15 @@ ms.author: casoper
 manager: wpickett
 ms.date: 10/19/2017
 ms.topic: reference
-ms.prod: azure
-ms.technology: azure
 ms.devlang: dotnet
 ms.service: traffic-manager
 ms.custom: devcenter, svc-overview
-ms.openlocfilehash: 491a8b12146882b32f7fc6d85ad58cca1d00fd04
-ms.sourcegitcommit: 2c08a778353ed743b9e437ed85f2e1dfb21b9427
+ms.openlocfilehash: 05856cbe48a5cf5f0c9ebf43609a029928f490f9
+ms.sourcegitcommit: bfa1898c97798991215d08ce89dea87efff44157
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/26/2017
-ms.locfileid: "23566107"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37065875"
 ---
 # <a name="azure-traffic-manager-libraries-for-net"></a>Bibliotecas de Azure Traffic Manager para .NET
 
@@ -29,7 +27,7 @@ Más información acerca de [Azure Traffic Manager](/azure/traffic-manager/traff
 
 ## <a name="management-library"></a>Biblioteca de administración
 
-Instale el [paquete NuGet](https://www.nuget.org/packages/Microsoft.Azure.Management.TrafficManager.Fluent) directamente desde la [Consola del Administrador de paquetes][PackageManager] de Visual Studio o con la [CLI de .NET Core][DotNetCLI].
+Instale el [paquete NuGet](https://www.nuget.org/packages/Microsoft.Azure.Management.TrafficManager.Fluent) directamente desde la [Consola del Administración de paquetes][PackageManager] de Visual Studio o con la [CLI de .NET Core][DotNetCLI].
 
 #### <a name="visual-studio-package-manager"></a>Administrador de paquetes de Visual Studio
 
@@ -44,7 +42,7 @@ dotnet add package Microsoft.Azure.Management.TrafficManager.Fluent
 > [!div class="nextstepaction"]
 > [Explorar las API de administración](/dotnet/api/overview/azure/trafficmanager/management)
 
-## <a name="samples"></a>Muestras
+## <a name="samples"></a>Ejemplos
 
 Explore más [código de .NET de ejemplo](https://azure.microsoft.com/resources/samples/?platform=dotnet) que puede usar en sus aplicaciones.
 

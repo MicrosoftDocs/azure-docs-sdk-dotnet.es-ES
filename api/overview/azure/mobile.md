@@ -7,23 +7,21 @@ ms.author: casoper
 manager: wpickett
 ms.date: 10/19/2017
 ms.topic: reference
-ms.prod: azure
-ms.technology: azure
 ms.devlang: dotnet
 ms.service: app-service
 ms.custom: devcenter, svc-overview
-ms.openlocfilehash: d63f419a56aec6452c8a7366d6ffbb1f86055944
-ms.sourcegitcommit: 4114b8821f20e02f4185fcea7549d716f29b9c90
+ms.openlocfilehash: aa73549789369c3aa169d1aee6788129780dac66
+ms.sourcegitcommit: bfa1898c97798991215d08ce89dea87efff44157
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/24/2017
-ms.locfileid: "23489169"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37065915"
 ---
 # <a name="azure-mobile-libraries-for-net"></a>Bibliotecas de Azure Mobile para .NET
 
 ## <a name="client-library"></a>Biblioteca de cliente
 
-Instale el [paquete NuGet](https://www.nuget.org/packages/Microsoft.Azure.Mobile.Server) directamente desde la [Consola del Administrador de paquetes][PackageManager] de Visual Studio o con la [CLI de .NET Core][DotNetCLI].
+Instale el [paquete NuGet](https://www.nuget.org/packages/Microsoft.Azure.Mobile.Server) directamente desde la [Consola del Administración de paquetes][PackageManager] de Visual Studio o con la [CLI de .NET Core][DotNetCLI].
 
 #### <a name="visual-studio-package-manager"></a>Administrador de paquetes de Visual Studio
 

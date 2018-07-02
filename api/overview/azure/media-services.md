@@ -7,17 +7,15 @@ ms.author: casoper
 manager: wpickett
 ms.date: 10/19/2017
 ms.topic: reference
-ms.prod: azure
-ms.technology: azure
 ms.devlang: dotnet
 ms.service: media-services
 ms.custom: devcenter, svc-overview
-ms.openlocfilehash: 872ed60363c0c886e9844d0cb0bef07cf41a0242
-ms.sourcegitcommit: fe3e1475208ba47d4630788bac88b952cc3fe61f
+ms.openlocfilehash: ec6a7ec7f8f0c416d93aad5c91ece4d3b499fd7a
+ms.sourcegitcommit: bfa1898c97798991215d08ce89dea87efff44157
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2017
-ms.locfileid: "23487448"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37065405"
 ---
 # <a name="azure-media-services-libraries-for-net"></a>Bibliotecas de Azure Media Services para .NET
 
@@ -33,7 +31,7 @@ La biblioteca del SDK de Azure Media Services para .NET permite programar en Med
 
 Para más información, consulte [Introducción a la entrega de contenido a petición mediante el SDK para .NET](/azure/media-services/media-services-dotnet-get-started).
 
-Instale el [paquete NuGet](https://www.nuget.org/packages/windowsazure.mediaservices) directamente desde la [Consola del Administrador de paquetes][PackageManager] de Visual Studio o con la [CLI de .NET Core][DotNetCLI].
+Instale el [paquete NuGet](https://www.nuget.org/packages/windowsazure.mediaservices) directamente desde la [Consola del Administración de paquetes][PackageManager] de Visual Studio o con la [CLI de .NET Core][DotNetCLI].
 
 #### <a name="visual-studio-package-manager"></a>Administrador de paquetes de Visual Studio
 
@@ -43,7 +41,7 @@ Install-Package windowsazure.mediaservices
 
 ### <a name="code-example"></a>Ejemplo de código
 
-En el ejemplo de código siguiente se usa el último SDK para .NET de Servicios multimedia para realizar las siguientes tareas:
+En el ejemplo de código siguiente se usa el último SDK para .NET de Media Services para realizar las siguientes tareas:
 
 - Crear un trabajo de codificación.
 - Obtener una referencia al codificador Codificador multimedia estándar.
@@ -94,7 +92,7 @@ job.GetExecutionProgressTask(CancellationToken.None).Wait();
 > [!div class="nextstepaction"]
 > [Explorar las API de cliente](/dotnet/api/overview/azure/mediaservices/client)
 
-## <a name="samples"></a>Muestras
+## <a name="samples"></a>Ejemplos
 
 - [Transmisión de contenido HLS protegido con Apple FairPlay](https://azure.microsoft.com/resources/samples/media-services-dotnet-dynamic-encryption-with-fairplay/)
 - [Copia de blobs en un recurso de Azure Media Services mediante extensiones del SDK para .NET](https://azure.microsoft.com/resources/samples/media-services-dotnet-copy-blob-into-asset/)

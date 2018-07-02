@@ -7,17 +7,15 @@ ms.author: casoper
 manager: wpickett
 ms.date: 10/19/2017
 ms.topic: reference
-ms.prod: azure
-ms.technology: azure
 ms.devlang: dotnet
 ms.service: multiple
 ms.custom: devcenter, svc-overview
-ms.openlocfilehash: f61c931d930fce75d038af8b8f1355f1de9cde7c
-ms.sourcegitcommit: fe3e1475208ba47d4630788bac88b952cc3fe61f
+ms.openlocfilehash: 3e28525f61ca8b4f8347b7a7e8994f9e479749ea
+ms.sourcegitcommit: bfa1898c97798991215d08ce89dea87efff44157
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2017
-ms.locfileid: "23487528"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37065965"
 ---
 # <a name="power-bi-embedded-libraries-for-net"></a>Bibliotecas de Power BI Embedded para .NET
 
@@ -74,7 +72,7 @@ using (PowerBIClient client = new PowerBIClient(new Uri(apiUrl), tokenCredential
 > [!div class="nextstepaction"]
 > [Explorar las API de cliente](https://powerbi.microsoft.com/documentation/powerbi-developer-rest-api-reference/)
 
-## <a name="samples"></a>Muestras
+## <a name="samples"></a>Ejemplos
 
 * [Ejemplos para desarrolladores de Power BI](https://github.com/Microsoft/PowerBI-Developer-Samples)
 * [Repositorio de GitHub de .NET de Power BI](https://github.com/Microsoft/PowerBI-CSharp)

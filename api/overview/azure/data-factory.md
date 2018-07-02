@@ -7,17 +7,15 @@ ms.author: casoper
 manager: wpickett
 ms.date: 10/19/2017
 ms.topic: reference
-ms.prod: azure
-ms.technology: azure
 ms.devlang: dotnet
 ms.service: data-factory
 ms.custom: devcenter, svc-overview
-ms.openlocfilehash: 20e94fa687a3008ac7112d1a6511f8cec92b544c
-ms.sourcegitcommit: fe3e1475208ba47d4630788bac88b952cc3fe61f
+ms.openlocfilehash: b3c492fbfe4a4afa6f06f8c48a370c554a01719c
+ms.sourcegitcommit: bfa1898c97798991215d08ce89dea87efff44157
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2017
-ms.locfileid: "23487148"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37065795"
 ---
 # <a name="azure-data-factory-libraries-for-net"></a>Bibliotecas de Azure Data Factory para .NET
 
@@ -31,7 +29,7 @@ Para más información, lea [Introducción a Azure Data Factory](/azure/data-fac
 
 La biblioteca de administración se usa para crear y programar flujos de trabajo controlados por datos (canalizaciones) en Data Factory V2 (versión preliminar).  Para más información, consulte [Create a data factory and pipeline using .NET SDK](/azure/data-factory/quickstart-create-data-factory-dot-net) (Crear una factoría de datos y una canalización mediante SDK de .NET).
 
-Instale el [paquete NuGet](https://www.nuget.org/packages/Microsoft.Azure.Management.DataFactory) directamente desde la [Consola del Administrador de paquetes][PackageManager] de Visual Studio o con la [CLI de .NET Core][DotNetCLI].
+Instale el [paquete NuGet](https://www.nuget.org/packages/Microsoft.Azure.Management.DataFactory) directamente desde la [Consola del Administración de paquetes][PackageManager] de Visual Studio o con la [CLI de .NET Core][DotNetCLI].
 
 #### <a name="visual-studio-package-manager"></a>Administrador de paquetes de Visual Studio
 
@@ -72,7 +70,7 @@ client.Factories.CreateOrUpdate(resourceGroup, dataFactoryName, dataFactory);
 
 La biblioteca de administración se usa para crear y programar flujos de trabajo controlados por datos (canalizaciones) en Data Factory, versión 1.  Para más información, consulte la documentación de [Data Factory, versión 1](/azure/data-factory/v1/data-factory-introduction).
 
-Instale el [paquete NuGet](https://www.nuget.org/packages/Microsoft.Azure.Management.DataFactories) directamente desde la [Consola del Administrador de paquetes][PackageManager] de Visual Studio o con la [CLI de .NET Core][DotNetCLI].
+Instale el [paquete NuGet](https://www.nuget.org/packages/Microsoft.Azure.Management.DataFactories) directamente desde la [Consola del Administración de paquetes][PackageManager] de Visual Studio o con la [CLI de .NET Core][DotNetCLI].
 
 #### <a name="visual-studio-package-manager"></a>Administrador de paquetes de Visual Studio
 
@@ -106,7 +104,7 @@ client.DataFactories.CreateOrUpdate(resourceGroupName,
 > [!div class="nextstepaction"]
 > [Explorar las API de administración](/dotnet/api/overview/azure/datafactories/management)
 
-## <a name="samples"></a>Muestras
+## <a name="samples"></a>Ejemplos
 
 * [MyDriving - An Azure IOT and Mobile Sample Application](https://azure.microsoft.com/resources/samples/mydriving/) (MyDriving: una aplicación de ejemplo para Azure IOT y dispositivos móviles) que usa Data Factory para proporcionar la información.
 

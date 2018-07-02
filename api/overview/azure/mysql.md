@@ -7,17 +7,15 @@ ms.author: casoper
 manager: wpickett
 ms.date: 10/19/2017
 ms.topic: reference
-ms.prod: azure
-ms.technology: azure
 ms.devlang: dotnet
 ms.service: mysql
 ms.custom: devcenter, svc-overview
-ms.openlocfilehash: 27c1a2c7d36966d14daff5397b248a24197bec3b
-ms.sourcegitcommit: 2c08a778353ed743b9e437ed85f2e1dfb21b9427
+ms.openlocfilehash: 6cf9d819b437a4524c71cdb2265455ef49efaea5
+ms.sourcegitcommit: bfa1898c97798991215d08ce89dea87efff44157
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/26/2017
-ms.locfileid: "23566056"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37065785"
 ---
 # <a name="azure-database-for-mysql-libraries-for-net"></a>Bibliotecas de Azure Database para MySQL para .NET
 
@@ -29,7 +27,7 @@ Trabajo con datos y recursos almacenados en [Azure Database para MySQL](/azure/m
 
 La biblioteca de cliente recomendada para acceder a Azure Database para MySQL es [Connector/Net](https://dev.mysql.com/doc/connector-net/en) de MySQL. Use el paquete para conectarse a la base de datos y ejecutar instrucciones SQL directamente. 
 
-Instale el [paquete NuGet](https://www.nuget.org/packages/MySql.Data) directamente desde la [Consola del Administrador de paquetes][PackageManager] de Visual Studio o con la [CLI de .NET Core][DotNetCLI].
+Instale el [paquete NuGet](https://www.nuget.org/packages/MySql.Data) directamente desde la [Consola del Administración de paquetes][PackageManager] de Visual Studio o con la [CLI de .NET Core][DotNetCLI].
 
 #### <a name="visual-studio-package-manager"></a>Administrador de paquetes de Visual Studio
 
@@ -73,7 +71,7 @@ using (MySqlConnection conn = new MySqlConnection(connectionString))
 }
 ```
 
-## <a name="samples"></a>Muestras
+## <a name="samples"></a>Ejemplos
 
 - [Ejemplos de código de ADO.NET](/dotnet/framework/data/adonet/ado-net-code-examples)
 - [Diseño de una base de datos MySQL mediante la CLI de Azure](https://docs.microsoft.com/azure/mysql/tutorial-design-database-using-cli) 

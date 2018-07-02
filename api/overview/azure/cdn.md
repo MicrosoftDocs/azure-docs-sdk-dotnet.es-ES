@@ -7,17 +7,15 @@ ms.author: casoper
 manager: wpickett
 ms.date: 10/19/2017
 ms.topic: reference
-ms.prod: azure
-ms.technology: azure
 ms.devlang: dotnet
 ms.service: cdn
 ms.custom: devcenter, svc-overview
-ms.openlocfilehash: afc63f943fcac3afd9afb7d85f6e699079829244
-ms.sourcegitcommit: 2c08a778353ed743b9e437ed85f2e1dfb21b9427
+ms.openlocfilehash: 4e5b56ca7e316f3a53d8c6d37fdd90c5d7130e1e
+ms.sourcegitcommit: bfa1898c97798991215d08ce89dea87efff44157
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/26/2017
-ms.locfileid: "23566336"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37065825"
 ---
 # <a name="azure-cdn-libraries-for-net"></a>Bibliotecas de CDN de Azure para .NET
 
@@ -32,7 +30,7 @@ Para aprender sobre CDN de Azure, consulte [Información general de Content Deli
 
 Puede usar la biblioteca de CDN de Azure para .NET para automatizar la creación y administración de perfiles y puntos de conexión de CDN. 
 
-Instale el [paquete NuGet](https://www.nuget.org/packages/Microsoft.Azure.Management.Cdn.Fluent) directamente desde la [Consola del Administrador de paquetes][PackageManager] de Visual Studio o con la [CLI de .NET Core][DotNetCLI].
+Instale el [paquete NuGet](https://www.nuget.org/packages/Microsoft.Azure.Management.Cdn.Fluent) directamente desde la [Consola del Administración de paquetes][PackageManager] de Visual Studio o con la [CLI de .NET Core][DotNetCLI].
 
 #### <a name="visual-studio-package-manager"></a>Administrador de paquetes de Visual Studio
 
@@ -67,7 +65,7 @@ ICdnProfile profileDefinition = azure.CdnProfiles.Define("CdnProfileName")
 > [Explorar las API de administración](/dotnet/api/overview/azure/cdn/management)
 
 
-## <a name="samples"></a>Muestras
+## <a name="samples"></a>Ejemplos
 
 * [Getting started with CDN - Manage CDN - in .NET](https://github.com/Azure-Samples/cdn-dotnet-manage-cdn) (Introducción a CDN y administración de CDN en .NET)
 

@@ -7,17 +7,15 @@ ms.author: casoper
 manager: wpickett
 ms.date: 10/19/2017
 ms.topic: reference
-ms.prod: azure
-ms.technology: azure
 ms.devlang: dotnet
 ms.service: hd-insight
 ms.custom: devcenter, svc-overview
-ms.openlocfilehash: da9023ab4e6106754d48acb31cda58cdb358f5cb
-ms.sourcegitcommit: fe3e1475208ba47d4630788bac88b952cc3fe61f
+ms.openlocfilehash: 2cdb080b4d224a77a36318cefd13ebfae2e3e2e1
+ms.sourcegitcommit: bfa1898c97798991215d08ce89dea87efff44157
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2017
-ms.locfileid: "23486958"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37065815"
 ---
 # <a name="azure-hdinsight-libraries-for-net"></a>Bibliotecas de Azure HDInsight para .NET
 
@@ -31,7 +29,7 @@ El SDK de .NET del servicio HDInsight proporciona clases que se relacionan con l
 
 Utilice el SDK de cliente de Azure HDInsight para crear, administrar y supervisar trabajos en un clúster de Hadoop. 
 
-Instale el [paquete NuGet](https://www.nuget.org/packages/Microsoft.Azure.Management.HDInsight.Job) directamente desde la [Consola del Administrador de paquetes][PackageManager] de Visual Studio o con la [CLI de .NET Core][DotNetCLI].
+Instale el [paquete NuGet](https://www.nuget.org/packages/Microsoft.Azure.Management.HDInsight.Job) directamente desde la [Consola del Administración de paquetes][PackageManager] de Visual Studio o con la [CLI de .NET Core][DotNetCLI].
 
 #### <a name="visual-studio-package-manager"></a>Administrador de paquetes de Visual Studio
 
@@ -69,7 +67,7 @@ JobSubmissionResponse jobResponse = managementClient.JobManagement.SubmitHiveJob
 
 Use la SDK de administración de Azure HDInsight para crear, administrar, iniciar, detener y escalar clústeres de Hadoop.
 
-Instale el [paquete NuGet](https://www.nuget.org/packages/Microsoft.Azure.Management.HDInsight) directamente desde la [Consola del Administrador de paquetes][PackageManager] de Visual Studio o con la [CLI de .NET Core][DotNetCLI].
+Instale el [paquete NuGet](https://www.nuget.org/packages/Microsoft.Azure.Management.HDInsight) directamente desde la [Consola del Administración de paquetes][PackageManager] de Visual Studio o con la [CLI de .NET Core][DotNetCLI].
 
 #### <a name="visual-studio-package-manager"></a>Administrador de paquetes de Visual Studio
 
@@ -111,7 +109,7 @@ managementClient.Clusters.Create("<ExistingResourceGroupName>", "<NewClusterName
 > [Explorar las API de administración](/dotnet/api/overview/azure/hdinsights/management)
 
 
-## <a name="samples"></a>Muestras
+## <a name="samples"></a>Ejemplos
 
 - [Creación de clústeres](https://docs.microsoft.com/azure/hdinsight/hdinsight-hadoop-create-linux-clusters-dotnet-sdk)
 - [Administración de clústeres](https://docs.microsoft.com/azure/hdinsight/hdinsight-administer-use-dotnet-sdk)

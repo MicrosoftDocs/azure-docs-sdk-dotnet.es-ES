@@ -7,17 +7,15 @@ ms.author: casoper
 manager: wpickett
 ms.date: 10/19/2017
 ms.topic: reference
-ms.prod: azure
-ms.technology: azure
 ms.devlang: dotnet
 ms.service: active-directory
 ms.custom: devcenter, svc-overview
-ms.openlocfilehash: aa20715fb62b1d4b714245c404f1a7c142caf586
-ms.sourcegitcommit: 2c08a778353ed743b9e437ed85f2e1dfb21b9427
+ms.openlocfilehash: a5a228fcde29dbef6a6e8d0482121ee710b002a4
+ms.sourcegitcommit: bfa1898c97798991215d08ce89dea87efff44157
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/26/2017
-ms.locfileid: "23565996"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37065865"
 ---
 # <a name="azure-active-directory-libraries-for-net"></a>Bibliotecas de Azure Active Directory para .NET
 
@@ -29,9 +27,9 @@ Para empezar a trabajar con Azure Active Directory, consulte [Inicio y cierre de
 
 ## <a name="client-library"></a>Biblioteca de cliente
 
-Conecte y autentique a los usuarios o aplicaciones a través de OAuth2, OpenID Connect, autenticación de API Graph de Active Directory o [SAML 2.0](https://docs.microsoft.com/azure/active-directory/develop/active-directory-saml-protocol-reference).
+Conecte y autentique a los usuarios o aplicaciones a través de OAuth2, OpenID Connect, autenticación de Graph API de Active Directory o [SAML 2.0](https://docs.microsoft.com/azure/active-directory/develop/active-directory-saml-protocol-reference).
 
-Instale el [paquete NuGet](https://www.nuget.org/packages/Microsoft.Azure.Management.AppService.Fluent) directamente desde la [Consola del Administrador de paquetes][PackageManager] de Visual Studio o con la [CLI de .NET Core][DotNetCLI].
+Instale el [paquete NuGet](https://www.nuget.org/packages/Microsoft.Azure.Management.AppService.Fluent) directamente desde la [Consola del Administración de paquetes][PackageManager] de Visual Studio o con la [CLI de .NET Core][DotNetCLI].
 
 #### <a name="visual-studio-package-manager"></a>Administrador de paquetes de Visual Studio
 
@@ -73,7 +71,7 @@ catch (AdalException ex)
 > [!div class="nextstepaction"]
 > [Explorar las API de cliente](/dotnet/api/overview/azure/activedirectory/client)
 
-### <a name="samples"></a>Muestras
+### <a name="samples"></a>Ejemplos
 
 * [Uso de OpenID Connect para autenticar a los usuarios de un inquilino de Azure AD](https://github.com/Azure-Samples/active-directory-dotnet-webapp-openidconnect)
 * [Uso de Oauth2 para llamar a una API web con permisos de aplicación](https://github.com/Azure-Samples/active-directory-dotnet-webapp-webapi-oauth2-appidentity)

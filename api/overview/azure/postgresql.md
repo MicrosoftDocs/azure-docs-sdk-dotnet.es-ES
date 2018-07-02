@@ -7,17 +7,15 @@ ms.author: casoper
 manager: wpickett
 ms.date: 10/19/2017
 ms.topic: reference
-ms.prod: azure
-ms.technology: azure
 ms.devlang: dotnet
 ms.service: postgresql
 ms.custom: devcenter, svc-overview
-ms.openlocfilehash: 7a8c1965432d5cca36665bce3963c30cdaee9205
-ms.sourcegitcommit: 4dba7cd869bddff3dee7315d258522dc4879abce
+ms.openlocfilehash: 40ef1d5ffd41b45523fbeb2c29095fd423b749bd
+ms.sourcegitcommit: bfa1898c97798991215d08ce89dea87efff44157
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/23/2017
-ms.locfileid: "25550815"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37065415"
 ---
 # <a name="azure-database-for-postgresql-libraries-for-net"></a>Bibliotecas de Azure Database para PostgreSQL para .NET
 
@@ -29,7 +27,7 @@ Trabajo con datos y recursos almacenados en [Azure Database para PostgreSQL](htt
 
 La biblioteca de cliente recomendada para acceder a Azure Database para PostgreSQL es código abierto [proveedor de datos Npgsql ADO.NET](http://www.npgsql.org/) de código abierto. Utilice el proveedor ADO.NET para conectarse a la base de datos y ejecutar instrucciones SQL directamente o a través de Entity Framework con los proveedores [Entity Framework 6](http://www.npgsql.org/ef6/index.html) o [Entity Framework Core](http://www.npgsql.org/efcore/index.html) de Npgsql.
 
-Instale el [paquete NuGet](https://www.nuget.org/packages/Npgsql) directamente desde la [Consola del Administrador de paquetes][PackageManager] de Visual Studio o con la [CLI de .NET Core][DotNetCLI].
+Instale el [paquete NuGet](https://www.nuget.org/packages/Npgsql) directamente desde la [Consola del Administración de paquetes][PackageManager] de Visual Studio o con la [CLI de .NET Core][DotNetCLI].
 
 #### <a name="visual-studio-package-manager"></a>Administrador de paquetes de Visual Studio
 
@@ -72,7 +70,7 @@ using (NpgsqlConnection conn = new NpgsqlConnection(connectionString))
 }
 ```
 
-### <a name="samples"></a>Muestras
+### <a name="samples"></a>Ejemplos
 
 - [Ejemplos de código de ADO.NET](/dotnet/framework/data/adonet/ado-net-code-examples)
 - [Diseño de una base de datos PostgreSQL mediante la CLI de Azure](https://docs.microsoft.com/azure/postgresql/tutorial-design-database-using-azure-cli)

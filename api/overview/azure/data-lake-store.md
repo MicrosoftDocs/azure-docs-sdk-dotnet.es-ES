@@ -7,17 +7,15 @@ ms.author: casoper
 manager: wpickett
 ms.date: 10/19/2017
 ms.topic: reference
-ms.prod: azure
-ms.technology: azure
 ms.devlang: dotnet
 ms.service: data-lake-store
 ms.custom: devcenter, svc-overview
-ms.openlocfilehash: e8380c4a9ebf86f03fe87fc800dffda10e48e60a
-ms.sourcegitcommit: 3e904e6e4f04f1c92d729459434c85faff32e386
+ms.openlocfilehash: f1b014c4835784ed8ecfa1e3b4bfd62a6ebf9562
+ms.sourcegitcommit: bfa1898c97798991215d08ce89dea87efff44157
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/09/2017
-ms.locfileid: "26588478"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37065635"
 ---
 # <a name="azure-data-lake-store-libraries-for-net"></a>Bibliotecas de Azure Data Lake Store para .NET
 
@@ -31,7 +29,7 @@ Para más información, consulte [Información general de Azure Data Lake Store]
 
 Utilice la biblioteca de cliente para realizar operaciones del sistema de archivos en Data Lake Store, como crear carpetas en una cuenta de Data Lake Store, cargar archivos y descargar archivos.  Para obtener un tutorial completo sobre el uso de Data Lake Store con .NET, consulte [Operaciones del sistema de archivos en Azure Data Lake Store con .NET SDK](/azure/data-lake-store/data-lake-store-data-operations-net-sdk).
 
-Instale el [paquete NuGet](https://www.nuget.org/packages/Microsoft.Azure.Management.DataLake.Store) directamente desde la [Consola del Administrador de paquetes][PackageManager] de Visual Studio o con la [CLI de .NET Core][DotNetCLI].
+Instale el [paquete NuGet](https://www.nuget.org/packages/Microsoft.Azure.Management.DataLake.Store) directamente desde la [Consola del Administración de paquetes][PackageManager] de Visual Studio o con la [CLI de .NET Core][DotNetCLI].
 
 #### <a name="visual-studio-package-manager"></a>Administrador de paquetes de Visual Studio
 
@@ -64,7 +62,7 @@ AdlsClient client = AdlsClient.CreateClient(_adlsAccountName, adlCreds);
 
 Utilice la biblioteca de administración para conectarse a sus repositorios de macrodatos y administrarlos.
 
-Instale el [paquete NuGet](https://www.nuget.org/packages/Microsoft.Azure.Management.DataLake.Store) directamente desde la [Consola del Administrador de paquetes][PackageManager] de Visual Studio o con la [CLI de .NET Core][DotNetCLI].
+Instale el [paquete NuGet](https://www.nuget.org/packages/Microsoft.Azure.Management.DataLake.Store) directamente desde la [Consola del Administración de paquetes][PackageManager] de Visual Studio o con la [CLI de .NET Core][DotNetCLI].
 
 #### <a name="visual-studio-package-manager"></a>Administrador de paquetes de Visual Studio
 
@@ -80,7 +78,7 @@ dotnet add package Microsoft.Azure.Management.DataLake.Store
 > [Explorar las API de cliente](/dotnet/api/overview/azure/datalakestore/management)
 
 
-## <a name="samples"></a>Muestras
+## <a name="samples"></a>Ejemplos
 
 * [Ejemplo de cliente de .NET de Azure Data Lake](https://azure.microsoft.com/en-us/resources/samples/data-lake-dotnet-client/)
 

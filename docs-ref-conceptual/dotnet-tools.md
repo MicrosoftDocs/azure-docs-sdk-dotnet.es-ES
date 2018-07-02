@@ -12,10 +12,10 @@ ms.devlang: dotnet
 ms.service: multiple
 ms.custom: devcenter
 ms.openlocfilehash: 5890df018eea61bcc0f8bce1cd4bc02fa84b37cf
-ms.sourcegitcommit: 3ba0ff4463338a0ab0f3f15a7601b89417c06970
+ms.sourcegitcommit: 9dd801d659803f5efb16d65454cd09258e1cc7d6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 06/25/2018
 ms.locfileid: "29752683"
 ---
 # <a name="tools-for-net-azure-developers"></a>Herramientas para desarrolladores de Azure para .NET
@@ -30,7 +30,7 @@ Sea cual sea su sistema operativo, hay disponible un gran conjunto de herramient
         <img src="https://docs.microsoft.com/en-us/media/logos/logo_vs-ide.svg" width="50" height="50"></img>
     </td>
     <td>
-Visual Studio 2017 incluye compatibilidad integrada con el desarrollo de Azure.
+        Visual Studio 2017 incluye compatibilidad integrada con el desarrollo de Azure.
     </td>
   </tr>
 </table>
@@ -63,7 +63,7 @@ Para comenzar, [desarrolle su primera aplicación de .NET en Azure](https://docs
         <img src="https://docs.microsoft.com/en-us/media/logos/logo_vs-mac.svg" width="50" height="50"></img>
     </td>
     <td>
-Visual Studio para Mac tiene todo lo que necesita para el desarrollo de Azure.
+        Visual Studio para Mac tiene todo lo que necesita para el desarrollo de Azure.
     </td>
   </tr>
 </table>

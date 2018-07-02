@@ -7,17 +7,15 @@ ms.author: casoper
 manager: wpickett
 ms.date: 10/19/2017
 ms.topic: reference
-ms.prod: azure
-ms.technology: azure
 ms.devlang: dotnet
 ms.service: sql-database
 ms.custom: devcenter, svc-overview
-ms.openlocfilehash: 3aba3c77935e0f00c7396b4cafa06be32ae2a50d
-ms.sourcegitcommit: c360a22d5bff6eedd714b28b847d2f26b06665f4
+ms.openlocfilehash: 30d5f9ffa0654673fe358872cbb7342fb87d4127
+ms.sourcegitcommit: bfa1898c97798991215d08ce89dea87efff44157
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/15/2017
-ms.locfileid: "24533110"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37065895"
 ---
 # <a name="azure-sql-database-apis-for-net"></a>API de Azure SQL Database para .NET
 
@@ -127,7 +125,7 @@ ISqlDatabase sqlDb = sqlServer.Databases.Define("DatabaseName").Create();
 > [!div class="nextstepaction"]
 > [Explorar las API de administración](/dotnet/api/overview/azure/sql/management)
 
-## <a name="samples"></a>Muestras
+## <a name="samples"></a>Ejemplos
 
 - [Ejemplos de código de ADO.NET](/dotnet/framework/data/adonet/ado-net-code-examples)
 - [Ejemplos de bibliotecas de administración de Azure para .NET en SQL Database](/dotnet/azure/dotnet-sdk-azure-sql-database-samples)

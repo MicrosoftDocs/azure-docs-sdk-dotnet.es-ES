@@ -7,17 +7,15 @@ ms.author: casoper
 manager: wpickett
 ms.date: 10/19/2017
 ms.topic: reference
-ms.prod: azure
-ms.technology: azure
 ms.devlang: dotnet
 ms.service: multiple
 ms.custom: devcenter, svc-overview
-ms.openlocfilehash: 8df15d55a80991f29b694f4af06a20514bf20b32
-ms.sourcegitcommit: 2c08a778353ed743b9e437ed85f2e1dfb21b9427
+ms.openlocfilehash: 97a4c642e8be03db7e31e8c9bc71dcf9c3fc1447
+ms.sourcegitcommit: bfa1898c97798991215d08ce89dea87efff44157
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/26/2017
-ms.locfileid: "23566086"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37065515"
 ---
 # <a name="azure-billing-libraries-for-net"></a>Bibliotecas de Azure Billing para .NET
 
@@ -27,7 +25,7 @@ La API de Azure Billing (versión preliminar) proporciona acceso mediante progra
 
 ## <a name="management-library"></a>Biblioteca de administración
 
-Instale el [paquete NuGet](https://www.nuget.org/packages/Microsoft.Azure.Management.Billing) directamente desde la [Consola del Administrador de paquetes][PackageManager] de Visual Studio o con la [CLI de .NET Core][DotNetCLI].
+Instale el [paquete NuGet](https://www.nuget.org/packages/Microsoft.Azure.Management.Billing) directamente desde la [Consola del Administración de paquetes][PackageManager] de Visual Studio o con la [CLI de .NET Core][DotNetCLI].
 
 #### <a name="visual-studio-package-manager"></a>Administrador de paquetes de Visual Studio
 
@@ -62,7 +60,7 @@ billingClient.Invoices.List();
 > [!div class="nextstepaction"]
 > [Explorar las API de administración](/dotnet/api/overview/azure/billing/management)
 
-## <a name="samples"></a>Muestras
+## <a name="samples"></a>Ejemplos
 
 * [API Usage](https://github.com/Azure-Samples/billing-dotnet-usage-api)
 * [API de RateCard](https://github.com/Azure-Samples/billing-dotnet-ratecard-api)

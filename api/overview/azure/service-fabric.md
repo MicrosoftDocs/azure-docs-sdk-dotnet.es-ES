@@ -7,17 +7,15 @@ ms.author: casoper
 manager: wpickett
 ms.date: 10/19/2017
 ms.topic: reference
-ms.prod: azure
-ms.technology: azure
 ms.devlang: dotnet
 ms.service: service-fabric
 ms.custom: devcenter, svc-overview
-ms.openlocfilehash: f4b54933d31a4e1fc4c390baa57469cc1c02783a
-ms.sourcegitcommit: 2c08a778353ed743b9e437ed85f2e1dfb21b9427
+ms.openlocfilehash: e1b4d08c93ad44973359f46501aba198047b10e8
+ms.sourcegitcommit: bfa1898c97798991215d08ce89dea87efff44157
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/26/2017
-ms.locfileid: "23566103"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37065945"
 ---
 # <a name="azure-service-fabric-libraries-for-net"></a>Bibliotecas de Azure Service Fabric para .NET
 
@@ -33,7 +31,7 @@ Utilice la biblioteca de cliente de Service Fabric para interactuar con un clús
 * **En tiempo de ejecución** Las API se utilizan para que la aplicación en ejecución pueda interactuar con el clúster que la aloja.
 * **Común** Las API contienen tipos usados tanto en API de **cliente** como **en tiempo de ejecución**.
 
-Instale el [paquete NuGet](https://www.nuget.org/packages/Microsoft.ServiceFabric) directamente desde la [Consola del Administrador de paquetes][PackageManager] de Visual Studio o con la [CLI de .NET Core][DotNetCLI].
+Instale el [paquete NuGet](https://www.nuget.org/packages/Microsoft.ServiceFabric) directamente desde la [Consola del Administración de paquetes][PackageManager] de Visual Studio o con la [CLI de .NET Core][DotNetCLI].
 
 #### <a name="visual-studio-package-manager"></a>Administrador de paquetes de Visual Studio
 
@@ -115,7 +113,7 @@ protected override async Task RunAsync(CancellationToken cancellationToken)
 
 La biblioteca de administración se utiliza para crear, actualizar y eliminar clústeres de Service Fabric.
 
-Instale el [paquete NuGet](https://www.nuget.org/packages/Microsoft.Azure.Management.ServiceFabric) directamente desde la [Consola del Administrador de paquetes][PackageManager] de Visual Studio o con la [CLI de .NET Core][DotNetCLI].
+Instale el [paquete NuGet](https://www.nuget.org/packages/Microsoft.Azure.Management.ServiceFabric) directamente desde la [Consola del Administración de paquetes][PackageManager] de Visual Studio o con la [CLI de .NET Core][DotNetCLI].
 
 #### <a name="visual-studio-package-manager"></a>Administrador de paquetes de Visual Studio
 
@@ -130,7 +128,7 @@ dotnet add package Microsoft.Azure.Management.ServiceFabric
 > [!div class="nextstepaction"]
 > [Explorar las API de administración](/dotnet/api/overview/azure/servicefabric/management)
 
-## <a name="samples"></a>Muestras
+## <a name="samples"></a>Ejemplos
 
 * [Implementación y eliminación de aplicaciones mediante FabricClient](/azure/service-fabric/service-fabric-deploy-remove-applications-fabricclient)
 

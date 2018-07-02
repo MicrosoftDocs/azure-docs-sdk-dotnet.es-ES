@@ -7,17 +7,15 @@ ms.author: casoper
 manager: wpickett
 ms.date: 10/19/2017
 ms.topic: reference
-ms.prod: azure
-ms.technology: azure
 ms.devlang: dotnet
 ms.service: stream-analytics
 ms.custom: devcenter, svc-overview
-ms.openlocfilehash: 2a5e8b8481548d6cfebc5104eb459f8772f51462
-ms.sourcegitcommit: fe3e1475208ba47d4630788bac88b952cc3fe61f
+ms.openlocfilehash: 4fc8c5700122a82a5e31df870787a67dad277542
+ms.sourcegitcommit: bfa1898c97798991215d08ce89dea87efff44157
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2017
-ms.locfileid: "23487138"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37065935"
 ---
 # <a name="azure-stream-analytics-libraries-for-net"></a>Bibliotecas de Azure Stream Analytics para .NET
 
@@ -32,7 +30,7 @@ Para más información acerca de Azure Stream Analytics, consulte [Introducción
 
 Utilice la biblioteca de administración de Azure Stream Analytics para crear, iniciar y detener trabajos de Azure Stream Analytics.
 
-Instale el [paquete NuGet](https://www.nuget.org/packages/Microsoft.Azure.Management.StreamAnalytics) directamente desde la [Consola del Administrador de paquetes][PackageManager] de Visual Studio o con la [CLI de .NET Core][DotNetCLI].
+Instale el [paquete NuGet](https://www.nuget.org/packages/Microsoft.Azure.Management.StreamAnalytics) directamente desde la [Consola del Administración de paquetes][PackageManager] de Visual Studio o con la [CLI de .NET Core][DotNetCLI].
 
 #### <a name="visual-studio-package-manager"></a>Administrador de paquetes de Visual Studio
 
@@ -90,7 +88,7 @@ StreamingJob createStreamingJobResult = streamAnalyticsManagementClient.Streamin
 > [Explorar las API de administración](/dotnet/api/overview/azure/streamanalytics/management)
 
 
-## <a name="samples"></a>Muestras
+## <a name="samples"></a>Ejemplos
 
 - [SDK de .NET de administración: configuración y ejecución de trabajos de análisis mediante la API de Azure Stream Analytics para .NET](/azure/stream-analytics/stream-analytics-dotnet-management-sdk)
 

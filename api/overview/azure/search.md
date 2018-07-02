@@ -7,17 +7,15 @@ ms.author: casoper
 manager: wpickett
 ms.date: 10/19/2017
 ms.topic: reference
-ms.prod: azure
-ms.technology: azure
 ms.devlang: dotnet
 ms.service: search
 ms.custom: devcenter, svc-overview
-ms.openlocfilehash: bd0899d6dbc6d474389eebac78a77a62b86c5255
-ms.sourcegitcommit: 2c08a778353ed743b9e437ed85f2e1dfb21b9427
+ms.openlocfilehash: 5062d444b859711d7f87a0ecbd65e6b204c04b16
+ms.sourcegitcommit: bfa1898c97798991215d08ce89dea87efff44157
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/26/2017
-ms.locfileid: "23566306"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37065285"
 ---
 # <a name="azure-search-libraries-for-net"></a>Bibliotecas de Azure Search para .NET
 
@@ -29,7 +27,7 @@ ms.locfileid: "23566306"
 
 Utilice la biblioteca de cliente de Azure Search para acceder y ejecutar las operaciones de indexación y de búsqueda en un servicio de búsqueda, índice, documentos u otro objeto. Para una introducción paso a paso, consulte [Cómo usar Azure Search desde una aplicación .NET](https://docs.microsoft.com/azure/search/search-howto-dotnet-sdk).
 
-Instale el [paquete NuGet](https://www.nuget.org/packages/Microsoft.Azure.Search) directamente desde la [Consola del Administrador de paquetes][PackageManager] de Visual Studio o con la [CLI de .NET Core][DotNetCLI].
+Instale el [paquete NuGet](https://www.nuget.org/packages/Microsoft.Azure.Search) directamente desde la [Consola del Administración de paquetes][PackageManager] de Visual Studio o con la [CLI de .NET Core][DotNetCLI].
 
 #### <a name="visual-studio-package-manager"></a>Administrador de paquetes de Visual Studio
 
@@ -69,7 +67,7 @@ ISearchIndexClient indexClient = serviceClient.Indexes.GetClient("hotels");
 
 Utilice la biblioteca de administración de Azure Search para aprovisionar un servicio, administrar las claves de API y ajustar los recursos. La administración de servicio tiene una dependencia en Azure Resource Manager para la identificación del suscriptor y del inquilino. Normalmente, el registro de autenticación y de aplicación con Azure Active Directory también es necesario para admitir el flujo de trabajo. Para obtener una introducción al aprovisionamiento del servicio Azure Search, consulte [How to use the Management REST API](https://docs.microsoft.com/rest/api/searchmanagement/search-howto-management-rest-api) (Uso de la API de REST de administración).
 
-Instale el [paquete NuGet](https://www.nuget.org/packages/Microsoft.Azure.Management.Search) directamente desde la [Consola del Administrador de paquetes][PackageManager] de Visual Studio o con la [CLI de .NET Core][DotNetCLI].
+Instale el [paquete NuGet](https://www.nuget.org/packages/Microsoft.Azure.Management.Search) directamente desde la [Consola del Administración de paquetes][PackageManager] de Visual Studio o con la [CLI de .NET Core][DotNetCLI].
 
 #### <a name="visual-studio-package-manager"></a>Administrador de paquetes de Visual Studio
 
@@ -84,7 +82,7 @@ dotnet add package Microsoft.Azure.Management.Search
 > [!div class="nextstepaction"]
 > [Explorar las API de administración](/dotnet/api/overview/azure/search/management)
 
-## <a name="samples"></a>Muestras
+## <a name="samples"></a>Ejemplos
 
  + [Ejemplos de Azure/ search-dotnet--getting-started](https://github.com/Azure-Samples/search-dotnet-getting-started)
  + [Ejemplos de Azure/ search-dotnet-management-api](https://github.com/Azure-Samples/search-dotnet-management-api)

@@ -7,17 +7,15 @@ ms.author: casoper
 manager: wpickett
 ms.date: 10/19/2017
 ms.topic: reference
-ms.prod: azure
-ms.technology: azure
 ms.devlang: dotnet
 ms.service: automation
 ms.custom: devcenter, svc-overview
-ms.openlocfilehash: 2055a5e24d445468763c049c34a5055cea108688
-ms.sourcegitcommit: fe3e1475208ba47d4630788bac88b952cc3fe61f
+ms.openlocfilehash: e45db49fa71e5ad16ab1e4f26d76cd9b0146ac5f
+ms.sourcegitcommit: bfa1898c97798991215d08ce89dea87efff44157
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2017
-ms.locfileid: "23486698"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37065765"
 ---
 # <a name="azure-automation-libraries-for-net"></a>Bibliotecas de Azure Automation para .NET
 
@@ -31,7 +29,7 @@ Para más información, lea [Introducción a Azure Automation](/azure/automation
 
 Uso de la biblioteca de administración para administrar runbooks y trabajos, y administrar la configuración de Desired State Configuration.
 
-Instale el [paquete NuGet](https://www.nuget.org/packages/Microsoft.Azure.Management.Automation) directamente desde la [Consola del Administrador de paquetes][PackageManager] de Visual Studio o con la [CLI de .NET Core][DotNetCLI].
+Instale el [paquete NuGet](https://www.nuget.org/packages/Microsoft.Azure.Management.Automation) directamente desde la [Consola del Administración de paquetes][PackageManager] de Visual Studio o con la [CLI de .NET Core][DotNetCLI].
 
 #### <a name="visual-studio-package-manager"></a>Administrador de paquetes de Visual Studio
 
@@ -74,7 +72,7 @@ Job job = automationManagementClient.Jobs.Create(automationAccountName, jcParam)
 > [!div class="nextstepaction"]
 > [Explorar las API de administración](/dotnet/api/overview/azure/automation/management)
 
-## <a name="samples"></a>Muestras
+## <a name="samples"></a>Ejemplos
 
 * [AzureBot](https://github.com/Microsoft/AzureBot) utiliza la biblioteca de Automation con [Framework Bot](https://docs.microsoft.com/bot-framework/) y [Cognitive Services](/cognitive-services) para mejorar la productividad de los desarrolladores en Azure
 
