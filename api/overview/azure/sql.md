@@ -7,47 +7,45 @@ ms.author: casoper
 manager: wpickett
 ms.date: 10/19/2017
 ms.topic: reference
-ms.prod: azure
-ms.technology: azure
 ms.devlang: dotnet
 ms.service: sql-database
 ms.custom: devcenter, svc-overview
-ms.openlocfilehash: 3aba3c77935e0f00c7396b4cafa06be32ae2a50d
-ms.sourcegitcommit: c360a22d5bff6eedd714b28b847d2f26b06665f4
+ms.openlocfilehash: 30d5f9ffa0654673fe358872cbb7342fb87d4127
+ms.sourcegitcommit: bfa1898c97798991215d08ce89dea87efff44157
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/15/2017
-ms.locfileid: "24533110"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37065895"
 ---
-# <a name="azure-sql-database-apis-for-net"></a><span data-ttu-id="bf243-104">API de Azure SQL Database para .NET</span><span class="sxs-lookup"><span data-stu-id="bf243-104">Azure SQL Database APIs for .NET</span></span>
+# <a name="azure-sql-database-apis-for-net"></a><span data-ttu-id="81334-104">API de Azure SQL Database para .NET</span><span class="sxs-lookup"><span data-stu-id="81334-104">Azure SQL Database APIs for .NET</span></span>
 
-## <a name="overview"></a><span data-ttu-id="bf243-105">Información general</span><span class="sxs-lookup"><span data-stu-id="bf243-105">Overview</span></span>
+## <a name="overview"></a><span data-ttu-id="81334-105">Información general</span><span class="sxs-lookup"><span data-stu-id="81334-105">Overview</span></span>
 
-<span data-ttu-id="bf243-106">[Azure SQL Database](https://docs.microsoft.com/azure/sql-database/sql-database-technical-overview) es un servicio de base de datos basado en el motor Microsoft SQL Server que admite datos relacionales, de tabla, JSON, espaciales y XML.</span><span class="sxs-lookup"><span data-stu-id="bf243-106">[Azure SQL Database](https://docs.microsoft.com/azure/sql-database/sql-database-technical-overview) is a database service using the Microsoft SQL Server engine that supports relational, JSON, spatial, and XML data.</span></span> 
+<span data-ttu-id="81334-106">[Azure SQL Database](https://docs.microsoft.com/azure/sql-database/sql-database-technical-overview) es un servicio de base de datos basado en el motor Microsoft SQL Server que admite datos relacionales, de tabla, JSON, espaciales y XML.</span><span class="sxs-lookup"><span data-stu-id="81334-106">[Azure SQL Database](https://docs.microsoft.com/azure/sql-database/sql-database-technical-overview) is a database service using the Microsoft SQL Server engine that supports relational, JSON, spatial, and XML data.</span></span> 
 
-<span data-ttu-id="bf243-107">Para aprender más sobre el uso de SQL Database con .NET, consulte [Uso de .NET (C#) con Visual Studio para conectarse y consultar una base de datos SQL de Azure](https://docs.microsoft.com/azure/sql-database/sql-database-connect-query-dotnet-visual-studio).</span><span class="sxs-lookup"><span data-stu-id="bf243-107">To learn more about the using SQL Database with .NET, see [Use .NET with Visual Studio to connect and query an Azure SQL database](https://docs.microsoft.com/azure/sql-database/sql-database-connect-query-dotnet-visual-studio).</span></span>
+<span data-ttu-id="81334-107">Para aprender más sobre el uso de SQL Database con .NET, consulte [Uso de .NET (C#) con Visual Studio para conectarse y consultar una base de datos SQL de Azure](https://docs.microsoft.com/azure/sql-database/sql-database-connect-query-dotnet-visual-studio).</span><span class="sxs-lookup"><span data-stu-id="81334-107">To learn more about the using SQL Database with .NET, see [Use .NET with Visual Studio to connect and query an Azure SQL database](https://docs.microsoft.com/azure/sql-database/sql-database-connect-query-dotnet-visual-studio).</span></span>
 
-## <a name="client-library"></a><span data-ttu-id="bf243-108">Biblioteca de cliente</span><span class="sxs-lookup"><span data-stu-id="bf243-108">Client library</span></span>
+## <a name="client-library"></a><span data-ttu-id="81334-108">Biblioteca de cliente</span><span class="sxs-lookup"><span data-stu-id="81334-108">Client library</span></span>
 
-<span data-ttu-id="bf243-109">Use la biblioteca de SQL para .NET para conectarse a su base de datos y autenticarse en ella y ejecutar instrucciones y procedimientos almacenados T-SQL ad-hoc.</span><span class="sxs-lookup"><span data-stu-id="bf243-109">Use the .NET SQL client library to connect and authenticate with your database and execute ad-hoc T-SQL statements and stored procedures.</span></span>
+<span data-ttu-id="81334-109">Use la biblioteca de SQL para .NET para conectarse a su base de datos y autenticarse en ella y ejecutar instrucciones y procedimientos almacenados T-SQL ad-hoc.</span><span class="sxs-lookup"><span data-stu-id="81334-109">Use the .NET SQL client library to connect and authenticate with your database and execute ad-hoc T-SQL statements and stored procedures.</span></span>
 
-<span data-ttu-id="bf243-110">Instale el [paquete NuGet]( https://www.nuget.org/packages/System.Data.SqlClient) directamente desde la [Consola del Administrador de paquetes](https://docs.microsoft.com/nuget/tools/package-manager-console) de Visual Studio o con la [CLI de .NET Core](https://docs.microsoft.com/dotnet/core/tools/dotnet-add-package).</span><span class="sxs-lookup"><span data-stu-id="bf243-110">Install the [NuGet package]( https://www.nuget.org/packages/System.Data.SqlClient) directly from the Visual Studio [Package Manager console](https://docs.microsoft.com/nuget/tools/package-manager-console) or with the [.NET Core CLI](https://docs.microsoft.com/dotnet/core/tools/dotnet-add-package).</span></span>
+<span data-ttu-id="81334-110">Instale el [paquete NuGet]( https://www.nuget.org/packages/System.Data.SqlClient) directamente desde la [Consola del Administrador de paquetes](https://docs.microsoft.com/nuget/tools/package-manager-console) de Visual Studio o con la [CLI de .NET Core](https://docs.microsoft.com/dotnet/core/tools/dotnet-add-package).</span><span class="sxs-lookup"><span data-stu-id="81334-110">Install the [NuGet package]( https://www.nuget.org/packages/System.Data.SqlClient) directly from the Visual Studio [Package Manager console](https://docs.microsoft.com/nuget/tools/package-manager-console) or with the [.NET Core CLI](https://docs.microsoft.com/dotnet/core/tools/dotnet-add-package).</span></span>
 
-#### <a name="visual-studio-package-manager"></a><span data-ttu-id="bf243-111">Administrador de paquetes de Visual Studio</span><span class="sxs-lookup"><span data-stu-id="bf243-111">Visual Studio Package Manager</span></span>
+#### <a name="visual-studio-package-manager"></a><span data-ttu-id="81334-111">Administrador de paquetes de Visual Studio</span><span class="sxs-lookup"><span data-stu-id="81334-111">Visual Studio Package Manager</span></span>
 
 ```powershell
 Install-Package System.Data.SqlClient
 ```
 
-#### <a name="net-core-cli"></a><span data-ttu-id="bf243-112">CLI de .NET Core</span><span class="sxs-lookup"><span data-stu-id="bf243-112">.NET Core CLI</span></span>
+#### <a name="net-core-cli"></a><span data-ttu-id="81334-112">CLI de .NET Core</span><span class="sxs-lookup"><span data-stu-id="81334-112">.NET Core CLI</span></span>
 
 ```bash
 dotnet add package System.Data.SqlClient
 ```
 
-### <a name="code-example"></a><span data-ttu-id="bf243-113">Ejemplo de código</span><span class="sxs-lookup"><span data-stu-id="bf243-113">Code Example</span></span>
+### <a name="code-example"></a><span data-ttu-id="81334-113">Ejemplo de código</span><span class="sxs-lookup"><span data-stu-id="81334-113">Code Example</span></span>
 
-<span data-ttu-id="bf243-114">En este ejemplo se conecta a una base de datos y se leen las filas de una tabla.</span><span class="sxs-lookup"><span data-stu-id="bf243-114">This example connects to a database and reads rows from a table.</span></span>
+<span data-ttu-id="81334-114">En este ejemplo se conecta a una base de datos y se leen las filas de una tabla.</span><span class="sxs-lookup"><span data-stu-id="81334-114">This example connects to a database and reads rows from a table.</span></span>
 
 ```csharp
 /* Include this 'using' directive...
@@ -78,29 +76,29 @@ using (SqlConnection conn = new SqlConnection(connectionString))
 ```
 
 > [!div class="nextstepaction"]
-> [<span data-ttu-id="bf243-115">Explorar las API de cliente</span><span class="sxs-lookup"><span data-stu-id="bf243-115">Explore the client APIs</span></span>](/dotnet/api/overview/azure/sql/client)
+> [<span data-ttu-id="81334-115">Explorar las API de cliente</span><span class="sxs-lookup"><span data-stu-id="81334-115">Explore the client APIs</span></span>](/dotnet/api/overview/azure/sql/client)
 
-## <a name="management-library"></a><span data-ttu-id="bf243-116">Biblioteca de administración</span><span class="sxs-lookup"><span data-stu-id="bf243-116">Management library</span></span>
+## <a name="management-library"></a><span data-ttu-id="81334-116">Biblioteca de administración</span><span class="sxs-lookup"><span data-stu-id="81334-116">Management library</span></span>
 
-<span data-ttu-id="bf243-117">Use la biblioteca de administración de Azure SQL Database para crear, administrar y escalar instancias de servidor de Azure SQL Database.</span><span class="sxs-lookup"><span data-stu-id="bf243-117">Use the Azure SQL Database management library to create, manage, and scale Azure SQL Database server instances.</span></span>
+<span data-ttu-id="81334-117">Use la biblioteca de administración de Azure SQL Database para crear, administrar y escalar instancias de servidor de Azure SQL Database.</span><span class="sxs-lookup"><span data-stu-id="81334-117">Use the Azure SQL Database management library to create, manage, and scale Azure SQL Database server instances.</span></span>
 
-<span data-ttu-id="bf243-118">Instale el [paquete NuGet](https://www.nuget.org/packages/Microsoft.Azure.Management.Sql.Fluent/) directamente desde la [Consola del Administrador de paquetes](https://docs.microsoft.com/nuget/tools/package-manager-console) de Visual Studio o con la [CLI de .NET Core](https://docs.microsoft.com/dotnet/core/tools/dotnet-add-package).</span><span class="sxs-lookup"><span data-stu-id="bf243-118">Install the [NuGet package](https://www.nuget.org/packages/Microsoft.Azure.Management.Sql.Fluent/) directly from the Visual Studio [Package Manager console](https://docs.microsoft.com/nuget/tools/package-manager-console) or with the [.NET Core CLI](https://docs.microsoft.com/dotnet/core/tools/dotnet-add-package).</span></span>
+<span data-ttu-id="81334-118">Instale el [paquete NuGet](https://www.nuget.org/packages/Microsoft.Azure.Management.Sql.Fluent/) directamente desde la [Consola del Administrador de paquetes](https://docs.microsoft.com/nuget/tools/package-manager-console) de Visual Studio o con la [CLI de .NET Core](https://docs.microsoft.com/dotnet/core/tools/dotnet-add-package).</span><span class="sxs-lookup"><span data-stu-id="81334-118">Install the [NuGet package](https://www.nuget.org/packages/Microsoft.Azure.Management.Sql.Fluent/) directly from the Visual Studio [Package Manager console](https://docs.microsoft.com/nuget/tools/package-manager-console) or with the [.NET Core CLI](https://docs.microsoft.com/dotnet/core/tools/dotnet-add-package).</span></span>
 
-#### <a name="visual-studio-package-manager"></a><span data-ttu-id="bf243-119">Administrador de paquetes de Visual Studio</span><span class="sxs-lookup"><span data-stu-id="bf243-119">Visual Studio Package Manager</span></span>
+#### <a name="visual-studio-package-manager"></a><span data-ttu-id="81334-119">Administrador de paquetes de Visual Studio</span><span class="sxs-lookup"><span data-stu-id="81334-119">Visual Studio Package Manager</span></span>
 
 ```powershell
 Install-Package Microsoft.Azure.Management.Sql.Fluent
 ``` 
 
-#### <a name="net-core-command-line"></a><span data-ttu-id="bf243-120">Línea de comandos de .NET Core</span><span class="sxs-lookup"><span data-stu-id="bf243-120">.NET Core command line</span></span>
+#### <a name="net-core-command-line"></a><span data-ttu-id="81334-120">Línea de comandos de .NET Core</span><span class="sxs-lookup"><span data-stu-id="81334-120">.NET Core command line</span></span>
 
 ```bash
 dotnet add package Microsoft.Azure.Management.Sql.Fluent
 ```
 
-### <a name="code-example"></a><span data-ttu-id="bf243-121">Ejemplo de código</span><span class="sxs-lookup"><span data-stu-id="bf243-121">Code Example</span></span>
+### <a name="code-example"></a><span data-ttu-id="81334-121">Ejemplo de código</span><span class="sxs-lookup"><span data-stu-id="81334-121">Code Example</span></span>
 
-<span data-ttu-id="bf243-122">En este ejemplo se crea una nueva instancia de servidor de SQL Database y luego se crea una nueva base de datos en esa instancia.</span><span class="sxs-lookup"><span data-stu-id="bf243-122">This example creates a new SQL Database server instance and then creates a new database on that instance.</span></span>
+<span data-ttu-id="81334-122">En este ejemplo se crea una nueva instancia de servidor de SQL Database y luego se crea una nueva base de datos en esa instancia.</span><span class="sxs-lookup"><span data-stu-id="81334-122">This example creates a new SQL Database server instance and then creates a new database on that instance.</span></span>
 
 ```csharp
 /* Include these 'using' directives...
@@ -125,12 +123,12 @@ ISqlDatabase sqlDb = sqlServer.Databases.Define("DatabaseName").Create();
 ```
 
 > [!div class="nextstepaction"]
-> [<span data-ttu-id="bf243-123">Explorar las API de administración</span><span class="sxs-lookup"><span data-stu-id="bf243-123">Explore the management APIs</span></span>](/dotnet/api/overview/azure/sql/management)
+> [<span data-ttu-id="81334-123">Explorar las API de administración</span><span class="sxs-lookup"><span data-stu-id="81334-123">Explore the management APIs</span></span>](/dotnet/api/overview/azure/sql/management)
 
-## <a name="samples"></a><span data-ttu-id="bf243-124">Muestras</span><span class="sxs-lookup"><span data-stu-id="bf243-124">Samples</span></span>
+## <a name="samples"></a><span data-ttu-id="81334-124">Ejemplos</span><span class="sxs-lookup"><span data-stu-id="81334-124">Samples</span></span>
 
-- [<span data-ttu-id="bf243-125">Ejemplos de código de ADO.NET</span><span class="sxs-lookup"><span data-stu-id="bf243-125">ADO.NET code examples</span></span>](/dotnet/framework/data/adonet/ado-net-code-examples)
-- [<span data-ttu-id="bf243-126">Ejemplos de bibliotecas de administración de Azure para .NET en SQL Database</span><span class="sxs-lookup"><span data-stu-id="bf243-126">Azure management libraries for .NET samples for SQL Database</span></span>](/dotnet/azure/dotnet-sdk-azure-sql-database-samples)
+- [<span data-ttu-id="81334-125">Ejemplos de código de ADO.NET</span><span class="sxs-lookup"><span data-stu-id="81334-125">ADO.NET code examples</span></span>](/dotnet/framework/data/adonet/ado-net-code-examples)
+- [<span data-ttu-id="81334-126">Ejemplos de bibliotecas de administración de Azure para .NET en SQL Database</span><span class="sxs-lookup"><span data-stu-id="81334-126">Azure management libraries for .NET samples for SQL Database</span></span>](/dotnet/azure/dotnet-sdk-azure-sql-database-samples)
 
-<span data-ttu-id="bf243-127">Vea la [lista completa](https://azure.microsoft.com/en-us/resources/samples/?platform=dotnet&term=sql+database) de ejemplos de Azure SQL Database.</span><span class="sxs-lookup"><span data-stu-id="bf243-127">View the [complete list](https://azure.microsoft.com/en-us/resources/samples/?platform=dotnet&term=sql+database) of Azure SQL Database samples.</span></span>
+<span data-ttu-id="81334-127">Vea la [lista completa](https://azure.microsoft.com/en-us/resources/samples/?platform=dotnet&term=sql+database) de ejemplos de Azure SQL Database.</span><span class="sxs-lookup"><span data-stu-id="81334-127">View the [complete list](https://azure.microsoft.com/en-us/resources/samples/?platform=dotnet&term=sql+database) of Azure SQL Database samples.</span></span>
 
