@@ -6,18 +6,17 @@ author: camsoper
 manager: wpickett
 ms.author: casoper
 ms.date: 11/15/2017
-layout: LandingPage
-ms.topic: landing-page
+ms.topic: article
 ms.technology: azure
 ms.devlang: dotnet
 ms.service: virtual-machines
 ms.custom: devcenter
-ms.openlocfilehash: 98f24553961793623f8a6aba10dcf45b930101fe
-ms.sourcegitcommit: 3e904e6e4f04f1c92d729459434c85faff32e386
+ms.openlocfilehash: 53e899ba3cd2ff265a2068e1b7eee5baa4520879
+ms.sourcegitcommit: bfa1898c97798991215d08ce89dea87efff44157
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/09/2017
-ms.locfileid: "26588488"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37065345"
 ---
 # <a name="migrate-an-aspnet-web-application-to-an-azure-virtual-machine"></a>Migración de una aplicación web ASP.NET a una máquina virtual de Azure
 
@@ -25,16 +24,7 @@ En este documento se describe cómo migrar una aplicación web ASP.NET de un ent
 
 ## <a name="quickstart"></a>Guía de inicio rápido
 
-Obtenga información acerca de cómo crear una máquina virtual y publicar la aplicación en ella:
-
-<div class="ico48Case">
-    <div class="ico48Link">
-        <a href="https://tutorials.visualstudio.com/aspnet-vm/intro">
-            <img width="48" height="48" alt="Publish to an Azure VM" src="https://docs.microsoft.com/azure/media/index/virtualmachine.svg">
-            <span>Publicar en una máquina virtual de Azure</span>
-        </a>
-    </div>
-</div>
+Vea cómo crear una máquina virtual y publicar la aplicación en ella: [Publicar en una máquina virtual de Azure](https://tutorials.visualstudio.com/aspnet-vm/intro)
 
 ## <a name="get-started"></a>Introducción
 
@@ -58,9 +48,9 @@ Las máquinas virtuales ofrecen una ruta más sencilla para migrar una aplicaci�
 
 Elija el tamaño y el tipo de máquina virtual más adecuados para la carga de trabajo.  Para más información, consulte [Tamaños de las máquinas virtuales Windows en Azure](https://docs.microsoft.com/azure/virtual-machines/windows/sizes).
 
-### <a name="maintenance"></a>Mantenimiento
+### <a name="maintenance"></a>Mantenimiento 
 
-Al igual que en una máquina local, es su responsabilidad mantener y actualizar la máquina virtual<sup>&#42;</sup>.  Si la aplicación puede ejecutarse en un entorno de Plataforma como servicio (PaaS), por ejemplo, [Azure App Service](https://docs.microsoft.com/azure/app-service/) o en un [contenedor](https://docs.microsoft.com/azure/app-service/containers/), esto ya no será necesario.
+Al igual que una máquina local, es su responsabilidad de mantener y actualizar la máquina virtual<sup>&#42;</sup>.  Si la aplicación puede ejecutarse en un entorno de Plataforma como servicio (PaaS), por ejemplo, [Azure App Service](https://docs.microsoft.com/azure/app-service/) o en un [contenedor](https://docs.microsoft.com/azure/app-service/containers/), esto ya no será necesario.
 
 *<sup>&#42;</sup>[Las actualizaciones automáticas del sistema operativo para los conjuntos de escalado de máquinas virtuales](https://docs.microsoft.com/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-automatic-upgrade) están disponibles en versión preliminar.*
 
@@ -88,8 +78,8 @@ Si su aplicación usa una base de datos local, la aplicación no podrá comunica
 
 ### <a name="high-availability-and-scalability"></a>Alta disponibilidad y escalabilidad
 
-#### <a name="virtual-machine-scale-sets"></a>Conjuntos de escalado de máquina virtual
-Si desea asegurarse de que la aplicación tenga alta disponibilidad y pueda escalar, migre la imagen de su máquina virtual a un conjunto de escalado de máquinas virtuales de Azure para mejorar la disponibilidad y escalabilidad de la aplicación.  Los conjuntos de escalado de máquinas virtuales permiten usar una máquina virtual existente ya configurada o configurar una canalización de compilación para crear una imagen con la aplicación.  
+#### <a name="virtual-machine-scale-sets"></a>Virtual Machine Scale Sets
+Si desea asegurarse de que la aplicación tenga alta disponibilidad y pueda escalar, migre la imagen de su máquina virtual a un conjunto de escalado de máquinas virtuales de Azure para mejorar la disponibilidad y escalabilidad de la aplicación.  VM Scale Sets permite usar una máquina virtual existente ya configurada o configurar una canalización de compilación para crear una imagen con la aplicación.  
 
 Para comenzar, consulte [Implementación de la aplicación en conjuntos de escalado de máquinas virtuales](https://docs.microsoft.com/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-deploy-app).
 
