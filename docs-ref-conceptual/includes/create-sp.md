@@ -1,12 +1,12 @@
-<span data-ttu-id="494f4-101">La aplicación .NET necesita permisos para leer y crear recursos en la suscripción de Azure para poder usar las bibliotecas de administración de Azure para .NET.</span><span class="sxs-lookup"><span data-stu-id="494f4-101">Your .NET application needs permissions to read and create resources in your Azure subscription in order to use the Azure Management Libraries for .NET.</span></span> <span data-ttu-id="494f4-102">Cree a una entidad de servicio y configure la aplicación para que se ejecute con sus credenciales para conceder este acceso.</span><span class="sxs-lookup"><span data-stu-id="494f4-102">Create a service principal and configure your app to run with its credentials to grant this access.</span></span> <span data-ttu-id="494f4-103">Las entidades de servicio son una manera de crear una cuenta no interactiva asociada con su identidad a la que conceder únicamente los privilegios que la aplicación necesita para la ejecución.</span><span class="sxs-lookup"><span data-stu-id="494f4-103">Service principals provide a way to create a non-interactive account associated with your identity to which you grant only the privileges your app needs to run.</span></span>
+<span data-ttu-id="f5e91-101">La aplicación .NET necesita permisos para leer y crear recursos en la suscripción de Azure para poder usar las bibliotecas de administración de Azure para .NET.</span><span class="sxs-lookup"><span data-stu-id="f5e91-101">Your .NET application needs permissions to read and create resources in your Azure subscription in order to use the Azure Management Libraries for .NET.</span></span> <span data-ttu-id="f5e91-102">Cree a una entidad de servicio y configure la aplicación para que se ejecute con sus credenciales para conceder este acceso.</span><span class="sxs-lookup"><span data-stu-id="f5e91-102">Create a service principal and configure your app to run with its credentials to grant this access.</span></span> <span data-ttu-id="f5e91-103">Las entidades de servicio son una manera de crear una cuenta no interactiva asociada con su identidad a la que conceder únicamente los privilegios que la aplicación necesita para la ejecución.</span><span class="sxs-lookup"><span data-stu-id="f5e91-103">Service principals provide a way to create a non-interactive account associated with your identity to which you grant only the privileges your app needs to run.</span></span>
 
-<span data-ttu-id="494f4-104">En primer lugar, inicie sesión en Azure PowerShell:</span><span class="sxs-lookup"><span data-stu-id="494f4-104">First, login to Azure PowerShell:</span></span>
+<span data-ttu-id="f5e91-104">En primer lugar, inicie sesión en Azure PowerShell:</span><span class="sxs-lookup"><span data-stu-id="f5e91-104">First, login to Azure PowerShell:</span></span>
 
 ```powershell
 Login-AzureRmAccount
 ```
 
-<span data-ttu-id="494f4-105">Anote la información mostrada sobre el inquilino y la suscripción:</span><span class="sxs-lookup"><span data-stu-id="494f4-105">Note the information displayed about your tenant and subscription:</span></span>
+<span data-ttu-id="f5e91-105">Anote la información mostrada sobre el inquilino y la suscripción:</span><span class="sxs-lookup"><span data-stu-id="f5e91-105">Note the information displayed about your tenant and subscription:</span></span>
 
 ```plaintext
 Environment           : AzureCloud
@@ -17,11 +17,15 @@ SubscriptionName      : my-subscription
 CurrentStorageAccount : 
 ```
 
-<span data-ttu-id="494f4-106">[Cree una entidad de servicio con PowerShell](/powershell/azure/create-azure-service-principal-azureps), así:</span><span class="sxs-lookup"><span data-stu-id="494f4-106">[Create a service principal using PowerShell](/powershell/azure/create-azure-service-principal-azureps), like this:</span></span>
+<span data-ttu-id="f5e91-106">[Cree una entidad de servicio con PowerShell](/powershell/azure/create-azure-service-principal-azureps), tal y como se indica a continuación:</span><span class="sxs-lookup"><span data-stu-id="f5e91-106">[Create a service principal using PowerShell](/powershell/azure/create-azure-service-principal-azureps) as shown below.</span></span> 
+
+> [!NOTE]
+> <span data-ttu-id="f5e91-107">Si el cmdlet `New-AzureRmADServicePrincipal` siguiente devuelve "Ya existe otro objeto con el mismo valor de propiedad identifierUris", significa que ya existe una entidad de servicio con ese nombre en el inquilino.</span><span class="sxs-lookup"><span data-stu-id="f5e91-107">If the `New-AzureRmADServicePrincipal` cmdlet below returns "Another object with the same value for property identifierUris already exists," there is already a service principal by that name in your tenant.</span></span> <span data-ttu-id="f5e91-108">Use un valor diferente para el parámetro **DisplayName**.</span><span class="sxs-lookup"><span data-stu-id="f5e91-108">Use a different value for the **DisplayName** parameter.</span></span> 
 
 ```powershell
 # Create the service principal (use a strong password)
-$sp = New-AzureRmADServicePrincipal -DisplayName "AzureDotNetTest" -Password "password"
+$cred = Get-Credential
+$sp = New-AzureRmADServicePrincipal -DisplayName "AzureDotNetTest" -Password $cred.Password
 
 # Give it the permissions it needs...
 New-AzureRmRoleAssignment -ServicePrincipalName $sp.ApplicationId -RoleDefinitionName Contributor
@@ -30,7 +34,7 @@ New-AzureRmRoleAssignment -ServicePrincipalName $sp.ApplicationId -RoleDefinitio
 $sp | Select DisplayName, ApplicationId
 ```
 
-<span data-ttu-id="494f4-107">Asegúrese de anotar el valor de ApplicationId:</span><span class="sxs-lookup"><span data-stu-id="494f4-107">Make sure to note the ApplicationId:</span></span>
+<span data-ttu-id="f5e91-109">Asegúrese de anotar el valor de ApplicationId:</span><span class="sxs-lookup"><span data-stu-id="f5e91-109">Make sure to note the ApplicationId:</span></span>
 
 ```plaintext
 DisplayName     ApplicationId
