@@ -10,12 +10,12 @@ ms.topic: reference
 ms.devlang: dotnet
 ms.service: sql-database
 ms.custom: devcenter, svc-overview
-ms.openlocfilehash: 30d5f9ffa0654673fe358872cbb7342fb87d4127
-ms.sourcegitcommit: bfa1898c97798991215d08ce89dea87efff44157
+ms.openlocfilehash: 8096e66be1263bc50648ef5b9b16f3fc2bd08ac8
+ms.sourcegitcommit: 512e031ead61a578ac96835c8ea01829842740bf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/28/2018
-ms.locfileid: "37065895"
+ms.lasthandoff: 07/18/2018
+ms.locfileid: "39116681"
 ---
 # <a name="azure-sql-database-apis-for-net"></a>API de Azure SQL Database para .NET
 
@@ -130,5 +130,5 @@ ISqlDatabase sqlDb = sqlServer.Databases.Define("DatabaseName").Create();
 - [Ejemplos de código de ADO.NET](/dotnet/framework/data/adonet/ado-net-code-examples)
 - [Ejemplos de bibliotecas de administración de Azure para .NET en SQL Database](/dotnet/azure/dotnet-sdk-azure-sql-database-samples)
 
-Vea la [lista completa](https://azure.microsoft.com/en-us/resources/samples/?platform=dotnet&term=sql+database) de ejemplos de Azure SQL Database.
+Vea la [lista completa](https://azure.microsoft.com/resources/samples/?platform=dotnet&term=sql+database) de ejemplos de Azure SQL Database.
 
