@@ -1,32 +1,32 @@
 ### YamlMime:YamlDocument
+ms.openlocfilehash: 5f899128e033bb05fe867afdf3026dcb18d42f5f
+ms.sourcegitcommit: 779c1b202d3670cfa0b9428c89f830cad9ec7e9d
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 07/18/2018
+ms.locfileid: "39135663"
 documentType: LandingData
-title: Azure para desarrolladores de .NET
+title: Azure para desarrolladores de .NET y .NET Core
 metadata:
   document_id: be4f4c73-c672-4490-8fca-ae087fba8b3b
-  title: 'Azure para desarrolladores de .NET: tutoriales, referencia de API para C#'
-  description: Introducción al desarrollo de aplicaciones con Azure con los recursos siguientes para encontrar tutoriales y herramientas excelentes para los desarrolladores de .NET.
+  title: 'Azure para desarrolladores de .NET y .NET Core: tutoriales, referencias de API para C#'
+  description: Empiece a desarrollar aplicaciones con Azure y use los recursos siguientes para encontrar excelentes tutoriales y herramientas para los desarrolladores que trabajan con .NET, .NET Core, ASP.NET y ASP.NET Core.
   keywords: Azure, .NET, SDK, API, NuGet
   author: camsoper
   ms.author: casoper
-  manager: douge
-  ms.date: 07/13/2017
+  manager: wpickett
+  ms.date: 07/17/2018
   ms.topic: landing-page
   featureFlags:
   - clicktale
   ms.technology: azure
   ms.devlang: dotnet
   ms.service: multiple
-  ms.openlocfilehash: 0df719af621462048f432589f4235b220721c591
-  ms.sourcegitcommit: 4ec8ceb3a22c209c9c620dd0982cfbc08d21006c
-  ms.translationtype: HT
-  ms.contentlocale: es-ES
-  ms.lasthandoff: 06/05/2018
-  ms.locfileid: "34761383"
 sections:
 - items:
   - type: markdown
     text: >
-      Introducción al desarrollo de aplicaciones preparadas para la nube con Azure con los recursos siguientes, que ofrecen tutoriales y herramientas excelentes para los desarrolladores de .NET.
+      Empiece a desarrollar aplicaciones preparadas para la nube con Azure y use los recursos siguientes, que ofrecen tutoriales y herramientas excelentes y use los recursos siguientes para encontrar excelentes tutoriales y herramientas para los desarrolladores de .NET y .NET Core.
 - items:
   - type: list
     style: cards
@@ -34,17 +34,18 @@ sections:
     columns: 2
     items:
     - href: https://docs.microsoft.com/azure/app-service-web/app-service-web-get-started-dotnet
-      html: <p>Implemente su primera aplicación .NET en Azure</p>
+      html: <p>Implemente su primera aplicación web de ASP.NET Core en Azure</p>
+      maintainContext: true
       image:
         src: https://docs.microsoft.com/en-us/media/common/i_get-started.svg
       title: Introducción
     - href: ./dotnet-samples?view=azure-dotnet
-      html: <p>Códigos de Azure de ejemplo con .NET</p>
+      html: <p>Ejemplos de códigos de Azure con .NET y .NET Core</p>
       image:
         src: https://docs.microsoft.com/en-us/media/common/i_code-samples.svg
       title: Ejemplos de código
     - href: https://docs.microsoft.com/dotnet/azure/dotnet-tools?view=azure-dotnet
-      html: <p>Herramientas para desarrolladores</p>
+      html: <p>Herramientas de desarrollo para .NET y .NET Core</p>
       image:
         src: https://docs.microsoft.com/en-us/media/common/i_download-install.svg
       title: Herramientas &amp; de SDK
@@ -56,7 +57,7 @@ sections:
 - title: Inicios rápidos en 5 minutos
   items:
   - type: paragraph
-    text: Aprenda a crear aplicaciones .NET con los servicios de Azure y C#.
+    text: Aprenda a compilar aplicaciones de .NET y .NET Core con los servicios de Azure y C#.
   - type: list
     style: cards
     className: cardsM
@@ -64,7 +65,7 @@ sections:
     items:
     - image:
         src: https://docs.microsoft.com/en-us/azure/media/index/app-service-web.svg
-      title: Compile una aplicación ASP.NET con una base de datos SQL de Azure
+      title: Compile una aplicación web ASP.NET con una base de datos SQL de Azure
       href: https://docs.microsoft.com/azure/app-service/app-service-web-tutorial-dotnet-sqldatabase
     - image:
         src: https://docs.microsoft.com/en-us/azure/media/index/azurefunctions.svg
@@ -76,7 +77,7 @@ sections:
       href: https://docs.microsoft.com/azure/sql-database/sql-database-connect-query-dotnet
     - image:
         src: https://docs.microsoft.com/en-us/azure/media/index/cosmosdb.svg
-      title: Cree una aplicación .NET con Azure Cosmos DB
+      title: Compile una aplicación .NET con Azure Cosmos DB
       href: https://docs.microsoft.com/azure/cosmos-db/create-sql-api-dotnet
     - image:
         src: https://docs.microsoft.com/en-us/azure/media/index/fabric.svg
@@ -104,13 +105,13 @@ sections:
 - title: Tutoriales detallados
   items:
   - type: paragraph
-    text: Aprenda a usar los servicios y las herramientas de Azure en las aplicaciones .NET.
+    text: Aprenda a usar los servicios y herramientas de Azure en aplicaciones .NET y .NET Core.
   - type: list
     style: unordered
     items:
-    - html: <a href="https://docs.microsoft.com/azure/app-service-web/app-service-web-tutorial-dotnet-sqldatabase">Creación de una aplicación web ASP.NET con Azure SQL Database</a>
-    - html: <a href="https://docs.microsoft.com/en-us/azure/cosmos-db/sql-api-dotnet-application">Creación de una aplicación web ASP.NET con Azure Cosmos DB</a>
-    - html: <a href="https://docs.microsoft.com/azure/app-service-api/app-service-api-dotnet-get-started">Creación e implementación de una API web en Azure</a>
+    - html: <a href="https://docs.microsoft.com/azure/app-service-web/app-service-web-tutorial-dotnet-sqldatabase">Creación de una aplicación web ASP.NET con Azure App Service y Azure SQL Database</a>
+    - html: <a href="https://docs.microsoft.com/en-us/azure/cosmos-db/sql-api-dotnet-application">Creación de una aplicación web ASP.NET con Azure App Service y Azure Cosmos DB</a>
+    - html: <a href="https://docs.microsoft.com/azure/app-service-api/app-service-api-dotnet-get-started">Creación e implementación de una API web en Azure App Service</a>
     - html: <a href="https://docs.microsoft.com/azure/container-service/container-service-kubernetes-windows-walkthrough">Introducción a los contenedores de Kubernetes y Windows</a>
     - html: <a href="https://docs.microsoft.com/azure/sql-database/sql-database-connect-query-dotnet">Conexión a Azure SQL Database y consulta</a>
     - html: <a href="https://docs.microsoft.com/azure/postgresql/connect-csharp">Conexión a Azure Database for PostgreSQL y consulta</a>

@@ -1,26 +1,26 @@
 ---
-title: Ejemplos de código C# de Azure para .NET
-description: Ejemplos de código C# para .NET y Azure.
+title: Ejemplos de código C# de Azure para .NET y .NET Core
+description: Ejemplos de código en C# para Azure mediante. NET, .NET Core, ASP.NET y ASP.NET Core.
 layout: LandingPage
 ms.topic: reference
 author: camsoper
 ms.author: casoper
 manager: wpickett
-ms.date: 04/12/2018
+ms.date: 07/17/2018
 ms.technology: azure
 ms.devlang: dotnet
 ms.service: multiple
 ms.custom: devcenter
-ms.openlocfilehash: 2952f2999ae53100d35d90f44bfcc6c9df696b00
-ms.sourcegitcommit: 7d88aef45df03d9a2be5b9ac5c9f1f146462427b
+ms.openlocfilehash: b4a67a2b3c942ea5282878a61ccabb7c1d3aa95c
+ms.sourcegitcommit: 779c1b202d3670cfa0b9428c89f830cad9ec7e9d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/11/2018
-ms.locfileid: "34051965"
+ms.lasthandoff: 07/18/2018
+ms.locfileid: "39135683"
 ---
-# <a name="azure-c-code-samples-for-net"></a>Ejemplos de código C# de Azure para .NET
+# <a name="azure-c-code-samples-for-net-and-net-core"></a>Ejemplos de código C# de Azure para .NET y .NET Core
 
-Estos son los principales ejemplos, tutoriales y muestras que recomendamos como introducción a Azure con. NET y C#.
+Estos son los principales ejemplos y tutoriales que recomendamos para empezar a trabajar con Azure mediante C#, .NET y .NET Core.
 
 <div id="main" class="v2">
     <div class="container">
@@ -36,8 +36,8 @@ Estos son los principales ejemplos, tutoriales y muestras que recomendamos como 
                                     </div>
                                 </div>
                                 <div class="cardText">
-                                    <h3>Sitio web básico</h3>
-                                    <p>Aprenda a crear un sitio web de ASP.NET Core sencillo que almacena información en un servidor back-end de SQL.</p>
+                                    <h3>Aplicación web básica</h3>
+                                    <p>Aprenda a crear una aplicación web de ASP.NET Core simple en Azure App Service que almacene información en un back-end de SQL de Azure.</p>
                                 </div>
                             </div>
                         </a>
@@ -113,7 +113,7 @@ Estos son los principales ejemplos, tutoriales y muestras que recomendamos como 
                                 </div>
                                 <div class="cardText">
                                     <h3>Analizar imágenes con AI</h3>
-                                    <p>Muestra cómo usar Cognitive Services para detectar características visuales en imágenes.</p>
+                                    <p>Muestra cómo usar Azure Cognitive Services para detectar características visuales en imágenes.</p>
                                 </div>
                             </div>
                         </a>
@@ -132,13 +132,13 @@ Estos son los principales ejemplos, tutoriales y muestras que recomendamos como 
                                 </div>
                                 <div class="cardText">
                                     <h3>Base de datos en la nube</h3>
-                                    <p>Aprenda a realizar búsquedas básicas, y a crear y editar en una moderna base de datos en la nube con Cosmos DB.</p>
+                                    <p>Aprenda a realizar operaciones básicas de búsqueda, creación y edición en una moderna base de datos en la nube mediante Azure Cosmos DB.</p>
                                 </div>
                             </div>
                         </a>
                     </div>
                 </div>
-            </li>             
+            </li>
         </ul>
     </div>
 </div>
