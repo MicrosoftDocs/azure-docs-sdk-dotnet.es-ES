@@ -1,28 +1,28 @@
 ---
-title: Introducción a las API de .NET de Azure
-description: Adéntrese en el uso básico de las bibliotecas de Azure para .NET con su propia suscripción de Azure.
-keywords: Azure, .NET, SDK, API ,autenticación, introducción
+title: Introducción a las API de .NET y .NET Core de Azure
+description: Adéntrese en el uso básico de las bibliotecas de Azure para .NET y .NET Core con su propia suscripción de Azure.
+keywords: Azure,. NET, .NET Core, ASP.NET, ASP.NET Core SDK, API, autenticar, introducción
 author: camsoper
 ms.author: casoper
 manager: wpickett
-ms.date: 10/19/2017
+ms.date: 07/17/2018
 ms.topic: reference
 ms.technology: azure
 ms.devlang: dotnet
 ms.service: multiple
 ms.custom: devcenter
-ms.openlocfilehash: a3733898f948dbb2ec07da20aa61724e07f23e73
-ms.sourcegitcommit: 3ba0ff4463338a0ab0f3f15a7601b89417c06970
+ms.openlocfilehash: a8775993e71566b7659a8ae8ceb2c376ece14e45
+ms.sourcegitcommit: 779c1b202d3670cfa0b9428c89f830cad9ec7e9d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/05/2018
-ms.locfileid: "29752877"
+ms.lasthandoff: 07/18/2018
+ms.locfileid: "39135783"
 ---
-# <a name="get-started-with-the-azure-net-apis"></a>Comience a trabajar con las API de .NET de Azure
+# <a name="get-started-with-the-azure-net-and-net-core-apis"></a>Introducción a las API de .NET y .NET Core de Azure
 
 En este tutorial se demuestra el uso de varias [API de Azure para .NET](/dotnet/api/overview/azure/).  Configurará la autenticación, creará y usará una cuenta de Azure Storage, creará y usará una instancia de Azure SQL Database, implementará algunas máquinas virtuales e implementará una aplicación web de Azure App Service desde GitHub.
 
-## <a name="prerequisites"></a>requisitos previos
+## <a name="prerequisites"></a>Requisitos previos
 
 - Una cuenta de Azure. Si no tiene una, [consiga una evaluación gratuita](https://azure.microsoft.com/free/).
 - [Azure PowerShell](/powershell/azure/install-azurerm-ps)
@@ -201,11 +201,11 @@ Reemplace el método `Main` por lo siguiente y asegúrese de asignar una contras
 
     Console.WriteLine("Creating database...");
     var sqlDb = sqlServer.Databases.Define(sqlDbName).Create();
-    
+
     // Display information for connecting later...
     Console.WriteLine("Created database {0} in server {1}.", sqlDbName, sqlServer.FullyQualifiedDomainName);
     Console.WriteLine("Your user name is {0}.", adminUser + "@" + sqlServer.Name);
-    
+
     // Build the connection string
     var builder = new SqlConnectionStringBuilder();
     builder.DataSource = sqlServer.FullyQualifiedDomainName;
@@ -241,11 +241,12 @@ Reemplace el método `Main` por lo siguiente y asegúrese de asignar una contras
     Console.ReadLine();
 }
 ```
+
 Ejecute el código como antes con **F5**.  La salida de la consola debe validar que el servidor se ha creado y que funciona según lo esperado, pero puede conectarse a él directamente con una herramienta como SQL Server Management Studio si así lo desea.
 
 ## <a name="write-a-blob-into-a-new-storage-account"></a>Escritura de un blob en una nueva cuenta de almacenamiento
 
-En este ejemplo creará una cuenta de almacenamiento y cargará un blob.  
+En este ejemplo se crea una cuenta de almacenamiento y se carga un blob.  
 
 Reemplace el método `Main` por lo siguiente:
 
@@ -280,7 +281,7 @@ static void Main(string[] args)
 
     var account = CloudStorageAccount.Parse(storageConnectionString);
     var serviceClient = account.CreateCloudBlobClient();
-    
+
     // Create container. Name must be lower case.
     Console.WriteLine("Creating container...");
     var container = serviceClient.GetContainerReference("helloazure");
@@ -290,7 +291,7 @@ static void Main(string[] args)
     var containerPermissions = new BlobContainerPermissions()
         { PublicAccess = BlobContainerPublicAccessType.Container };
     container.SetPermissionsAsync(containerPermissions).Wait();
-    
+
     // write a blob to the container
     Console.WriteLine("Uploading blob...");
     var blob = container.GetBlockBlobReference("helloazure.txt");
@@ -299,13 +300,13 @@ static void Main(string[] args)
 
     // Wait for the user
     Console.WriteLine("Press enter to continue...");
-    Console.ReadLine();        
+    Console.ReadLine();
 }
 ```
 
 Presione **F5** para ejecutar el ejemplo.
 
-Al cabo de varios minutos, finaliza el programa. Vaya a la dirección URL mostrada en la consola para comprobar que el blob se ha cargado.  Debería ver el texto "Hello, Azure!" en el explorador.
+Varios minutos después, el programa finaliza. Vaya a la dirección URL mostrada en la consola para comprobar que el blob se ha cargado.  Debería ver el texto "Hello, Azure!" en el explorador.
 
 ## <a name="clean-up"></a>Limpieza
 
@@ -317,6 +318,7 @@ Para eliminar todos los recursos que ha creado, escriba lo siguiente en PowerShe
 ```powershell
 Remove-AzureRmResourceGroup -ResourceGroupName sampleResourceGroup
 ```
+
 ## <a name="explore-more-samples"></a>Exploración de más ejemplos
 
 Para aprender más sobre cómo usar las bibliotecas de Azure para .NET para administrar recursos y automatizar tareas, consulte nuestro código de ejemplo para [máquinas virtuales](dotnet-sdk-azure-virtual-machine-samples.md), [aplicaciones web](dotnet-sdk-azure-web-apps-samples.md) y [bases de datos SQL](dotnet-sdk-azure-sql-database-samples.md).

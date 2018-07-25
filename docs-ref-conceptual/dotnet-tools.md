@@ -1,26 +1,26 @@
 ---
-title: Herramientas para desarrolladores de .NET de Azure
-description: Obtenga las herramientas para empezar a usar las bibliotecas .NET de Azure desde un entorno de Windows, Linux o Mac.
+title: Herramientas para desarrolladores de .NET y .NET Core de Azure
+description: Obtenga las herramientas para empezar a usar las bibliotecas .NET de Azure desde un entorno de Windows, Linux y Mac.
 keywords: Azure .NET, SDK, referencia de API de Azure .NET, biblioteca de clases de Azure .NET
 author: camsoper
 ms.author: casoper
 manager: wpickett
-ms.date: 10/19/2017
+ms.date: 07/17/2018
 ms.topic: reference
 ms.technology: azure
 ms.devlang: dotnet
 ms.service: multiple
 ms.custom: devcenter
-ms.openlocfilehash: 5890df018eea61bcc0f8bce1cd4bc02fa84b37cf
-ms.sourcegitcommit: 9dd801d659803f5efb16d65454cd09258e1cc7d6
+ms.openlocfilehash: 9c9d25e8f065408f81ed8b1fdb25817196f7e053
+ms.sourcegitcommit: 779c1b202d3670cfa0b9428c89f830cad9ec7e9d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "29752683"
+ms.lasthandoff: 07/18/2018
+ms.locfileid: "39135703"
 ---
-# <a name="tools-for-net-azure-developers"></a>Herramientas para desarrolladores de Azure para .NET
+# <a name="tools-for-net-and-net-core-azure-developers"></a>Herramientas para desarrolladores de .NET y .NET Core de Azure
 
-Sea cual sea su sistema operativo, hay disponible un gran conjunto de herramientas para ayudarle en sus tareas de desarrollo con .NET en Azure.
+Independientemente del sistema operativo, tenemos un magnífico conjunto de herramientas que le ayudan a desarrollar en Azure mediante .NET, .NET Core, ASP.NET y ASP.NET Core.
 
 ## <a name="windowstabwindows"></a>[Windows](#tab/windows)
 
@@ -44,7 +44,6 @@ Si ya tiene instalado Visual Studio 2017, puede omitir este paso.
 > [!div class="nextstepaction"]
 > [Descargas de Visual Studio 2017](https://www.visualstudio.com/downloads/)
 
-
 ### <a name="step-2-install-the-two-azure-workloads"></a>Paso 2: Instalación de las dos cargas de trabajo de Azure
 
 Después de iniciar el instalador de Visual Studio 2017, asegúrese de que ha marcado las cargas de trabajo de desarrollo web de Azure y ASP.NET.
@@ -53,8 +52,7 @@ Después de iniciar el instalador de Visual Studio 2017, asegúrese de que ha ma
 
 ### <a name="step-3-develop-with-net-on-azure"></a>Paso 3: Desarrollo con .NET en Azure
 
-Para comenzar, [desarrolle su primera aplicación de .NET en Azure](https://docs.microsoft.com/azure/app-service-web/app-service-web-get-started-dotnet).
-
+Comience por [implementar su primera aplicación web ASP.NET Core en Azure App Service](https://docs.microsoft.com/azure/app-service-web/app-service-web-get-started-dotnet).
 
 ## <a name="macostabmacos"></a>[macOS](#tab/macos)
 <table>
@@ -67,7 +65,6 @@ Para comenzar, [desarrolle su primera aplicación de .NET en Azure](https://docs
     </td>
   </tr>
 </table>
-
 
 ### <a name="step-1-download-visual-studio-for-mac"></a>Paso 1: Descarga de Visual Studio para Mac
 
@@ -82,16 +79,16 @@ Durante la instalación, las herramientas de Azure ya están habilitadas de form
 
 <img src="https://docs.microsoft.com/en-us/visualstudio/products/images/vs-code.svg" width="50" height="50"></img>
 
-### <a name="step-1-download-net-core-sdk"></a>Paso 1: Descarga del SDK de .NET Core
+### <a name="step-1-download-the-net-core-sdk"></a>Step 1: Descarga del SDK de .NET Core
 
-El SDK de Core y las herramientas de línea de comandos para aplicaciones .NET.
+El SDK y las herramientas de línea de comandos de las aplicaciones .NET Core.
 
 > [!div class="nextstepaction"]
 > [Download .NET Core SDK](https://www.microsoft.com/net/core) (Descarga del SDK de .NET Core)
 
 ### <a name="step-2-visual-studio-code"></a>Paso 2: Visual Studio Code
 
-Edite y depure aplicaciones .NET en cualquier SO.
+Edite y depure aplicaciones .NET Core en cualquier sistema operativo: Windows, Mac y Linux.
 
 > [!div class="nextstepaction"]
 > [Descarga de Visual Studio Code](https://code.visualstudio.com)
