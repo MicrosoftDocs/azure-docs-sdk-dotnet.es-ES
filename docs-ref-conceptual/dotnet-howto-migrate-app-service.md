@@ -11,12 +11,12 @@ ms.technology: azure
 ms.devlang: dotnet
 ms.service: app-service
 ms.custom: devcenter
-ms.openlocfilehash: 643d758af8f90f22791d3b7deb18ae6233067ef0
-ms.sourcegitcommit: 779c1b202d3670cfa0b9428c89f830cad9ec7e9d
+ms.openlocfilehash: af17a7dee8dd93aa50807b0b6b7eebadb673151b
+ms.sourcegitcommit: 6a1974bc7c7511aacac5b69daa296a59ab3f8000
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/18/2018
-ms.locfileid: "39135723"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44700957"
 ---
 # <a name="migrate-your-net-web-app-or-service-to-azure-app-service"></a>Migración de una aplicación web o un servicio de .NET a Azure App Service 
 
@@ -30,10 +30,10 @@ ms.locfileid: "39135723"
 
 Compruebe el acceso a los recursos locales, ya que es posible que haya que migrarlos o cambiarlos. Estas son las opciones para mitigar el acceso a los recursos locales:
 
-* Crear una VPN que conecte App Service a recursos locales mediante [Azure Virtual Networks](https://docs.microsoft.com/en-us/azure/app-service/web-sites-integrate-with-vnet).
-* Exponer de forma segura servicios locales en la nube sin cambios en el firewall mediante [Azure Relay](https://docs.microsoft.com/en-us/azure/service-bus-relay/relay-what-is-it).
+* Crear una VPN que conecte App Service a recursos locales mediante [Azure Virtual Networks](https://docs.microsoft.com/azure/app-service/web-sites-integrate-with-vnet).
+* Exponer de forma segura servicios locales en la nube sin cambios en el firewall mediante [Azure Relay](https://docs.microsoft.com/azure/service-bus-relay/relay-what-is-it).
 * Migrar dependencias como un [base de datos SQL](https://go.microsoft.com/fwlink/?linkid=863217) a Azure.
-* Usar las ofertas de plataforma como servicio en la nube para reducir las dependencias. Por ejemplo, en lugar de conectarse a un servidor de correo local, considere la posibilidad de usar [SendGrid](https://docs.microsoft.com/en-us/azure/sendgrid-dotnet-how-to-send-email). 
+* Usar las ofertas de plataforma como servicio en la nube para reducir las dependencias. Por ejemplo, en lugar de conectarse a un servidor de correo local, considere la posibilidad de usar [SendGrid](https://docs.microsoft.com/azure/sendgrid-dotnet-how-to-send-email). 
 
 ### <a name="port-bindings"></a>Enlaces de puerto
 
@@ -64,7 +64,7 @@ No es una opción admitida. Considere la posibilidad de copiar los ensamblados n
 Todo lo que tradicionalmente se configuraba mediante applicationHost.config en la aplicación, ahora se puede configurar mediante Azure Portal. Esto se aplica al valor de bits de AppPool, la opción para habilitar y deshabilitar websockets, la versión de canalización administrada, la versión de .NET Framework (2.0 o 4.0), etc. Para modificar la [configuración de la aplicación](https://docs.microsoft.com/azure/app-service/web-sites-configure), vaya a [Azure Portal](https://portal.azure.com), abra la hoja de la aplicación web y, a continuación, seleccione la pestaña **Configuración de la aplicación**.
 
 #### <a name="iis5-compatibility-mode"></a>Modo de compatibilidad con IIS5
-El modo de compatibilidad con IIS5 no se admite. En Azure App Service cada aplicación web y todas las aplicaciones que están debajo se ejecuta en el mismo proceso de trabajo con un conjunto específico del [grupo de aplicaciones](http://technet.microsoft.com/en-us/library/cc735247(v=WS.10).aspx).
+El modo de compatibilidad con IIS5 no se admite. En Azure App Service cada aplicación web y todas las aplicaciones que están debajo se ejecuta en el mismo proceso de trabajo con un conjunto específico del [grupo de aplicaciones](http://technet.microsoft.com/library/cc735247(v=WS.10).aspx).
 
 #### <a name="iis7-schema-compliance"></a>Cumplimiento del esquema de IIS7 +  
 Algunos elementos y atributos no se definen en el esquema de IIS de Azure App Service. Si tiene problemas, considere la posibilidad de usar [transformaciones XDT](http://azure.microsoft.com/documentation/articles/web-sites-transform-extend/).
