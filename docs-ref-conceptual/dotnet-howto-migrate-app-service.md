@@ -5,18 +5,18 @@ keywords: Azure. NET, ASP.NET, App Service, aplicación web, migrar, migración
 author: camsoper
 manager: wpickett
 ms.author: casoper
-ms.date: 07/16/2018
+ms.date: 08/11/2018
 ms.topic: article
 ms.technology: azure
 ms.devlang: dotnet
 ms.service: app-service
 ms.custom: devcenter
-ms.openlocfilehash: af17a7dee8dd93aa50807b0b6b7eebadb673151b
-ms.sourcegitcommit: 6a1974bc7c7511aacac5b69daa296a59ab3f8000
+ms.openlocfilehash: 172ceb6956004dd560175d6662debdb4c898743d
+ms.sourcegitcommit: ed841c513dd332b14ca76a0c8a1893be13ec9f2c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44700957"
+ms.lasthandoff: 09/14/2018
+ms.locfileid: "45567327"
 ---
 # <a name="migrate-your-net-web-app-or-service-to-azure-app-service"></a>Migración de una aplicación web o un servicio de .NET a Azure App Service 
 
@@ -78,7 +78,7 @@ Azure App Service no permite el registro de componentes COM en la plataforma. Si
 ### <a name="physical-directories"></a>Directorios físicos 
 Azure App Service no permite el acceso a la unidad física. Para acceder a los archivos a través de SMB, es posible que deba usar [Azure Files](https://docs.microsoft.com/azure/storage/files/storage-files-introduction). [Azure Blob Storage](https://docs.microsoft.com/azure/storage/blobs/storage-blobs-introduction) puede almacenar archivos para el acceso a través de HTTPS.  
 
-### <a name="isapi-filters"></a>Filtros de ISAPI  
+### <a name="isapi-filters"></a>Filtros ISAPI  
 Azure App Service puede admitir el uso de los filtros ISAPI; sin embargo, la DLL de ISAPI se debe implementar en el sitio y registrar a través de web.config.  
 
 ### <a name="https-bindings-and-ssl"></a>Enlaces HTTPS y SSL 
@@ -117,4 +117,4 @@ Si la aplicación no se puede migrar directamente a App Service, considere la po
 ## <a name="next-steps"></a>Pasos siguientes
 
 > [!div class="nextstepaction"]
-> [Migración de una aplicación web de ASP.NET a Azure App Service](https://aka.ms/azure-webapp-migrate)
+> [Implementación de la aplicación desde Visual Studio](https://docs.microsoft.com/visualstudio/deployment/quickstart-deploy-to-azure?view=vs-2017)
