@@ -1,27 +1,19 @@
 ---
 title: Implementación en Azure desde la línea de comandos con .NET Core
 description: En este artículo se describe cómo implementar una aplicación de ASP.NET Core en Azure App Service mediante herramientas de la línea de comandos.
-keywords: Azure .NET, SDK, referencia de API de Azure .NET, biblioteca de clases de Azure .NET
-author: camsoper
-manager: douge
-ms.author: casoper
 ms.date: 06/20/2017
-ms.topic: article
-ms.prod: azure
-ms.technology: azure
-ms.devlang: dotnet
-ms.openlocfilehash: 8371c304681ff88cba6f1cc3ba0d1caef836d609
-ms.sourcegitcommit: e1a0e91988bb849c75e9583a80e3e6d712083785
+ms.openlocfilehash: a29f5474dcfedc6f8d044f09ad4d54c5be6a371f
+ms.sourcegitcommit: 5d9b713653b3d03e1d0a67f6e126ee399d1c2a60
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/14/2018
-ms.locfileid: "31005882"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47190498"
 ---
 # <a name="deploy-to-azure-from-the-command-line-with-net-core"></a>Implementación en Azure desde la línea de comandos con .NET Core
 
 Este tutorial le guiará a través de la compilación e implementación de una aplicación de Microsoft Azure con .NET Core.  Cuando termine, tendrá una aplicación web de tareas pendientes integrada en ASP.NET MVC Core, hospedada como aplicación web de Azure y que usa Azure Cosmos DB para el almacenamiento de datos.
 
-## <a name="prerequisites"></a>requisitos previos
+## <a name="prerequisites"></a>Requisitos previos
 
 * Una [suscripción a Microsoft Azure](https://azure.microsoft.com/free/).
 * [.NET Core](https://www.microsoft.com/net/download/core) (opcional)

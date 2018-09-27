@@ -1,22 +1,15 @@
 ---
 title: Elección de la opción de hospedaje de Azure correcta
 description: Vea cuál es la ruta de migración de Azure más adecuada para su aplicación web ASP.NET.
-keywords: Azure .NET, ASP.NET, App Service, máquina virtual, aplicación web, migrar, migración
 author: CESARDELATORRE
-manager: wpickett
 ms.author: cesardl
 ms.date: 11/15/2017
-ms.topic: article
-ms.technology: azure
-ms.devlang: dotnet
-ms.service: multiple
-ms.custom: devcenter, casoper
-ms.openlocfilehash: dbf54bb1a6e3d612ef8363a6b30e06b388b4490f
-ms.sourcegitcommit: 3e904e6e4f04f1c92d729459434c85faff32e386
+ms.openlocfilehash: 7c0d10436efa86c3d4a60f80e2eebd935ee01cee
+ms.sourcegitcommit: 5d9b713653b3d03e1d0a67f6e126ee399d1c2a60
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/09/2017
-ms.locfileid: "26588468"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47190618"
 ---
 # <a name="choose-the-right-azure-hosting-option"></a>Elección de la opción de hospedaje de Azure correcta
 

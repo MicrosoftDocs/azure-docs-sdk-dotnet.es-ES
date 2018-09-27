@@ -1,21 +1,15 @@
 ---
 title: Bibliotecas de Azure Compute para .NET
 description: Referencia de las bibliotecas Azure Compute para .NET
-keywords: Azure, .NET, SDK, API, VM, máquinas virtuales, Compute
-author: camsoper
-ms.author: casoper
-manager: wpickett
 ms.date: 10/19/2017
 ms.topic: reference
-ms.devlang: dotnet
 ms.service: virtual-machines
-ms.custom: devcenter, svc-overview
-ms.openlocfilehash: 96aabe0953a44b86da9cfd3202c43a4aa0f08a89
-ms.sourcegitcommit: bfa1898c97798991215d08ce89dea87efff44157
+ms.openlocfilehash: ee481e0f2448a874629bec36a719e7682407d320
+ms.sourcegitcommit: 5d9b713653b3d03e1d0a67f6e126ee399d1c2a60
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/28/2018
-ms.locfileid: "37065855"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47190698"
 ---
 # <a name="azure-virtual-machine-libraries-for-net"></a>Bibliotecas de Azure Virtual Machines para .NET
 

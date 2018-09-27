@@ -1,21 +1,15 @@
 ---
 title: Bibliotecas de Azure Container Instances para .NET
 description: Referencia de las bibliotecas de Azure Container Instances para .NET
-keywords: Azure, .NET, SDK, API, Container Instances, ACI
-author: mmacy
-ms.author: marsma
-manager: jeconnoc
 ms.date: 06/11/2018
 ms.topic: reference
-ms.devlang: dotnet
 ms.service: dcontainer-instances
-ms.custom: devcenter, svc-overview
-ms.openlocfilehash: 85fe5485c04193b336d10e8c387719e2ad1e6910
-ms.sourcegitcommit: bfa1898c97798991215d08ce89dea87efff44157
+ms.openlocfilehash: 93f537058e0ed11f51cc6cb6cece01da80559822
+ms.sourcegitcommit: 5d9b713653b3d03e1d0a67f6e126ee399d1c2a60
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/28/2018
-ms.locfileid: "37066153"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47190728"
 ---
 # <a name="azure-container-instances-libraries-for-net"></a>Bibliotecas de Azure Container Instances para .NET
 

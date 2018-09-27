@@ -1,34 +1,28 @@
 ---
-title: Bibliotecas de CDN de Azure para .NET
-description: Referencia de las bibliotecas de CDN de Azure para .NET
-keywords: Azure, .NET, SDK, API, CDN
-author: camsoper
-ms.author: casoper
-manager: wpickett
+title: Bibliotecas de Azure CDN para .NET
+description: Referencia de las bibliotecas de Azure CDN para .NET
 ms.date: 10/19/2017
 ms.topic: reference
-ms.devlang: dotnet
 ms.service: cdn
-ms.custom: devcenter, svc-overview
-ms.openlocfilehash: 4e5b56ca7e316f3a53d8c6d37fdd90c5d7130e1e
-ms.sourcegitcommit: bfa1898c97798991215d08ce89dea87efff44157
+ms.openlocfilehash: 6475edbe4fa0d01739de5cff76038aa6e7fd2cf9
+ms.sourcegitcommit: 5d9b713653b3d03e1d0a67f6e126ee399d1c2a60
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/28/2018
-ms.locfileid: "37065825"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47190128"
 ---
-# <a name="azure-cdn-libraries-for-net"></a>Bibliotecas de CDN de Azure para .NET
+# <a name="azure-cdn-libraries-for-net"></a>Bibliotecas de Azure CDN para .NET
 
 ## <a name="overview"></a>Información general
 
 Content Delivery Network (CDN) de Azure almacena en caché contenido de web estático en ubicaciones colocadas estratégicamente para proporcionar el máximo rendimiento a la hora de proporcionar contenido a los usuarios. CDN ofrece a los desarrolladores una solución global para entregar contenido de alto ancho de banda almacenando en caché el contenido en nodos físicos en todo el mundo.
 
-Para aprender sobre CDN de Azure, consulte [Información general de Content Delivery Network (CDN) de Azure](https://docs.microsoft.com/azure/cdn/cdn-overview).
+Para aprender sobre Azure CDN, consulte [Información general de Content Delivery Network (CDN) de Azure](https://docs.microsoft.com/azure/cdn/cdn-overview).
 
 
 ## <a name="management-library"></a>Biblioteca de administración
 
-Puede usar la biblioteca de CDN de Azure para .NET para automatizar la creación y administración de perfiles y puntos de conexión de CDN. 
+Puede usar la biblioteca de Azure CDN para .NET para automatizar la creación y administración de perfiles y puntos de conexión de CDN. 
 
 Instale el [paquete NuGet](https://www.nuget.org/packages/Microsoft.Azure.Management.Cdn.Fluent) directamente desde la [Consola del Administración de paquetes][PackageManager] de Visual Studio o con la [CLI de .NET Core][DotNetCLI].
 

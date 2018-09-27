@@ -1,21 +1,15 @@
 ---
 title: Bibliotecas de Azure App Service para .NET
 description: Referencia de las bibliotecas de Azure App Service para .NET
-keywords: Azure, .NET, SDK, API, aplicaciones web, App Service, móvil, asp.net
-author: camsoper
-ms.author: casoper
-manager: wpickett
 ms.date: 10/19/2017
 ms.topic: reference
-ms.devlang: dotnet
 ms.service: app-service
-ms.custom: devcenter, svc-overview
-ms.openlocfilehash: 0fee28930dff5075cdd84fe3cb88850e07bc6ccb
-ms.sourcegitcommit: bfa1898c97798991215d08ce89dea87efff44157
+ms.openlocfilehash: 82f8eccfafd2f7b1cf1df1ce0f40212509ccddd3
+ms.sourcegitcommit: 5d9b713653b3d03e1d0a67f6e126ee399d1c2a60
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/28/2018
-ms.locfileid: "37065805"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47189998"
 ---
 # <a name="azure-app-service-libraries-for-net"></a>Bibliotecas de Azure App Service para .NET
 

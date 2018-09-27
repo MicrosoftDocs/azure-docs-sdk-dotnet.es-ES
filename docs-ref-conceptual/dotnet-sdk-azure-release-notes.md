@@ -1,22 +1,13 @@
 ---
 title: Notas de la versión de las bibliotecas de administración de Azure para .NET | Microsoft Docs
 description: Vea cuáles son las novedades y cambios importantes en las bibliotecas de administración de Azure para .NET.
-keywords: Azure, .NET, API, referencia, notas, actualizaciones, en desuso
-author: camsoper
-ms.author: casoper
-manager: wpickett
 ms.date: 10/19/2017
-ms.topic: reference
-ms.technology: azure
-ms.devlang: dotnet
-ms.service: multiple
-ms.custom: devcenter
-ms.openlocfilehash: 48ff29507268f6b38acb24217801cf7b0227e444
-ms.sourcegitcommit: e1a0e91988bb849c75e9583a80e3e6d712083785
+ms.openlocfilehash: dac9dee9c25fc349dedd50d6007f25c7d15b0928
+ms.sourcegitcommit: 5d9b713653b3d03e1d0a67f6e126ee399d1c2a60
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/14/2018
-ms.locfileid: "31005912"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47190678"
 ---
 # <a name="release-notes"></a>Notas de la versión 
 
@@ -31,7 +22,7 @@ ms.locfileid: "31005912"
     <th align="left">Próximamente</th>
   </tr>
   <tr>
-    <td>Proceso</td>
+    <td>Compute</td>
     <td>Máquinas virtuales y extensiones de estas<br>Conjuntos de escalado de máquinas virtuales<br>Discos administrados</td>
     <td></td>
     <td valign="top">Instancias de Azure Container Service<br>Azure Container Registry</td>
