@@ -1,45 +1,39 @@
 ---
 title: Bibliotecas de Azure Virtual Network para .NET
 description: Referencia de las bibliotecas de Azure Virtual Network para .NET
-keywords: Azure, .NET, SDK, API, Virtual Network
-author: camsoper
-ms.author: casoper
-manager: wpickett
 ms.date: 10/19/2017
 ms.topic: reference
-ms.devlang: dotnet
 ms.service: virtual-network
-ms.custom: devcenter, svc-overview
-ms.openlocfilehash: eb2300522e63339386bf08b5dfac3b803a1e5efd
-ms.sourcegitcommit: bfa1898c97798991215d08ce89dea87efff44157
+ms.openlocfilehash: 54dd79cf0f5bed1eab7b606b8a6e3b30c797ecd0
+ms.sourcegitcommit: 5d9b713653b3d03e1d0a67f6e126ee399d1c2a60
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/28/2018
-ms.locfileid: "37065295"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47190668"
 ---
-# <a name="azure-virtual-network-libraries-for-net"></a><span data-ttu-id="f3dfe-104">Bibliotecas de Azure Virtual Network para .NET</span><span class="sxs-lookup"><span data-stu-id="f3dfe-104">Azure Virtual Network libraries for .NET</span></span>
+# <a name="azure-virtual-network-libraries-for-net"></a><span data-ttu-id="0e0ea-103">Bibliotecas de Azure Virtual Network para .NET</span><span class="sxs-lookup"><span data-stu-id="0e0ea-103">Azure Virtual Network libraries for .NET</span></span>
 
-## <a name="overview"></a><span data-ttu-id="f3dfe-105">Información general</span><span class="sxs-lookup"><span data-stu-id="f3dfe-105">Overview</span></span>
-<span data-ttu-id="f3dfe-106">El servicio [Azure Virtual Network](/azure/virtual-network/virtual-networks-overview) le permite conectar de forma segura los recursos de Azure con redes virtuales.</span><span class="sxs-lookup"><span data-stu-id="f3dfe-106">The [Azure Virtual Network](/azure/virtual-network/virtual-networks-overview) service enables you to securely connect Azure resources to each other with virtual networks (VNets).</span></span> <span data-ttu-id="f3dfe-107">Una red virtual es una representación de su propia red en la nube.</span><span class="sxs-lookup"><span data-stu-id="f3dfe-107">A VNet is a representation of your own network in the cloud.</span></span> <span data-ttu-id="f3dfe-108">Puede conectar redes virtuales entre sí para que los recursos conectados a cualquiera de las redes virtuales se comuniquen entre sí.</span><span class="sxs-lookup"><span data-stu-id="f3dfe-108">You can also connect VNets to each other, enabling resources connected to either VNet to communicate with each other.</span></span> 
+## <a name="overview"></a><span data-ttu-id="0e0ea-104">Información general</span><span class="sxs-lookup"><span data-stu-id="0e0ea-104">Overview</span></span>
+<span data-ttu-id="0e0ea-105">El servicio [Azure Virtual Network](/azure/virtual-network/virtual-networks-overview) le permite conectar de forma segura los recursos de Azure con redes virtuales.</span><span class="sxs-lookup"><span data-stu-id="0e0ea-105">The [Azure Virtual Network](/azure/virtual-network/virtual-networks-overview) service enables you to securely connect Azure resources to each other with virtual networks (VNets).</span></span> <span data-ttu-id="0e0ea-106">Una red virtual es una representación de su propia red en la nube.</span><span class="sxs-lookup"><span data-stu-id="0e0ea-106">A VNet is a representation of your own network in the cloud.</span></span> <span data-ttu-id="0e0ea-107">Puede conectar redes virtuales entre sí para que los recursos conectados a cualquiera de las redes virtuales se comuniquen entre sí.</span><span class="sxs-lookup"><span data-stu-id="0e0ea-107">You can also connect VNets to each other, enabling resources connected to either VNet to communicate with each other.</span></span> 
 
-## <a name="management-library"></a><span data-ttu-id="f3dfe-109">Biblioteca de administración</span><span class="sxs-lookup"><span data-stu-id="f3dfe-109">Management library</span></span>
+## <a name="management-library"></a><span data-ttu-id="0e0ea-108">Biblioteca de administración</span><span class="sxs-lookup"><span data-stu-id="0e0ea-108">Management library</span></span>
 
-<span data-ttu-id="f3dfe-110">Instale el [paquete NuGet](https://www.nuget.org/packages/Microsoft.Azure.Management.Network.Fluent) directamente desde la [Consola del Administración de paquetes][PackageManager] de Visual Studio o con la [CLI de .NET Core][DotNetCLI].</span><span class="sxs-lookup"><span data-stu-id="f3dfe-110">Install the [NuGet package](https://www.nuget.org/packages/Microsoft.Azure.Management.Network.Fluent) directly from the Visual Studio [Package Manager console][PackageManager] or with the [.NET Core CLI][DotNetCLI].</span></span>
+<span data-ttu-id="0e0ea-109">Instale el [paquete NuGet](https://www.nuget.org/packages/Microsoft.Azure.Management.Network.Fluent) directamente desde la [Consola del Administración de paquetes][PackageManager] de Visual Studio o con la [CLI de .NET Core][DotNetCLI].</span><span class="sxs-lookup"><span data-stu-id="0e0ea-109">Install the [NuGet package](https://www.nuget.org/packages/Microsoft.Azure.Management.Network.Fluent) directly from the Visual Studio [Package Manager console][PackageManager] or with the [.NET Core CLI][DotNetCLI].</span></span>
 
-#### <a name="visual-studio-package-manager"></a><span data-ttu-id="f3dfe-111">Administrador de paquetes de Visual Studio</span><span class="sxs-lookup"><span data-stu-id="f3dfe-111">Visual Studio Package Manager</span></span>
+#### <a name="visual-studio-package-manager"></a><span data-ttu-id="0e0ea-110">Administrador de paquetes de Visual Studio</span><span class="sxs-lookup"><span data-stu-id="0e0ea-110">Visual Studio Package Manager</span></span>
 
 ```powershell
 Install-Package Microsoft.Azure.Management.Network.Fluent
 ```
 
-#### <a name="net-core-cli"></a><span data-ttu-id="f3dfe-112">CLI de .NET Core</span><span class="sxs-lookup"><span data-stu-id="f3dfe-112">.NET Core CLI</span></span>
+#### <a name="net-core-cli"></a><span data-ttu-id="0e0ea-111">CLI de .NET Core</span><span class="sxs-lookup"><span data-stu-id="0e0ea-111">.NET Core CLI</span></span>
 
 ```bash
 dotnet add package Microsoft.Azure.Management.Network.Fluent
 ```
 
-### <a name="code-example"></a><span data-ttu-id="f3dfe-113">Ejemplo de código</span><span class="sxs-lookup"><span data-stu-id="f3dfe-113">Code Example</span></span>
-<span data-ttu-id="f3dfe-114">En este ejemplo se muestra cómo crear una nueva red virtual.</span><span class="sxs-lookup"><span data-stu-id="f3dfe-114">This example shows how you can create a virtual network.</span></span>
+### <a name="code-example"></a><span data-ttu-id="0e0ea-112">Ejemplo de código</span><span class="sxs-lookup"><span data-stu-id="0e0ea-112">Code Example</span></span>
+<span data-ttu-id="0e0ea-113">En este ejemplo se muestra cómo crear una nueva red virtual.</span><span class="sxs-lookup"><span data-stu-id="0e0ea-113">This example shows how you can create a virtual network.</span></span>
 
 ```csharp
 /* 
@@ -85,12 +79,12 @@ using (NetworkManagementClient client = new NetworkManagementClient(credentials)
 ```
 
 > [!div class="nextstepaction"]
-> [<span data-ttu-id="f3dfe-115">Explorar las API de administración</span><span class="sxs-lookup"><span data-stu-id="f3dfe-115">Explore the management APIs</span></span>](/dotnet/api/overview/azure/network/management)
+> [<span data-ttu-id="0e0ea-114">Explorar las API de administración</span><span class="sxs-lookup"><span data-stu-id="0e0ea-114">Explore the management APIs</span></span>](/dotnet/api/overview/azure/network/management)
 
-## <a name="samples"></a><span data-ttu-id="f3dfe-116">Ejemplos</span><span class="sxs-lookup"><span data-stu-id="f3dfe-116">Samples</span></span>
-- [<span data-ttu-id="f3dfe-117">Administración de redes virtuales con subredes</span><span class="sxs-lookup"><span data-stu-id="f3dfe-117">Managing Virtual Networks with subnets</span></span>](https://github.com/Azure-Samples/network-dotnet-manage-virtual-network)
+## <a name="samples"></a><span data-ttu-id="0e0ea-115">Ejemplos</span><span class="sxs-lookup"><span data-stu-id="0e0ea-115">Samples</span></span>
+- [<span data-ttu-id="0e0ea-116">Administración de redes virtuales con subredes</span><span class="sxs-lookup"><span data-stu-id="0e0ea-116">Managing Virtual Networks with subnets</span></span>](https://github.com/Azure-Samples/network-dotnet-manage-virtual-network)
 
-<span data-ttu-id="f3dfe-118">Explore más [código de ejemplo de .NET](https://azure.microsoft.com/resources/samples/?platform=dotnet) que puede usar en sus aplicaciones.</span><span class="sxs-lookup"><span data-stu-id="f3dfe-118">Explore more [.NET sample code](https://azure.microsoft.com/resources/samples/?platform=dotnet) that you can use in your apps.</span></span>
+<span data-ttu-id="0e0ea-117">Explore más [código de ejemplo de .NET](https://azure.microsoft.com/resources/samples/?platform=dotnet) que puede usar en sus aplicaciones.</span><span class="sxs-lookup"><span data-stu-id="0e0ea-117">Explore more [.NET sample code](https://azure.microsoft.com/resources/samples/?platform=dotnet) that you can use in your apps.</span></span>
 
 
 [PackageManager]: https://docs.microsoft.com/nuget/tools/package-manager-console 

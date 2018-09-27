@@ -1,44 +1,38 @@
 ---
 title: Bibliotecas de Azure IoT para .NET
 description: Referencia de las bibliotecas de Azure IoT para .NET
-keywords: Azure, .NET, SDK, API, IoT
-author: camsoper
-ms.author: casoper
-manager: wpickett
 ms.date: 10/19/2017
 ms.topic: reference
-ms.devlang: dotnet
 ms.service: iot-hub
-ms.custom: devcenter, svc-overview
-ms.openlocfilehash: af823e910acedd4f204034b12a31ba61fd53e090
-ms.sourcegitcommit: bfa1898c97798991215d08ce89dea87efff44157
+ms.openlocfilehash: 54182d8fabec0d3aee3ca3b58c7315bdf43cc24e
+ms.sourcegitcommit: 5d9b713653b3d03e1d0a67f6e126ee399d1c2a60
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/28/2018
-ms.locfileid: "37065275"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47190188"
 ---
-# <a name="azure-iot-libraries-for-net"></a><span data-ttu-id="90d14-104">Bibliotecas de Azure IoT para .NET</span><span class="sxs-lookup"><span data-stu-id="90d14-104">Azure IoT libraries for .NET</span></span>
+# <a name="azure-iot-libraries-for-net"></a><span data-ttu-id="ce2e6-103">Bibliotecas de Azure IoT para .NET</span><span class="sxs-lookup"><span data-stu-id="ce2e6-103">Azure IoT libraries for .NET</span></span>
 
-## <a name="overview"></a><span data-ttu-id="90d14-105">Información general</span><span class="sxs-lookup"><span data-stu-id="90d14-105">Overview</span></span>
+## <a name="overview"></a><span data-ttu-id="ce2e6-104">Información general</span><span class="sxs-lookup"><span data-stu-id="ce2e6-104">Overview</span></span>
 
-<span data-ttu-id="90d14-106">[Azure IoT Hub](https://azure.microsoft.com/services/iot-hub/) es un servicio totalmente administrado que permite la comunicación bidireccional confiable y segura entre millones de dispositivos y un back-end de la solución.</span><span class="sxs-lookup"><span data-stu-id="90d14-106">[Azure IoT Hub](https://azure.microsoft.com/services/iot-hub/) is a fully managed service that enables reliable and secure bi-directional communications between millions of devices and a solution back end.</span></span>
+<span data-ttu-id="ce2e6-105">[Azure IoT Hub](https://azure.microsoft.com/services/iot-hub/) es un servicio totalmente administrado que permite la comunicación bidireccional confiable y segura entre millones de dispositivos y un back-end de la solución.</span><span class="sxs-lookup"><span data-stu-id="ce2e6-105">[Azure IoT Hub](https://azure.microsoft.com/services/iot-hub/) is a fully managed service that enables reliable and secure bi-directional communications between millions of devices and a solution back end.</span></span>
 
-<span data-ttu-id="90d14-107">Los dispositivos y orígenes de datos en una solución de IoT pueden ir de un sensor sencillo conectado a la red a un dispositivo informático eficaz e independiente.</span><span class="sxs-lookup"><span data-stu-id="90d14-107">Devices and data sources in an IoT solution can range from a simple network-connected sensor to a powerful, standalone computing device.</span></span> <span data-ttu-id="90d14-108">Dispositivos que tienen limitada la funcionalidad de proceso, la memoria, el ancho de banda de comunicación y la compatibilidad con el protocolo de comunicación.</span><span class="sxs-lookup"><span data-stu-id="90d14-108">Devices may have limited processing capability, memory, communication bandwidth, and communication protocol support.</span></span> <span data-ttu-id="90d14-109">Los [SDK de dispositivo](https://docs.microsoft.com/azure/iot-hub/iot-hub-devguide-sdks) de IoT le permiten implementar aplicaciones cliente para una amplia variedad de dispositivos y aplicaciones back-end.</span><span class="sxs-lookup"><span data-stu-id="90d14-109">The IoT [device SDKs](https://docs.microsoft.com/azure/iot-hub/iot-hub-devguide-sdks) enable you to implement client applications for a wide variety of devices and back-end applications.</span></span>
+<span data-ttu-id="ce2e6-106">Los dispositivos y orígenes de datos en una solución de IoT pueden ir de un sensor sencillo conectado a la red a un dispositivo informático eficaz e independiente.</span><span class="sxs-lookup"><span data-stu-id="ce2e6-106">Devices and data sources in an IoT solution can range from a simple network-connected sensor to a powerful, standalone computing device.</span></span> <span data-ttu-id="ce2e6-107">Dispositivos que tienen limitada la funcionalidad de proceso, la memoria, el ancho de banda de comunicación y la compatibilidad con el protocolo de comunicación.</span><span class="sxs-lookup"><span data-stu-id="ce2e6-107">Devices may have limited processing capability, memory, communication bandwidth, and communication protocol support.</span></span> <span data-ttu-id="ce2e6-108">Los [SDK de dispositivo](https://docs.microsoft.com/azure/iot-hub/iot-hub-devguide-sdks) de IoT le permiten implementar aplicaciones cliente para una amplia variedad de dispositivos y aplicaciones back-end.</span><span class="sxs-lookup"><span data-stu-id="ce2e6-108">The IoT [device SDKs](https://docs.microsoft.com/azure/iot-hub/iot-hub-devguide-sdks) enable you to implement client applications for a wide variety of devices and back-end applications.</span></span>
 
-<span data-ttu-id="90d14-110">El SDK de dispositivo para .NET facilita la creación dispositivos que ejecutan .NET y que se conectan a Azure IoT Hub.</span><span class="sxs-lookup"><span data-stu-id="90d14-110">The device SDK for .NET facilitates building devices running .NET that connect to Azure IoT Hub.</span></span>
+<span data-ttu-id="ce2e6-109">El SDK de dispositivo para .NET facilita la creación dispositivos que ejecutan .NET y que se conectan a Azure IoT Hub.</span><span class="sxs-lookup"><span data-stu-id="ce2e6-109">The device SDK for .NET facilitates building devices running .NET that connect to Azure IoT Hub.</span></span>
 
-<span data-ttu-id="90d14-111">El SDK de servicio para .NET facilita la creación de aplicaciones de back-end que utilizan .NET y que administran y permiten dispositivos de control desde la nube.</span><span class="sxs-lookup"><span data-stu-id="90d14-111">The service SDK for .NET facilitates building back-end applications using .NET that manage and allow controlling devices from the Cloud.</span></span>
+<span data-ttu-id="ce2e6-110">El SDK de servicio para .NET facilita la creación de aplicaciones de back-end que utilizan .NET y que administran y permiten dispositivos de control desde la nube.</span><span class="sxs-lookup"><span data-stu-id="ce2e6-110">The service SDK for .NET facilitates building back-end applications using .NET that manage and allow controlling devices from the Cloud.</span></span>
 
-<span data-ttu-id="90d14-112">[Más información sobre Azure IoT](https://docs.microsoft.com/azure/iot-hub/).</span><span class="sxs-lookup"><span data-stu-id="90d14-112">[Learn more about Azure IoT](https://docs.microsoft.com/azure/iot-hub/).</span></span>
+<span data-ttu-id="ce2e6-111">[Más información sobre Azure IoT](https://docs.microsoft.com/azure/iot-hub/).</span><span class="sxs-lookup"><span data-stu-id="ce2e6-111">[Learn more about Azure IoT](https://docs.microsoft.com/azure/iot-hub/).</span></span>
 
 
-## <a name="client-library"></a><span data-ttu-id="90d14-113">Biblioteca de cliente</span><span class="sxs-lookup"><span data-stu-id="90d14-113">Client library</span></span>
+## <a name="client-library"></a><span data-ttu-id="ce2e6-112">Biblioteca de cliente</span><span class="sxs-lookup"><span data-stu-id="ce2e6-112">Client library</span></span>
 
-<span data-ttu-id="90d14-114">Utilice el cliente de dispositivos IoT de .NET para conectarse y enviar mensajes a su instancia de IoT Hub.</span><span class="sxs-lookup"><span data-stu-id="90d14-114">Use the .NET IoT devices client to connect and send messages to your IoT Hub.</span></span>
+<span data-ttu-id="ce2e6-113">Utilice el cliente de dispositivos IoT de .NET para conectarse y enviar mensajes a su instancia de IoT Hub.</span><span class="sxs-lookup"><span data-stu-id="ce2e6-113">Use the .NET IoT devices client to connect and send messages to your IoT Hub.</span></span>
 
-<span data-ttu-id="90d14-115">Instale el [paquete NuGet]( https://www.nuget.org/packages/Microsoft.Azure.Devices.Client) directamente desde la [Consola del Administración de paquetes][PackageManager] de Visual Studio o con la [CLI de .NET Core][DotNetCLI].</span><span class="sxs-lookup"><span data-stu-id="90d14-115">Install the [NuGet package]( https://www.nuget.org/packages/Microsoft.Azure.Devices.Client) directly from the Visual Studio [Package Manager console][PackageManager] or with the [.NET Core CLI][DotNetCLI].</span></span>
+<span data-ttu-id="ce2e6-114">Instale el [paquete NuGet]( https://www.nuget.org/packages/Microsoft.Azure.Devices.Client) directamente desde la [Consola del Administración de paquetes][PackageManager] de Visual Studio o con la [CLI de .NET Core][DotNetCLI].</span><span class="sxs-lookup"><span data-stu-id="ce2e6-114">Install the [NuGet package]( https://www.nuget.org/packages/Microsoft.Azure.Devices.Client) directly from the Visual Studio [Package Manager console][PackageManager] or with the [.NET Core CLI][DotNetCLI].</span></span>
 
-#### <a name="visual-studio-package-manager"></a><span data-ttu-id="90d14-116">Administrador de paquetes de Visual Studio</span><span class="sxs-lookup"><span data-stu-id="90d14-116">Visual Studio Package Manager</span></span>
+#### <a name="visual-studio-package-manager"></a><span data-ttu-id="ce2e6-115">Administrador de paquetes de Visual Studio</span><span class="sxs-lookup"><span data-stu-id="ce2e6-115">Visual Studio Package Manager</span></span>
 
 ```powershell
 Install-Package Microsoft.Azure.Devices.Client
@@ -47,9 +41,9 @@ Install-Package Microsoft.Azure.Devices.Client
 ```bash
 dotnet add package Microsoft.Azure.Devices.Client
 ```
-### <a name="code-examples"></a><span data-ttu-id="90d14-117">Ejemplos de código</span><span class="sxs-lookup"><span data-stu-id="90d14-117">Code Examples</span></span> 
+### <a name="code-examples"></a><span data-ttu-id="ce2e6-116">Ejemplos de código</span><span class="sxs-lookup"><span data-stu-id="ce2e6-116">Code Examples</span></span> 
 
-<span data-ttu-id="90d14-118">En este ejemplo se conecta a IoT Hub y se envía un mensaje por segundo.</span><span class="sxs-lookup"><span data-stu-id="90d14-118">This example connects to the IoT Hub and sends one message per second.</span></span>
+<span data-ttu-id="ce2e6-117">En este ejemplo se conecta a IoT Hub y se envía un mensaje por segundo.</span><span class="sxs-lookup"><span data-stu-id="ce2e6-117">This example connects to the IoT Hub and sends one message per second.</span></span>
 
 ```csharp
 string deviceKey = "<deviceKey>";
@@ -84,15 +78,15 @@ while (true)
 
 
 > [!div class="nextstepaction"]
-> [<span data-ttu-id="90d14-119">Explorar las API de cliente</span><span class="sxs-lookup"><span data-stu-id="90d14-119">Explore the client APIs</span></span>](/dotnet/api/overview/azure/iot/client)
+> [<span data-ttu-id="ce2e6-118">Explorar las API de cliente</span><span class="sxs-lookup"><span data-stu-id="ce2e6-118">Explore the client APIs</span></span>](/dotnet/api/overview/azure/iot/client)
 
-## <a name="samples"></a><span data-ttu-id="90d14-120">Ejemplos</span><span class="sxs-lookup"><span data-stu-id="90d14-120">Samples</span></span>
+## <a name="samples"></a><span data-ttu-id="ce2e6-119">Ejemplos</span><span class="sxs-lookup"><span data-stu-id="ce2e6-119">Samples</span></span>
 
-- [<span data-ttu-id="90d14-121">Servicio web genérico al escenario de centro de eventos</span><span class="sxs-lookup"><span data-stu-id="90d14-121">Generic Web Service to Event Hub scenario</span></span>](https://azure.microsoft.com/resources/samples/event-hubs-dotnet-importfromweb/)
+- [<span data-ttu-id="ce2e6-120">Servicio web genérico al escenario de centro de eventos</span><span class="sxs-lookup"><span data-stu-id="ce2e6-120">Generic Web Service to Event Hub scenario</span></span>](https://azure.microsoft.com/resources/samples/event-hubs-dotnet-importfromweb/)
 
-<span data-ttu-id="90d14-122">Consulte la [lista completa](https://azure.microsoft.com/resources/samples/?platform=dotnet&service=iot-hub) de ejemplos de Azure IoT Hub.</span><span class="sxs-lookup"><span data-stu-id="90d14-122">View the [complete list](https://azure.microsoft.com/resources/samples/?platform=dotnet&service=iot-hub) of Azure IoT Upsamples.</span></span>
+<span data-ttu-id="ce2e6-121">Consulte la [lista completa](https://azure.microsoft.com/resources/samples/?platform=dotnet&service=iot-hub) de ejemplos de Azure IoT Hub.</span><span class="sxs-lookup"><span data-stu-id="ce2e6-121">View the [complete list](https://azure.microsoft.com/resources/samples/?platform=dotnet&service=iot-hub) of Azure IoT Upsamples.</span></span>
 
-<span data-ttu-id="90d14-123">Consulte la [guía para desarrolladores de Azure IoT Hub](https://docs.microsoft.com/azure/iot-hub/iot-hub-devguide) para más información.</span><span class="sxs-lookup"><span data-stu-id="90d14-123">View the [Azure IoT Hub developer guide](https://docs.microsoft.com/azure/iot-hub/iot-hub-devguide) for more guidance.</span></span>
+<span data-ttu-id="ce2e6-122">Consulte la [guía para desarrolladores de Azure IoT Hub](https://docs.microsoft.com/azure/iot-hub/iot-hub-devguide) para más información.</span><span class="sxs-lookup"><span data-stu-id="ce2e6-122">View the [Azure IoT Hub developer guide](https://docs.microsoft.com/azure/iot-hub/iot-hub-devguide) for more guidance.</span></span>
 
 [PackageManager]: https://docs.microsoft.com/nuget/tools/package-manager-console
 [DotNetCLI]: https://docs.microsoft.com/dotnet/core/tools/dotnet-add-package

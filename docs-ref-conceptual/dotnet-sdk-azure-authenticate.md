@@ -1,28 +1,19 @@
 ---
 title: Autenticación con las bibliotecas de Azure para .NET
 description: Autenticación en las bibliotecas de Azure para .NET
-keywords: Azure, .NET, SDK, API, autenticación, active directory, entidad de servicio
-author: camsoper
-ms.author: casoper
-manager: wpickett
 ms.date: 08/22/2018
-ms.topic: reference
-ms.technology: azure
-ms.devlang: dotnet
-ms.service: multiple
-ms.custom: devcenter
-ms.openlocfilehash: 019f0047fb141842eb1481ad9b835fa865a9a139
-ms.sourcegitcommit: b2a53a3aea9de6720bd975fb7fe4e722e9d182a3
+ms.openlocfilehash: d0d8db89816a887fa23490a213917a3c554ecdb4
+ms.sourcegitcommit: 5d9b713653b3d03e1d0a67f6e126ee399d1c2a60
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "42703048"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47190868"
 ---
-# <a name="authenticate-with-the-azure-libraries-for-net"></a><span data-ttu-id="d4e98-104">Autenticación con las bibliotecas de Azure para .NET</span><span class="sxs-lookup"><span data-stu-id="d4e98-104">Authenticate with the Azure Libraries for .NET</span></span>
+# <a name="authenticate-with-the-azure-libraries-for-net"></a><span data-ttu-id="61a65-103">Autenticación con las bibliotecas de Azure para .NET</span><span class="sxs-lookup"><span data-stu-id="61a65-103">Authenticate with the Azure Libraries for .NET</span></span>
 
-## <a name="connect-to-services-with-connection-strings"></a><span data-ttu-id="d4e98-105">Conexión a los servicios con cadenas de conexión</span><span class="sxs-lookup"><span data-stu-id="d4e98-105">Connect to services with connection strings</span></span>
+## <a name="connect-to-services-with-connection-strings"></a><span data-ttu-id="61a65-104">Conexión a los servicios con cadenas de conexión</span><span class="sxs-lookup"><span data-stu-id="61a65-104">Connect to services with connection strings</span></span>
 
-<span data-ttu-id="d4e98-106">La mayoría de las bibliotecas de servicio de Azure necesitan claves o una cadena de conexión para la autenticación.</span><span class="sxs-lookup"><span data-stu-id="d4e98-106">Most Azure service libraries require a connection string or keys for authentication.</span></span> <span data-ttu-id="d4e98-107">Por ejemplo, SQL Database usa una cadena de conexión SQL estándar:</span><span class="sxs-lookup"><span data-stu-id="d4e98-107">For example, SQL Database uses a standard SQL connection string:</span></span>
+<span data-ttu-id="61a65-105">La mayoría de las bibliotecas de servicio de Azure necesitan claves o una cadena de conexión para la autenticación.</span><span class="sxs-lookup"><span data-stu-id="61a65-105">Most Azure service libraries require a connection string or keys for authentication.</span></span> <span data-ttu-id="61a65-106">Por ejemplo, SQL Database usa una cadena de conexión SQL estándar:</span><span class="sxs-lookup"><span data-stu-id="61a65-106">For example, SQL Database uses a standard SQL connection string:</span></span>
 
 ```csharp
 var builder = new SqlConnectionStringBuilder();
@@ -41,7 +32,7 @@ using (var conn = new SqlConnection(builder.ConnectionString))
 }
 ```
 
-<span data-ttu-id="d4e98-108">Azure Storage usa una clave de almacenamiento:</span><span class="sxs-lookup"><span data-stu-id="d4e98-108">Azure Storage uses a storage key:</span></span>
+<span data-ttu-id="61a65-107">Azure Storage usa una clave de almacenamiento:</span><span class="sxs-lookup"><span data-stu-id="61a65-107">Azure Storage uses a storage key:</span></span>
 
 ```csharp
 string storageConnectionString = "DefaultEndpointsProtocol=https;"
@@ -53,9 +44,9 @@ var account = CloudStorageAccount.Parse(storageConnectionString);
 // Do things with the account here...
 ```
 
-<span data-ttu-id="d4e98-109">Las cadenas de conexión de servicio se utilizan en otros servicios de Azure como [CosmosDB](/azure/documentdb/documentdb-dotnet-application#a-nametoc395637769astep-5-wiring-up-azure-cosmos-db), [Redis Cache](/azure/redis-cache/cache-dotnet-how-to-use-azure-redis-cache) y [Service Bus](/azure/service-bus-messaging/service-bus-dotnet-get-started-with-queues), y puede obtener estas cadenas mediante Azure Portal, la CLI o PowerShell.</span><span class="sxs-lookup"><span data-stu-id="d4e98-109">Service connection strings are used in other Azure services like [CosmosDB](/azure/documentdb/documentdb-dotnet-application#a-nametoc395637769astep-5-wiring-up-azure-cosmos-db), [Redis Cache](/azure/redis-cache/cache-dotnet-how-to-use-azure-redis-cache), and [Service Bus](/azure/service-bus-messaging/service-bus-dotnet-get-started-with-queues) and you can get those strings using the Azure portal, CLI, or PowerShell.</span></span>  <span data-ttu-id="d4e98-110">También puede usar las bibliotecas de administración de Azure para .NET para consultar recursos para generar cadenas de conexión en el código.</span><span class="sxs-lookup"><span data-stu-id="d4e98-110">You can also use the Azure management libraries for .NET to query resources to build connection strings in your code.</span></span> 
+<span data-ttu-id="61a65-108">Las cadenas de conexión de servicio se utilizan en otros servicios de Azure como [CosmosDB](/azure/documentdb/documentdb-dotnet-application#a-nametoc395637769astep-5-wiring-up-azure-cosmos-db), [Redis Cache](/azure/redis-cache/cache-dotnet-how-to-use-azure-redis-cache) y [Service Bus](/azure/service-bus-messaging/service-bus-dotnet-get-started-with-queues), y puede obtener estas cadenas mediante Azure Portal, la CLI o PowerShell.</span><span class="sxs-lookup"><span data-stu-id="61a65-108">Service connection strings are used in other Azure services like [CosmosDB](/azure/documentdb/documentdb-dotnet-application#a-nametoc395637769astep-5-wiring-up-azure-cosmos-db), [Redis Cache](/azure/redis-cache/cache-dotnet-how-to-use-azure-redis-cache), and [Service Bus](/azure/service-bus-messaging/service-bus-dotnet-get-started-with-queues) and you can get those strings using the Azure portal, CLI, or PowerShell.</span></span>  <span data-ttu-id="61a65-109">También puede usar las bibliotecas de administración de Azure para .NET para consultar recursos para generar cadenas de conexión en el código.</span><span class="sxs-lookup"><span data-stu-id="61a65-109">You can also use the Azure management libraries for .NET to query resources to build connection strings in your code.</span></span> 
 
-<span data-ttu-id="d4e98-111">Este fragmento de código usa las bibliotecas de administración para crear una cadena de conexión de la cuenta de almacenamiento:</span><span class="sxs-lookup"><span data-stu-id="d4e98-111">This snippet uses the management libraries to create a storage account connection string:</span></span>
+<span data-ttu-id="61a65-110">Este fragmento de código usa las bibliotecas de administración para crear una cadena de conexión de la cuenta de almacenamiento:</span><span class="sxs-lookup"><span data-stu-id="61a65-110">This snippet uses the management libraries to create a storage account connection string:</span></span>
 
 ```csharp
 // Get a storage account
@@ -76,24 +67,24 @@ var account = CloudStorageAccount.Parse(storageConnectionString);
 // Do things with the account here...
 ```
 
-<span data-ttu-id="d4e98-112">Otras bibliotecas requieren que la aplicación se ejecute con una [entidad de servicio](https://docs.microsoft.com/azure/active-directory/develop/active-directory-application-objects) que autoriza la ejecución de la aplicación con las credenciales otorgadas.</span><span class="sxs-lookup"><span data-stu-id="d4e98-112">Other libraries require your application to run with a [service principal](https://docs.microsoft.com/azure/active-directory/develop/active-directory-application-objects) authorizing the application to run with granted credentials.</span></span> <span data-ttu-id="d4e98-113">Esta configuración es similar a los pasos de la autenticación basada en objetos para la biblioteca de administración que se enumeran a continuación.</span><span class="sxs-lookup"><span data-stu-id="d4e98-113">This configuration is similar to the object-based authentication steps for the management library listed below.</span></span>
+<span data-ttu-id="61a65-111">Otras bibliotecas requieren que la aplicación se ejecute con una [entidad de servicio](https://docs.microsoft.com/azure/active-directory/develop/active-directory-application-objects) que autoriza la ejecución de la aplicación con las credenciales otorgadas.</span><span class="sxs-lookup"><span data-stu-id="61a65-111">Other libraries require your application to run with a [service principal](https://docs.microsoft.com/azure/active-directory/develop/active-directory-application-objects) authorizing the application to run with granted credentials.</span></span> <span data-ttu-id="61a65-112">Esta configuración es similar a los pasos de la autenticación basada en objetos para la biblioteca de administración que se enumeran a continuación.</span><span class="sxs-lookup"><span data-stu-id="61a65-112">This configuration is similar to the object-based authentication steps for the management library listed below.</span></span>
 
-## <a name="mgmt-auth"></a><span data-ttu-id="d4e98-114">Bibliotecas de administración de Azure para .NET y Java</span><span class="sxs-lookup"><span data-stu-id="d4e98-114">Azure management libraries for .NET authentication</span></span>
+## <a name="mgmt-auth"></a><span data-ttu-id="61a65-113">Bibliotecas de administración de Azure para .NET y Java</span><span class="sxs-lookup"><span data-stu-id="61a65-113">Azure management libraries for .NET authentication</span></span>
 
 [!include[Create service principal](includes/create-sp.md)]
 
-<span data-ttu-id="d4e98-115">Ahora que ya está creada la entidad de servicio, hay dos opciones disponibles para autenticarse en la entidad de servicio para crear y administrar los recursos.</span><span class="sxs-lookup"><span data-stu-id="d4e98-115">Now that the service principal is created, two options are available to authenticate to the service principal to create and manage resources.</span></span>
+<span data-ttu-id="61a65-114">Ahora que ya está creada la entidad de servicio, hay dos opciones disponibles para autenticarse en la entidad de servicio para crear y administrar los recursos.</span><span class="sxs-lookup"><span data-stu-id="61a65-114">Now that the service principal is created, two options are available to authenticate to the service principal to create and manage resources.</span></span>
 
-<span data-ttu-id="d4e98-116">En ambas opciones, debe agregar los siguientes paquetes NuGet al proyecto.</span><span class="sxs-lookup"><span data-stu-id="d4e98-116">For both options you will need to add the following nuget packages to your project.</span></span>
+<span data-ttu-id="61a65-115">En ambas opciones, debe agregar los siguientes paquetes NuGet al proyecto.</span><span class="sxs-lookup"><span data-stu-id="61a65-115">For both options you will need to add the following nuget packages to your project.</span></span>
 
 ```
 Install-Package Microsoft.Azure.Management.Fluent
 Install-Package Microsoft.Azure.Management.ResourceManager.Fluent
 ```
 
-### <a name="authenticate-with-token-credentials"></a><span data-ttu-id="d4e98-117">Autenticación con credenciales de token</span><span class="sxs-lookup"><span data-stu-id="d4e98-117">Authenticate with token credentials</span></span>
+### <a name="authenticate-with-token-credentials"></a><span data-ttu-id="61a65-116">Autenticación con credenciales de token</span><span class="sxs-lookup"><span data-stu-id="61a65-116">Authenticate with token credentials</span></span>
 
-<span data-ttu-id="d4e98-118">El primer método consiste en generar el objeto de credencial de token en el código.</span><span class="sxs-lookup"><span data-stu-id="d4e98-118">The first method is to build the token credential object in code.</span></span>  <span data-ttu-id="d4e98-119">Debe almacenar las credenciales de forma segura en un archivo de configuración, el Registro o Azure KeyVault.</span><span class="sxs-lookup"><span data-stu-id="d4e98-119">You should store the credentials securely in a configuration file, the registry, or Azure KeyVault.</span></span>
+<span data-ttu-id="61a65-117">El primer método consiste en generar el objeto de credencial de token en el código.</span><span class="sxs-lookup"><span data-stu-id="61a65-117">The first method is to build the token credential object in code.</span></span>  <span data-ttu-id="61a65-118">Debe almacenar las credenciales de forma segura en un archivo de configuración, el Registro o Azure KeyVault.</span><span class="sxs-lookup"><span data-stu-id="61a65-118">You should store the credentials securely in a configuration file, the registry, or Azure KeyVault.</span></span>
 
 ```csharp
 var credentials = SdkContext.AzureCredentialsFactory
@@ -103,9 +94,9 @@ var credentials = SdkContext.AzureCredentialsFactory
     AzureEnvironment.AzureGlobalCloud);
 ```
 
-<span data-ttu-id="d4e98-120">Use los valores de *clientId*, *clientSecret* y *tenantId* de la salida JSON de la creación de la entidad de servicio.</span><span class="sxs-lookup"><span data-stu-id="d4e98-120">Use the *clientId*, *clientSecret*, and *tenantId* values from the JSON output when you created the service principal.</span></span>
+<span data-ttu-id="61a65-119">Use los valores de *clientId*, *clientSecret* y *tenantId* de la salida JSON de la creación de la entidad de servicio.</span><span class="sxs-lookup"><span data-stu-id="61a65-119">Use the *clientId*, *clientSecret*, and *tenantId* values from the JSON output when you created the service principal.</span></span>
 
-<span data-ttu-id="d4e98-121">Después, cree el objeto `Azure` de punto de entrada para empezar a trabajar con la API:</span><span class="sxs-lookup"><span data-stu-id="d4e98-121">Then create the entry point `Azure` object to start working with the API:</span></span>
+<span data-ttu-id="61a65-120">Después, cree el objeto `Azure` de punto de entrada para empezar a trabajar con la API:</span><span class="sxs-lookup"><span data-stu-id="61a65-120">Then create the entry point `Azure` object to start working with the API:</span></span>
 
 ```csharp
 var azure = Microsoft.Azure.Management.Fluent.Azure
@@ -114,13 +105,13 @@ var azure = Microsoft.Azure.Management.Fluent.Azure
     .WithDefaultSubscription();
 ```
 
-### <a name="mgmt-file"></a><span data-ttu-id="d4e98-122">Autenticación basada en archivo</span><span class="sxs-lookup"><span data-stu-id="d4e98-122">File-based authentication</span></span>
+### <a name="mgmt-file"></a><span data-ttu-id="61a65-121">Autenticación basada en archivo</span><span class="sxs-lookup"><span data-stu-id="61a65-121">File-based authentication</span></span>
 
-<span data-ttu-id="d4e98-123">La autenticación basada en archivo permite colocar las credenciales de la entidad de servicio en un archivo de texto sin formato y protegerlo en el sistema de archivos.</span><span class="sxs-lookup"><span data-stu-id="d4e98-123">File-based authentication allows you to put the service principal credentials in a plain text file and secure it within the file system.</span></span>
+<span data-ttu-id="61a65-122">La autenticación basada en archivo permite colocar las credenciales de la entidad de servicio en un archivo de texto sin formato y protegerlo en el sistema de archivos.</span><span class="sxs-lookup"><span data-stu-id="61a65-122">File-based authentication allows you to put the service principal credentials in a plain text file and secure it within the file system.</span></span>
 
 [!include[File-based authentication](includes/file-based-auth.md)]
 
-<span data-ttu-id="d4e98-124">Lea el contenido del archivo y cree el objeto `Azure` de punto de entrada para empezar a trabajar con la API:</span><span class="sxs-lookup"><span data-stu-id="d4e98-124">Read the contents of the file and create the entry point `Azure` object to start working with the API:</span></span>
+<span data-ttu-id="61a65-123">Lea el contenido del archivo y cree el objeto `Azure` de punto de entrada para empezar a trabajar con la API:</span><span class="sxs-lookup"><span data-stu-id="61a65-123">Read the contents of the file and create the entry point `Azure` object to start working with the API:</span></span>
 
 ```csharp
 // pull in the location of the authentication properties file from the environment 

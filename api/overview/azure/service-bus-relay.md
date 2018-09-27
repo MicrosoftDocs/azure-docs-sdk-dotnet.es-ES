@@ -1,35 +1,29 @@
 ---
 title: Bibliotecas de Azure Service Bus Relay para .NET
 description: Referencia de las bibliotecas de Azure Service Bus Relay para .NET
-keywords: Azure, .NET, SDK, API, Service Bus Relay
-author: camsoper
-ms.author: casoper
-manager: wpickett
 ms.date: 10/19/2017
 ms.topic: reference
-ms.devlang: dotnet
 ms.service: service-bus
-ms.custom: devcenter, svc-overview
-ms.openlocfilehash: e0dd9c9b0a187fe6ca81d764e60afd00cbaab654
-ms.sourcegitcommit: bfa1898c97798991215d08ce89dea87efff44157
+ms.openlocfilehash: 75c481ab23e461c5194a9eeb0ca668af98f4d2d7
+ms.sourcegitcommit: 5d9b713653b3d03e1d0a67f6e126ee399d1c2a60
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/28/2018
-ms.locfileid: "37065955"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47189988"
 ---
-# <a name="azure-service-bus-relay-libraries-for-net"></a><span data-ttu-id="60961-104">Bibliotecas de Azure Service Bus Relay para .NET</span><span class="sxs-lookup"><span data-stu-id="60961-104">Azure Service Bus Relay libraries for .NET</span></span>
+# <a name="azure-service-bus-relay-libraries-for-net"></a><span data-ttu-id="490d2-103">Bibliotecas de Azure Service Bus Relay para .NET</span><span class="sxs-lookup"><span data-stu-id="490d2-103">Azure Service Bus Relay libraries for .NET</span></span>
 
-## <a name="overview"></a><span data-ttu-id="60961-105">Información general</span><span class="sxs-lookup"><span data-stu-id="60961-105">Overview</span></span>
+## <a name="overview"></a><span data-ttu-id="490d2-104">Información general</span><span class="sxs-lookup"><span data-stu-id="490d2-104">Overview</span></span>
 
-<span data-ttu-id="60961-106">El servicio Azure Relay crea aplicaciones híbridas, ya que permite exponer de forma segura los servicios que se encuentran en una red corporativa en la nube pública sin tener que abrir una conexión de firewall y sin que sea necesario realizar cambios intrusivos en una infraestructura de red corporativa.</span><span class="sxs-lookup"><span data-stu-id="60961-106">The Azure Relay service creates hybrid applications by enabling you to securely expose services that reside within a corporate enterprise network to the public cloud, without having to open a firewall connection, or require intrusive changes to a corporate network infrastructure.</span></span> <span data-ttu-id="60961-107">Relay admite diversos protocolos de transporte y estándares de servicios web.</span><span class="sxs-lookup"><span data-stu-id="60961-107">Relay supports a variety of different transport protocols and web services standards.</span></span>
+<span data-ttu-id="490d2-105">El servicio Azure Relay crea aplicaciones híbridas, ya que permite exponer de forma segura los servicios que se encuentran en una red corporativa en la nube pública sin tener que abrir una conexión de firewall y sin que sea necesario realizar cambios intrusivos en una infraestructura de red corporativa.</span><span class="sxs-lookup"><span data-stu-id="490d2-105">The Azure Relay service creates hybrid applications by enabling you to securely expose services that reside within a corporate enterprise network to the public cloud, without having to open a firewall connection, or require intrusive changes to a corporate network infrastructure.</span></span> <span data-ttu-id="490d2-106">Relay admite diversos protocolos de transporte y estándares de servicios web.</span><span class="sxs-lookup"><span data-stu-id="490d2-106">Relay supports a variety of different transport protocols and web services standards.</span></span>
           
-<span data-ttu-id="60961-108">Más información acerca de [Azure Relay](/azure/service-bus-relay/relay-what-is-it).</span><span class="sxs-lookup"><span data-stu-id="60961-108">Learn more about [Azure Relay](/azure/service-bus-relay/relay-what-is-it).</span></span>
+<span data-ttu-id="490d2-107">Más información acerca de [Azure Relay](/azure/service-bus-relay/relay-what-is-it).</span><span class="sxs-lookup"><span data-stu-id="490d2-107">Learn more about [Azure Relay](/azure/service-bus-relay/relay-what-is-it).</span></span>
 
-## <a name="client-library"></a><span data-ttu-id="60961-109">Biblioteca de cliente</span><span class="sxs-lookup"><span data-stu-id="60961-109">Client library</span></span>
+## <a name="client-library"></a><span data-ttu-id="490d2-108">Biblioteca de cliente</span><span class="sxs-lookup"><span data-stu-id="490d2-108">Client library</span></span>
 
-<span data-ttu-id="60961-110">Instale el [paquete NuGet](https://www.nuget.org/packages/Microsoft.Azure.Relay) directamente desde la [Consola del Administración de paquetes][PackageManager] de Visual Studio o con la [CLI de .NET Core][DotNetCLI].</span><span class="sxs-lookup"><span data-stu-id="60961-110">Install the [NuGet package](https://www.nuget.org/packages/Microsoft.Azure.Relay) directly from the Visual Studio [Package Manager console][PackageManager] or with the [.NET Core CLI][DotNetCLI].</span></span>
+<span data-ttu-id="490d2-109">Instale el [paquete NuGet](https://www.nuget.org/packages/Microsoft.Azure.Relay) directamente desde la [Consola del Administración de paquetes][PackageManager] de Visual Studio o con la [CLI de .NET Core][DotNetCLI].</span><span class="sxs-lookup"><span data-stu-id="490d2-109">Install the [NuGet package](https://www.nuget.org/packages/Microsoft.Azure.Relay) directly from the Visual Studio [Package Manager console][PackageManager] or with the [.NET Core CLI][DotNetCLI].</span></span>
 
-#### <a name="visual-studio-package-manager"></a><span data-ttu-id="60961-111">Administrador de paquetes de Visual Studio</span><span class="sxs-lookup"><span data-stu-id="60961-111">Visual Studio Package Manager</span></span>
+#### <a name="visual-studio-package-manager"></a><span data-ttu-id="490d2-110">Administrador de paquetes de Visual Studio</span><span class="sxs-lookup"><span data-stu-id="490d2-110">Visual Studio Package Manager</span></span>
 
 ```powershell
 Install-Package Microsoft.Azure.Relay
@@ -40,11 +34,11 @@ dotnet add package Microsoft.Azure.Relay
 ```
 
 > [!div class="nextstepaction"]
-> [<span data-ttu-id="60961-112">Explorar las API de cliente</span><span class="sxs-lookup"><span data-stu-id="60961-112">Explore the client APIs</span></span>](/dotnet/api/overview/azure/relay/client)
+> [<span data-ttu-id="490d2-111">Explorar las API de cliente</span><span class="sxs-lookup"><span data-stu-id="490d2-111">Explore the client APIs</span></span>](/dotnet/api/overview/azure/relay/client)
 
-## <a name="samples"></a><span data-ttu-id="60961-113">Ejemplos</span><span class="sxs-lookup"><span data-stu-id="60961-113">Samples</span></span>
+## <a name="samples"></a><span data-ttu-id="490d2-112">Ejemplos</span><span class="sxs-lookup"><span data-stu-id="490d2-112">Samples</span></span>
 
-<span data-ttu-id="60961-114">Explore más [código de .NET de ejemplo](https://azure.microsoft.com/resources/samples/?platform=dotnet) que puede usar en sus aplicaciones.</span><span class="sxs-lookup"><span data-stu-id="60961-114">Explore more [sample .NET code](https://azure.microsoft.com/resources/samples/?platform=dotnet) you can use in your apps.</span></span>
+<span data-ttu-id="490d2-113">Explore más [código de .NET de ejemplo](https://azure.microsoft.com/resources/samples/?platform=dotnet) que puede usar en sus aplicaciones.</span><span class="sxs-lookup"><span data-stu-id="490d2-113">Explore more [sample .NET code](https://azure.microsoft.com/resources/samples/?platform=dotnet) you can use in your apps.</span></span>
 
 [PackageManager]: https://docs.microsoft.com/nuget/tools/package-manager-console
 [DotNetCLI]: https://docs.microsoft.com/dotnet/core/tools/dotnet-add-package
