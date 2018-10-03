@@ -1,329 +1,78 @@
 ---
-title: Introducción a las API de .NET y .NET Core de Azure
-description: Adéntrese en el uso básico de las bibliotecas de Azure para .NET y .NET Core con su propia suscripción de Azure.
-keywords: Azure,. NET, .NET Core, ASP.NET, ASP.NET Core SDK, API, autenticar, introducción
-author: camsoper
-ms.author: casoper
-manager: wpickett
-ms.date: 08/22/2018
-ms.topic: reference
-ms.technology: azure
-ms.devlang: dotnet
-ms.service: multiple
-ms.custom: devcenter
-ms.openlocfilehash: ad894e47704fcccc83f7d02acb8e418b167993f9
-ms.sourcegitcommit: b2a53a3aea9de6720bd975fb7fe4e722e9d182a3
+title: Introducción a Azure y .NET
+description: Obtenga información sobre los conceptos básicos que necesita saber acerca de Azure y .NET.
+ms.date: 09/19/2018
+ms.openlocfilehash: 89fdae6afa5c040127975de43c79d837550a9fbc
+ms.sourcegitcommit: 5d9b713653b3d03e1d0a67f6e126ee399d1c2a60
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "42703058"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47190598"
 ---
-# <a name="get-started-with-the-azure-net-and-net-core-apis"></a><span data-ttu-id="0fa1e-104">Introducción a las API de .NET y .NET Core de Azure</span><span class="sxs-lookup"><span data-stu-id="0fa1e-104">Get started with the Azure .NET and .NET Core APIs</span></span>
+# <a name="get-started-with-azure-and-net"></a><span data-ttu-id="f8ae6-103">Introducción a Azure y .NET</span><span class="sxs-lookup"><span data-stu-id="f8ae6-103">Get started with Azure and .NET</span></span>
 
-<span data-ttu-id="0fa1e-105">En este tutorial se demuestra el uso de varias [API de Azure para .NET](/dotnet/api/overview/azure/).</span><span class="sxs-lookup"><span data-stu-id="0fa1e-105">This tutorial demonstrates the usage of several [Azure APIs for .NET](/dotnet/api/overview/azure/).</span></span>  <span data-ttu-id="0fa1e-106">Configurará la autenticación, creará y usará una cuenta de Azure Storage, creará y usará una instancia de Azure SQL Database, implementará algunas máquinas virtuales e implementará una aplicación web de Azure App Service desde GitHub.</span><span class="sxs-lookup"><span data-stu-id="0fa1e-106">You will set up authentication, create and use an Azure Storage account, create and use an Azure SQL Database, deploy some virtual machines, and deploy an Azure App Service Web App from GitHub.</span></span>
+<span data-ttu-id="f8ae6-104">Este documento proporciona información general sobre los conceptos clave y los servicios de .NET con los que los desarrolladores deben estar familiarizados para comenzar a desarrollar aplicaciones con los servicios de Azure.</span><span class="sxs-lookup"><span data-stu-id="f8ae6-104">This document provides an overview of key concepts and services .NET developers should be familar with to get started developing apps using Azure services.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="0fa1e-107">Requisitos previos</span><span class="sxs-lookup"><span data-stu-id="0fa1e-107">Prerequisites</span></span>
+## <a name="key-concepts"></a><span data-ttu-id="f8ae6-105">Conceptos clave</span><span class="sxs-lookup"><span data-stu-id="f8ae6-105">Key Concepts</span></span>
 
-- <span data-ttu-id="0fa1e-108">Una cuenta de Azure.</span><span class="sxs-lookup"><span data-stu-id="0fa1e-108">An Azure account.</span></span> <span data-ttu-id="0fa1e-109">Si no tiene una, [consiga una evaluación gratuita](https://azure.microsoft.com/free/).</span><span class="sxs-lookup"><span data-stu-id="0fa1e-109">If you don't have one, [get a free trial](https://azure.microsoft.com/free/)</span></span>
+<span data-ttu-id="f8ae6-106">**Cuenta de Azure**: la cuenta de Azure es la credencial que usa para iniciar sesión en los servicios de Azure, como [Azure Portal](https://portal.azure.com) o [Cloud Shell](https://shell.azure.com).</span><span class="sxs-lookup"><span data-stu-id="f8ae6-106">**Azure account**: Your Azure account is the credential you use to sign into Azure services, such as the [Azure Portal](https://portal.azure.com) or [Cloud Shell](https://shell.azure.com).</span></span> <span data-ttu-id="f8ae6-107">Si no tiene una cuenta de Azure, puede [crear una gratis](https://azure.microsoft.com/free/dotnet/).</span><span class="sxs-lookup"><span data-stu-id="f8ae6-107">If you don't have an Azure account, you can [create one for free](https://azure.microsoft.com/free/dotnet/).</span></span>
 
-## <a name="set-up-authentication"></a><span data-ttu-id="0fa1e-110">Configuración de la autenticación</span><span class="sxs-lookup"><span data-stu-id="0fa1e-110">Set up authentication</span></span>
+<span data-ttu-id="f8ae6-108">**Suscripción de Azure**: una suscripción es el plan de facturación en el que se crean los recursos de Azure.</span><span class="sxs-lookup"><span data-stu-id="f8ae6-108">**Azure subscription**: A subscription is the billing plan within which Azure resources are created.</span></span> <span data-ttu-id="f8ae6-109">Las suscripciones pueden ser suscripciones individuales o suscripciones empresariales administradas por su empresa.</span><span class="sxs-lookup"><span data-stu-id="f8ae6-109">Subscriptions can be individual subscriptions or enterprise subscriptions managed by your company.</span></span> <span data-ttu-id="f8ae6-110">La cuenta de Azure puede asociarse a varias suscripciones.</span><span class="sxs-lookup"><span data-stu-id="f8ae6-110">Your Azure account can be associated with multiple subscriptions.</span></span> <span data-ttu-id="f8ae6-111">En este caso, asegúrese de seleccionar la suscripción correcta al crear recursos.</span><span class="sxs-lookup"><span data-stu-id="f8ae6-111">In this case, make sure you're selecting the correct subscription when creating resources.</span></span> <span data-ttu-id="f8ae6-112">Para más información, consulte [Descripción de las cuentas, suscripciones y facturación](https://docs.microsoft.com/azure/guides/developer/azure-developer-guide#understanding-accounts-subscriptions-and-billing).</span><span class="sxs-lookup"><span data-stu-id="f8ae6-112">For more information, see [Understanding accounts, subscriptions and billing](https://docs.microsoft.com/azure/guides/developer/azure-developer-guide#understanding-accounts-subscriptions-and-billing).</span></span>
 
-[!include[Create service principal](includes/create-sp.md)]
+> [!TIP]
+> <span data-ttu-id="f8ae6-113">Si tiene una suscripción de Visual Studio, [tiene créditos mensuales de Azure a la espera de ser activados](https://azure.microsoft.com/pricing/member-offers/credit-for-visual-studio-subscribers/).</span><span class="sxs-lookup"><span data-stu-id="f8ae6-113">If you have a Visual Studio subscription, [you have monthly Azure credits waiting to be activated](https://azure.microsoft.com/pricing/member-offers/credit-for-visual-studio-subscribers/).</span></span>
 
-[!include[File-based authentication](includes/file-based-auth.md)]
+<span data-ttu-id="f8ae6-114">**Grupo de recursos**: los grupos de recursos son una manera de organizar los recursos de Azure en grupos para su administración.</span><span class="sxs-lookup"><span data-stu-id="f8ae6-114">**Resource group**: Resource groups are a way to organize your Azure resources into groups for management.</span></span> <span data-ttu-id="f8ae6-115">Los recursos creados en Azure se almacenarán en un grupo de recursos, algo similar a guardar un archivo en una carpeta en un equipo.</span><span class="sxs-lookup"><span data-stu-id="f8ae6-115">Resources created in Azure will be stored in a resource group, similar to saving a file in a folder on a computer.</span></span>
 
-## <a name="create-a-new-project"></a><span data-ttu-id="0fa1e-111">Creación de un nuevo proyecto</span><span class="sxs-lookup"><span data-stu-id="0fa1e-111">Create a new project</span></span> 
+<span data-ttu-id="f8ae6-116">**Hospedaje**: para ejecutar código en Azure, debe estar hospedado en un servicio que admita la ejecución de código proporcionado por el usuario.</span><span class="sxs-lookup"><span data-stu-id="f8ae6-116">**Hosting**: To run code in Azure, it needs to be hosted in a service that supports executing user-provided code.</span></span>
 
-<span data-ttu-id="0fa1e-112">Cree un nuevo proyecto de aplicación de consola.</span><span class="sxs-lookup"><span data-stu-id="0fa1e-112">Create a new console application project.</span></span>  <span data-ttu-id="0fa1e-113">En Visual Studio, haga clic en **Archivo**, **Nuevo** y luego haga clic en **Proyecto...** .  En las plantillas de Visual C#, seleccione **Aplicación de consola (.NET Core)**, asigne un nombre a su proyecto y luego haga clic en **Aceptar**.</span><span class="sxs-lookup"><span data-stu-id="0fa1e-113">In Visual Studio, do this by clicking **File**, **New**, and then clicking **Project...**.  Under the Visual C# templates, select **Console App (.NET Core)**, name your project, and then click **OK**.</span></span>
+<span data-ttu-id="f8ae6-117">**Servicios administrados**: Azure proporciona algunos servicios en los que se proporciona información o datos a Azure y la implementación de Azure toma las acciones oportunas.</span><span class="sxs-lookup"><span data-stu-id="f8ae6-117">**Managed services**: Azure provides some services where you provide data or information to Azure, and Azure's implementation takes the appropriate action.</span></span> <span data-ttu-id="f8ae6-118">Un ejemplo es Azure Blob Storage, donde se proporcionan los archivos y Azure se encarga de leerlos, escribirlos y almacenarlos.</span><span class="sxs-lookup"><span data-stu-id="f8ae6-118">One example is Azure Blob Storage, where you provide files and Azure handles reading, writing, and persisting them.</span></span>
 
-![Cuadro de diálogo Nuevo proyecto](media/dotnet-sdk-azure-get-started/new-project.png)
+## <a name="choosing-a-hosting-option"></a><span data-ttu-id="f8ae6-119">Elección de una opción de hospedaje</span><span class="sxs-lookup"><span data-stu-id="f8ae6-119">Choosing a hosting option</span></span>
 
-<span data-ttu-id="0fa1e-115">Cuando se cree la nueva aplicación de consola, abra la Consola del Administrador de paquetes; para ello, haga clic en **Herramientas**, **Administrador de paquetes de NuGet** y luego haga clic en **Consola del Administrador de paquetes**.</span><span class="sxs-lookup"><span data-stu-id="0fa1e-115">When the new console app is created, open the Package Manager Console by clicking **Tools**, **NuGet Package Manager**, and then click **Package Manager Console**.</span></span>  <span data-ttu-id="0fa1e-116">En la consola, ejecute los tres comandos siguientes para obtener los paquetes que necesita:</span><span class="sxs-lookup"><span data-stu-id="0fa1e-116">In the console, get the packages you'll need by executing the following three commands:</span></span>
+<span data-ttu-id="f8ae6-120">El hospedaje en Azure se puede dividir en tres categorías.</span><span class="sxs-lookup"><span data-stu-id="f8ae6-120">Hosting in Azure can be divided into three categories.</span></span>
 
-```powershell
-# Azure Management Libraries for .NET (Fluent)
-Install-Package Microsoft.Azure.Management.Fluent
+* <span data-ttu-id="f8ae6-121">**Infraestructura como servicio (IaaS)**: con IaaS, se aprovisionan las máquinas virtuales que se necesitan junto con los componentes de red y almacenamiento asociados.</span><span class="sxs-lookup"><span data-stu-id="f8ae6-121">**Infrastructure-as-a-Service (IaaS)**: With IaaS, you provision the virtual machines you need along with associated network and storage components.</span></span> <span data-ttu-id="f8ae6-122">A continuación, el usuario implementa el software y las aplicaciones que desee en esas máquinas virtuales.</span><span class="sxs-lookup"><span data-stu-id="f8ae6-122">You then deploy whatever software and applications you want onto those VMs.</span></span> <span data-ttu-id="f8ae6-123">Este modelo es lo más parecido a un entorno local tradicional, salvo que Microsoft administra la infraestructura.</span><span class="sxs-lookup"><span data-stu-id="f8ae6-123">This model is the closest to a traditional on-premises environment except that Microsoft manages the infrastructure.</span></span> <span data-ttu-id="f8ae6-124">El usuario administra las máquinas virtuales individuales, incluidos el sistema operativo, el software personalizado y las actualizaciones de seguridad.</span><span class="sxs-lookup"><span data-stu-id="f8ae6-124">You still manage the individual VMs, including the operating system, custom software, and security updates.</span></span>
 
-# Azure Store client libraries
-Install-Package WindowsAzure.Storage
+* <span data-ttu-id="f8ae6-125">**Plataforma como servicio (PaaS)**: PaaS proporciona un entorno de hospedaje administrado en el que se implementa la aplicación sin necesidad de administrar las máquinas virtuales o los recursos de red.</span><span class="sxs-lookup"><span data-stu-id="f8ae6-125">**Platform-as-a-Service (PaaS)**: PaaS provides a managed hosting environment where you deploy your application without needing to manage VMs or networking resources.</span></span> <span data-ttu-id="f8ae6-126">Por ejemplo, en lugar de crear máquinas virtuales individuales, se crea un recuento de instancias y el servicio aprovisiona, configura y administra los recursos necesarios.</span><span class="sxs-lookup"><span data-stu-id="f8ae6-126">For example, instead of creating individual VMs, you specify an instance count, and the service will provision, configure, and manage the necessary resources.</span></span> <span data-ttu-id="f8ae6-127">Azure App Service es un ejemplo de un servicio de PaaS.</span><span class="sxs-lookup"><span data-stu-id="f8ae6-127">Azure App Service is an example of a PaaS service.</span></span>
+  
+* <span data-ttu-id="f8ae6-128">**Funciones como servicio (FaaS)**: conocidas comúnmente como informática sin servidor, FaaS va más allá de PaaS al abstraer las preocupaciones del entorno de hospedaje.</span><span class="sxs-lookup"><span data-stu-id="f8ae6-128">**Functions-as-a-Service (FaaS)**: Commonly referred to as serverless computing, FaaS goes even further than PaaS in abstracting the concerns of the hosting environment.</span></span> <span data-ttu-id="f8ae6-129">En lugar de crear instancias de proceso y después implementar el código en esas instancias, se implementa el código y el servicio lo ejecuta automáticamente.</span><span class="sxs-lookup"><span data-stu-id="f8ae6-129">Instead of creating compute instances and then deploying code to those instances, you deploy your code and the service automatically runs it.</span></span> <span data-ttu-id="f8ae6-130">No es necesario administrar los recursos de proceso.</span><span class="sxs-lookup"><span data-stu-id="f8ae6-130">You don't need to administer the compute resources.</span></span> <span data-ttu-id="f8ae6-131">La plataforma escala sin problemas el código hasta el nivel necesario para controlar el tráfico y se paga solo cuando se ejecuta el código.</span><span class="sxs-lookup"><span data-stu-id="f8ae6-131">The platform seamlessly scales your code up or down to whatever level necessary to handle the traffic, and you pay only when your code is running.</span></span> <span data-ttu-id="f8ae6-132">Azure Functions es un servicio de FaaS.</span><span class="sxs-lookup"><span data-stu-id="f8ae6-132">Azure Functions is a FaaS service.</span></span>
 
-# SQL Database client libraries
-Install-Package System.Data.SqlClient
-```
+<span data-ttu-id="f8ae6-133">Por lo general, cuanto más favorece la aplicación los modelos FaaS y PaaS, más ventajas obtendrá de la ejecución en la nube.</span><span class="sxs-lookup"><span data-stu-id="f8ae6-133">Generally, the more your application favors FaaS and PaaS models, the more benefits you'll see from running in the cloud.</span></span> <span data-ttu-id="f8ae6-134">A continuación se muestra un resumen de las tres opciones de hospedaje más comunes en Azure y cuándo optar por ellas.</span><span class="sxs-lookup"><span data-stu-id="f8ae6-134">Below is a summary of three common hosting choices in Azure and when to choose them.</span></span>
 
-## <a name="directives"></a><span data-ttu-id="0fa1e-117">Directivas</span><span class="sxs-lookup"><span data-stu-id="0fa1e-117">Directives</span></span>
-
-<span data-ttu-id="0fa1e-118">Edite el archivo `Program.cs` de la aplicación.</span><span class="sxs-lookup"><span data-stu-id="0fa1e-118">Edit your application's `Program.cs` file.</span></span>  <span data-ttu-id="0fa1e-119">Reemplace las directivas `using` de la parte superior por lo siguiente:</span><span class="sxs-lookup"><span data-stu-id="0fa1e-119">Replace the `using` directives at the top with the following:</span></span>
-
-```csharp
-using System;
-using System.Linq;
-using Microsoft.Azure.Management.Compute.Fluent;
-using Microsoft.Azure.Management.Compute.Fluent.Models;
-using Microsoft.Azure.Management.Fluent;
-using Microsoft.Azure.Management.ResourceManager.Fluent;
-using Microsoft.Azure.Management.ResourceManager.Fluent.Core;
-using Microsoft.WindowsAzure.Storage;
-using Microsoft.WindowsAzure.Storage.Blob;
-using System.Data.SqlClient;
-```
+* <span data-ttu-id="f8ae6-135">[Azure App Service](https://docs.microsoft.com/azure/app-service/app-service-value-prop-what-is): si desea hospedar un servicio o una aplicación web, examine App Service en primer lugar.</span><span class="sxs-lookup"><span data-stu-id="f8ae6-135">[Azure App Service](https://docs.microsoft.com/azure/app-service/app-service-value-prop-what-is): If you're looking to host a web application or service, look at App Service first.</span></span> <span data-ttu-id="f8ae6-136">Para empezar a trabajar con App Service y aplicaciones de ASP.NET, WCF y ASP.NET Core, consulte [Creación de una aplicación web de ASP.NET Core en Azure](https://docs.microsoft.com/azure/app-service/app-service-web-get-started-dotnet).</span><span class="sxs-lookup"><span data-stu-id="f8ae6-136">To get started with App Service and ASP.NET, WCF, and ASP.NET Core apps, see [Create an ASP.NET Core web app in Azure](https://docs.microsoft.com/azure/app-service/app-service-web-get-started-dotnet).</span></span>
 
-## <a name="create-a-virtual-machine"></a><span data-ttu-id="0fa1e-120">de una máquina virtual</span><span class="sxs-lookup"><span data-stu-id="0fa1e-120">Create a virtual machine</span></span>
+* <span data-ttu-id="f8ae6-137">[Azure Functions](https://docs.microsoft.com/azure/azure-functions/functions-overview): Azure Functions es muy útil para los flujos de trabajo controlados por eventos.</span><span class="sxs-lookup"><span data-stu-id="f8ae6-137">[Azure Functions](https://docs.microsoft.com/azure/azure-functions/functions-overview): Azure Functions is great for event-driven workflows.</span></span> <span data-ttu-id="f8ae6-138">Algunos ejemplos son la respuesta a webhooks, el procesamiento de elementos de colas, el almacenamiento de blobs y los temporizadores.</span><span class="sxs-lookup"><span data-stu-id="f8ae6-138">Examples include responding to webhooks, processing items in queues or blob storage, and timers.</span></span> <span data-ttu-id="f8ae6-139">Para empezar a trabajar con Azure Functions, consulte [Creación de la primera función mediante Visual Studio](https://docs.microsoft.com/azure/azure-functions/functions-create-your-first-function-visual-studio).</span><span class="sxs-lookup"><span data-stu-id="f8ae6-139">To get started with Azure Functions, see [Create your first function using Visual Studio](https://docs.microsoft.com/azure/azure-functions/functions-create-your-first-function-visual-studio).</span></span>
 
-<span data-ttu-id="0fa1e-121">En este ejemplo se implementa una máquina virtual.</span><span class="sxs-lookup"><span data-stu-id="0fa1e-121">This example deploys a virtual machine.</span></span> 
+* <span data-ttu-id="f8ae6-140">[Azure Virtual Machines](https://docs.microsoft.com/azure/virtual-machines/): si App Service no satisface sus necesidades para hospedar una aplicación existente debido a dependencias específicas, las máquinas virtuales serán el lugar más fácil para empezar.</span><span class="sxs-lookup"><span data-stu-id="f8ae6-140">[Azure Virtual Machines](https://docs.microsoft.com/azure/virtual-machines/): If App Service doesn't meet your needs for hosting an existing application due to specific dependencies, Virtual Machines will be the easiest place to start.</span></span> <span data-ttu-id="f8ae6-141">Para empezar a trabajar con Virtual Machines y ASP.NET o WCF, consulte [Implementación de una aplicación ASP.NET en una máquina virtual de Azure](https://tutorials.visualstudio.com/aspnet-vm/intro).</span><span class="sxs-lookup"><span data-stu-id="f8ae6-141">To get started with Virtual Machines and ASP.NET or WCF, see [Deploy an ASP.NET app to an Azure virtual machine](https://tutorials.visualstudio.com/aspnet-vm/intro).</span></span>
 
-<span data-ttu-id="0fa1e-122">Reemplace el método `Main` por lo siguiente:</span><span class="sxs-lookup"><span data-stu-id="0fa1e-122">Replace the `Main` method with the following.</span></span>  <span data-ttu-id="0fa1e-123">No olvide proporcionar valores reales de `username` y `password` para la máquina virtual.</span><span class="sxs-lookup"><span data-stu-id="0fa1e-123">Be sure to provide an actual `username` and `password` for the virtual machine.</span></span>
+> [!TIP]
+> <span data-ttu-id="f8ae6-142">Para obtener una lista más completa de los servicios de Azure, consulte la [información general de las opciones de proceso de Azure](https://docs.microsoft.com/azure/architecture/guide/technology-choices/compute-overview#azure-compute-options).</span><span class="sxs-lookup"><span data-stu-id="f8ae6-142">For a more complete list of Azure services, see [Overview of Azure compute options](https://docs.microsoft.com/azure/architecture/guide/technology-choices/compute-overview#azure-compute-options).</span></span> <span data-ttu-id="f8ae6-143">Para más información acerca de cómo elegir un servicio, consulte [Árbol de decisión para los servicios de proceso de Azure](https://docs.microsoft.com/azure/architecture/guide/technology-choices/compute-decision-tree).</span><span class="sxs-lookup"><span data-stu-id="f8ae6-143">For more information on choosing a service, see [Decision tree for Azure compute services](https://docs.microsoft.com/azure/architecture/guide/technology-choices/compute-decision-tree).</span></span>
 
-```csharp
-static void Main(string[] args)
-{
-    // Set some variables...
-    string username = "MY_USERNAME";
-    string password = "MY_PASSWORD";
-    string rgName = "sampleResourceGroup";
-    string windowsVmName = "sampleWindowsVM";
-    string publicIpDnsLabel = "samplePublicIP" + (new Random().Next(0,100000)).ToString();
-
-    // Authenticate
-    var credentials = SdkContext.AzureCredentialsFactory
-        .FromFile(Environment.GetEnvironmentVariable("AZURE_AUTH_LOCATION"));
-
-    var azure = Azure
-        .Configure()
-        .WithLogLevel(HttpLoggingDelegatingHandler.Level.Basic)
-        .Authenticate(credentials)
-        .WithDefaultSubscription();
-
-    // Create the VM
-    Console.WriteLine("Creating VM...");
-    var windowsVM = azure.VirtualMachines.Define(windowsVmName)
-        .WithRegion(Region.USEast)
-        .WithNewResourceGroup(rgName)
-        .WithNewPrimaryNetwork("10.0.0.0/28")
-        .WithPrimaryPrivateIPAddressDynamic()
-        .WithNewPrimaryPublicIPAddress(publicIpDnsLabel)
-        .WithPopularWindowsImage(KnownWindowsVirtualMachineImage.WindowsServer2012R2Datacenter)
-        .WithAdminUsername(username)
-        .WithAdminPassword(password)
-        .WithSize(VirtualMachineSizeTypes.StandardD2V2)
-        .Create();
-
-    // Wait for the user
-    Console.WriteLine("Press enter to continue...");
-    Console.ReadLine();
-}
-```
-
-<span data-ttu-id="0fa1e-124">Presione **F5** para ejecutar el ejemplo.</span><span class="sxs-lookup"><span data-stu-id="0fa1e-124">Press **F5** to run the sample.</span></span>
-
-<span data-ttu-id="0fa1e-125">Al cabo de varios minutos, el programa finalizará y le pedirá que presione Entrar.</span><span class="sxs-lookup"><span data-stu-id="0fa1e-125">After several minutes, the program will finish, prompting you to press enter.</span></span> <span data-ttu-id="0fa1e-126">Presione ENTRAR y, después, compruebe la máquina virtual de su suscripción con Cloud Shell:</span><span class="sxs-lookup"><span data-stu-id="0fa1e-126">After pressing enter, verify the virtual machine in your subscription with the Cloud Shell:</span></span>
-
-```azurecli-interactive
-az vm list
-```
-
-## <a name="deploy-a-web-app-from-a-github-repo"></a><span data-ttu-id="0fa1e-127">Implementación de una aplicación web desde un repositorio de GitHub</span><span class="sxs-lookup"><span data-stu-id="0fa1e-127">Deploy a web app from a GitHub repo</span></span>
-
-<span data-ttu-id="0fa1e-128">Ahora, modificará el código para crear e implementar una nueva aplicación web desde un repositorio de GitHub existente.</span><span class="sxs-lookup"><span data-stu-id="0fa1e-128">Now you'll modify your code to create a deploy a new web app from an existing GitHub repository.</span></span> <span data-ttu-id="0fa1e-129">Reemplace el método `Main` por el código siguiente:</span><span class="sxs-lookup"><span data-stu-id="0fa1e-129">Replace the `Main` method with the following code:</span></span>
-
-```csharp
-static void Main(string[] args)
-{
-    // Set some variables...
-    string rgName = "sampleResourceGroup";
-    string appName = SdkContext.RandomResourceName("WebApp", 20);
-
-    // Authenticate
-    var credentials = SdkContext.AzureCredentialsFactory
-        .FromFile(Environment.GetEnvironmentVariable("AZURE_AUTH_LOCATION"));
-
-    var azure = Azure
-        .Configure()
-        .Authenticate(credentials)
-        .WithDefaultSubscription();
-
-    // Create the web app
-    Console.WriteLine("Creating Web App...");
-    var app = azure.WebApps.Define(appName)
-        .WithRegion(Region.USEast)
-        .WithNewResourceGroup(rgName)
-        .WithNewFreeAppServicePlan()
-        .DefineSourceControl()
-        .WithPublicGitRepository("https://github.com/Azure-Samples/app-service-web-dotnet-get-started")
-        .WithBranch("master")
-        .Attach()
-        .Create();
-    Console.WriteLine("Your web app is live at: https://{0}", app.HostNames.First());
-
-    // Wait for the user
-    Console.WriteLine("Press enter to continue...");
-    Console.ReadLine();
-}
-```
-
-<span data-ttu-id="0fa1e-130">Ejecute el código como antes con **F5**.</span><span class="sxs-lookup"><span data-stu-id="0fa1e-130">Run the code as before by pressing **F5**.</span></span>  <span data-ttu-id="0fa1e-131">Compruebe la implementación; para ello, abra un explorador y navegue hasta la dirección URL que se muestra en la consola.</span><span class="sxs-lookup"><span data-stu-id="0fa1e-131">Verify the deployment by opening a browser and navigating to URL displayed in the console.</span></span>
-
-## <a name="connect-to-a-sql-database"></a><span data-ttu-id="0fa1e-132">Conexión a una base de datos SQL</span><span class="sxs-lookup"><span data-stu-id="0fa1e-132">Connect to a SQL database</span></span>
-
-<span data-ttu-id="0fa1e-133">En este ejemplo se crea una nueva instancia de Azure SQL Database y se realizan algunas operaciones SQL.</span><span class="sxs-lookup"><span data-stu-id="0fa1e-133">This example creates a new Azure SQL Database and performs a few SQL operations.</span></span>
-
-<span data-ttu-id="0fa1e-134">Reemplace el método `Main` por lo siguiente y asegúrese de asignar una contraseña segura para `dbPassword`:</span><span class="sxs-lookup"><span data-stu-id="0fa1e-134">Replace the `Main` method with the following, making sure to assign a strong password for `dbPassword`:</span></span>
-
-```csharp
- static void Main(string[] args)
-{
-    // Set some variables...
-    string rgName = "sampleResourceGroup";
-    string adminUser = SdkContext.RandomResourceName("db", 8);
-    string sqlServerName = SdkContext.RandomResourceName("sql", 10);
-    string sqlDbName = SdkContext.RandomResourceName("dbname", 8);
-    string dbPassword = "YOUR_PASSWORD_HERE";
-
-    // Authenticate
-    var credentials = SdkContext.AzureCredentialsFactory
-        .FromFile(Environment.GetEnvironmentVariable("AZURE_AUTH_LOCATION"));
-
-    var azure = Azure
-        .Configure()
-        .Authenticate(credentials)
-        .WithDefaultSubscription();
-
-    // Create the SQL server and database
-    Console.WriteLine("Creating server...");
-    var sqlServer = azure.SqlServers.Define(sqlServerName)
-        .WithRegion(Region.USEast)
-        .WithNewResourceGroup(rgName)
-        .WithAdministratorLogin(adminUser)
-        .WithAdministratorPassword(dbPassword)
-        .WithNewFirewallRule("0.0.0.0", "255.255.255.255")
-        .Create();
-
-    Console.WriteLine("Creating database...");
-    var sqlDb = sqlServer.Databases.Define(sqlDbName).Create();
-
-    // Display information for connecting later...
-    Console.WriteLine("Created database {0} in server {1}.", sqlDbName, sqlServer.FullyQualifiedDomainName);
-    Console.WriteLine("Your user name is {0}.", adminUser + "@" + sqlServer.Name);
-
-    // Build the connection string
-    var builder = new SqlConnectionStringBuilder();
-    builder.DataSource = sqlServer.FullyQualifiedDomainName;
-    builder.InitialCatalog = sqlDbName;
-    builder.UserID = adminUser + "@" + sqlServer.Name; // Format user ID as "user@server"
-    builder.Password = dbPassword;
-    builder.Encrypt = true;
-    builder.TrustServerCertificate = true;
-
-    // connect to the database, create a table and insert an entry into it
-    using (var conn = new SqlConnection(builder.ConnectionString))
-    {
-        conn.Open();
-
-        Console.WriteLine("Populating database...");
-        var createCommand = new SqlCommand("CREATE TABLE CLOUD (name varchar(255), code int);", conn);
-        createCommand.ExecuteNonQuery();
-
-        var insertCommand = new SqlCommand("INSERT INTO CLOUD (name, code ) VALUES ('Azure', 1);", conn);
-        insertCommand.ExecuteNonQuery();
-
-        Console.WriteLine("Reading from database...");
-        var selectCommand = new SqlCommand("SELECT * FROM CLOUD", conn);
-        var results = selectCommand.ExecuteReader();
-        while(results.Read())
-        {
-            Console.WriteLine("Name: {0} Code: {1}", results[0], results[1]);
-        }
-    }
-
-    // Wait for the user
-    Console.WriteLine("Press enter to continue...");
-    Console.ReadLine();
-}
-```
-
-<span data-ttu-id="0fa1e-135">Ejecute el código como antes con **F5**.</span><span class="sxs-lookup"><span data-stu-id="0fa1e-135">Run the code as before by pressing **F5**.</span></span>  <span data-ttu-id="0fa1e-136">La salida de la consola debe validar que el servidor se ha creado y que funciona según lo esperado, pero puede conectarse a él directamente con una herramienta como SQL Server Management Studio si así lo desea.</span><span class="sxs-lookup"><span data-stu-id="0fa1e-136">The console output should validate that the server was created and works as expected, but you can connect to it directly with a tool like SQL Server Management Studio if you like.</span></span>
-
-## <a name="write-a-blob-into-a-new-storage-account"></a><span data-ttu-id="0fa1e-137">Escritura de un blob en una nueva cuenta de almacenamiento</span><span class="sxs-lookup"><span data-stu-id="0fa1e-137">Write a blob into a new storage account</span></span>
-
-<span data-ttu-id="0fa1e-138">En este ejemplo se crea una cuenta de almacenamiento y se carga un blob.</span><span class="sxs-lookup"><span data-stu-id="0fa1e-138">This example creates a storage account and upload a blob.</span></span>  
-
-<span data-ttu-id="0fa1e-139">Reemplace el método `Main` por lo siguiente:</span><span class="sxs-lookup"><span data-stu-id="0fa1e-139">Replace the `Main` method with the following.</span></span>
-
-```csharp
-static void Main(string[] args)
-{
-    // Set some variables...
-    string rgName = "sampleResourceGroup";
-    string storageAccountName = SdkContext.RandomResourceName("st", 10);
-
-    // Authenticate
-    var credentials = SdkContext.AzureCredentialsFactory
-        .FromFile(Environment.GetEnvironmentVariable("AZURE_AUTH_LOCATION"));
-
-    var azure = Azure
-        .Configure()
-        .Authenticate(credentials)
-        .WithDefaultSubscription();
-
-    // Create the storage account
-    Console.WriteLine("Creating storage account...");
-    var storage = azure.StorageAccounts.Define(storageAccountName)
-        .WithRegion(Region.USEast)
-        .WithNewResourceGroup(rgName)
-        .Create();
-
-    var storageKeys = storage.GetKeys();
-    string storageConnectionString = "DefaultEndpointsProtocol=https;"
-        + "AccountName=" + storage.Name
-        + ";AccountKey=" + storageKeys[0].Value
-        + ";EndpointSuffix=core.windows.net";
-
-    var account = CloudStorageAccount.Parse(storageConnectionString);
-    var serviceClient = account.CreateCloudBlobClient();
-
-    // Create container. Name must be lower case.
-    Console.WriteLine("Creating container...");
-    var container = serviceClient.GetContainerReference("helloazure");
-    container.CreateIfNotExistsAsync().Wait();
-
-    // Make the container public
-    var containerPermissions = new BlobContainerPermissions()
-        { PublicAccess = BlobContainerPublicAccessType.Container };
-    container.SetPermissionsAsync(containerPermissions).Wait();
-
-    // write a blob to the container
-    Console.WriteLine("Uploading blob...");
-    var blob = container.GetBlockBlobReference("helloazure.txt");
-    blob.UploadTextAsync("Hello, Azure!").Wait();
-    Console.WriteLine("Your blob is located at {0}", blob.StorageUri.PrimaryUri);
-
-    // Wait for the user
-    Console.WriteLine("Press enter to continue...");
-    Console.ReadLine();
-}
-```
-
-<span data-ttu-id="0fa1e-140">Presione **F5** para ejecutar el ejemplo.</span><span class="sxs-lookup"><span data-stu-id="0fa1e-140">Press **F5** to run the sample.</span></span>
-
-<span data-ttu-id="0fa1e-141">Varios minutos después, el programa finaliza.</span><span class="sxs-lookup"><span data-stu-id="0fa1e-141">After several minutes, the program finishes.</span></span> <span data-ttu-id="0fa1e-142">Vaya a la dirección URL mostrada en la consola para comprobar que el blob se ha cargado.</span><span class="sxs-lookup"><span data-stu-id="0fa1e-142">Verify the blob was uploaded by browsing to the URL displayed in the console.</span></span>  <span data-ttu-id="0fa1e-143">Debería ver el texto "Hello, Azure!"</span><span class="sxs-lookup"><span data-stu-id="0fa1e-143">You should see the text "Hello, Azure!"</span></span> <span data-ttu-id="0fa1e-144">en el explorador.</span><span class="sxs-lookup"><span data-stu-id="0fa1e-144">in your browser.</span></span>
-
-## <a name="clean-up"></a><span data-ttu-id="0fa1e-145">Limpieza</span><span class="sxs-lookup"><span data-stu-id="0fa1e-145">Clean up</span></span>
-
-> [!IMPORTANT]
-> <span data-ttu-id="0fa1e-146">Si no limpia los recursos de este tutorial, le seguirán cobrando por ellos.</span><span class="sxs-lookup"><span data-stu-id="0fa1e-146">If you don't clean up your resources from this tutorial, you will continue to be charged for them.</span></span>  <span data-ttu-id="0fa1e-147">Asegúrese de realizar este paso.</span><span class="sxs-lookup"><span data-stu-id="0fa1e-147">Be sure to do this step.</span></span>
-
-<span data-ttu-id="0fa1e-148">Para eliminar todos los recursos que ha creado, escriba lo siguiente en Cloud Shell:</span><span class="sxs-lookup"><span data-stu-id="0fa1e-148">Delete all the resources you created by entering the following in the Cloud Shell:</span></span>
-
-```azurecli-interactive
-az group delete --name sampleResourceGroup
-```
-
-## <a name="explore-more-samples"></a><span data-ttu-id="0fa1e-149">Ver más ejemplos</span><span class="sxs-lookup"><span data-stu-id="0fa1e-149">Explore more samples</span></span>
-
-<span data-ttu-id="0fa1e-150">Para aprender más sobre cómo usar las bibliotecas de Azure para .NET para administrar recursos y automatizar tareas, consulte nuestro código de ejemplo para [máquinas virtuales](dotnet-sdk-azure-virtual-machine-samples.md), [aplicaciones web](dotnet-sdk-azure-web-apps-samples.md) y [bases de datos SQL](dotnet-sdk-azure-sql-database-samples.md).</span><span class="sxs-lookup"><span data-stu-id="0fa1e-150">To learn more about how to use the Azure libraries for .NET to manage resources and automate tasks, see our sample code for [virtual machines](dotnet-sdk-azure-virtual-machine-samples.md), [web apps](dotnet-sdk-azure-web-apps-samples.md) and [SQL database](dotnet-sdk-azure-sql-database-samples.md).</span></span>
-
-## <a name="reference"></a><span data-ttu-id="0fa1e-151">Referencia</span><span class="sxs-lookup"><span data-stu-id="0fa1e-151">Reference</span></span>
-
-<span data-ttu-id="0fa1e-152">Hay una [referencia](http://docs.microsoft.com/dotnet/api) disponible para todos los paquetes.</span><span class="sxs-lookup"><span data-stu-id="0fa1e-152">A [reference](http://docs.microsoft.com/dotnet/api) is available for all packages.</span></span>
-
-[!include[Contribute and community](includes/contribute.md)]
+## <a name="choosing-a-data-storage-service"></a><span data-ttu-id="f8ae6-144">Elección de un servicio de almacenamiento de datos</span><span class="sxs-lookup"><span data-stu-id="f8ae6-144">Choosing a data storage service</span></span>
+
+<span data-ttu-id="f8ae6-145">Azure ofrece varios servicios para almacenar los datos según sus necesidades.</span><span class="sxs-lookup"><span data-stu-id="f8ae6-145">Azure offers several services for storing your data depending on your needs.</span></span> <span data-ttu-id="f8ae6-146">Los servicios de datos más comunes para los desarrolladores de .NET son:</span><span class="sxs-lookup"><span data-stu-id="f8ae6-146">The most common data services for .NET developers are:</span></span>
+
+* <span data-ttu-id="f8ae6-147">[Azure SQL Database](https://docs.microsoft.com/azure/sql-database/): si desea migrar una aplicación que ya utiliza SQL Server a la nube, Azure SQL Database es un lugar lógico para comenzar.</span><span class="sxs-lookup"><span data-stu-id="f8ae6-147">[Azure SQL Database](https://docs.microsoft.com/azure/sql-database/): If you're looking to migrate an application that is already using SQL Server to the cloud, Azure SQL Database is a natural place to start.</span></span> <span data-ttu-id="f8ae6-148">Para comenzar, consulte [Tutorial: Creación de una aplicación ASP.NET en Azure con SQL Database](https://docs.microsoft.com/azure/app-service/app-service-web-tutorial-dotnet-sqldatabase).</span><span class="sxs-lookup"><span data-stu-id="f8ae6-148">To get started, see [Tutorial: Build an ASP.NET app in Azure with SQL Database](https://docs.microsoft.com/azure/app-service/app-service-web-tutorial-dotnet-sqldatabase).</span></span>
+
+* <span data-ttu-id="f8ae6-149">[Azure Cosmos DB](https://docs.microsoft.com/azure/cosmos-db/): Azure Cosmos DB es una base de datos moderna diseñada para la nube.</span><span class="sxs-lookup"><span data-stu-id="f8ae6-149">[Azure Cosmos DB](https://docs.microsoft.com/azure/cosmos-db/): Azure Cosmos DB is a modern database designed for the cloud.</span></span> <span data-ttu-id="f8ae6-150">Cuando se inicia una aplicación nueva que todavía no tiene una dependencia de una base de datos específica, puede evaluar Azure Cosmos DB.</span><span class="sxs-lookup"><span data-stu-id="f8ae6-150">When starting a new application that doesn't yet have a specific database dependency, you should look at Azure Cosmos DB.</span></span> <span data-ttu-id="f8ae6-151">Cosmos DB es una buena elección para las nuevas aplicaciones web, móviles, de juegos y de IoT donde la escala automática, el rendimiento predecible, los tiempos de respuesta rápidos y la capacidad de consultar datos sin esquema son importantes.</span><span class="sxs-lookup"><span data-stu-id="f8ae6-151">Cosmos DB is a good choice for new web, mobile, gaming, and IoT applications where automatic scale, predictable performance, fast response times, and the ability to query schema-free data are important.</span></span> <span data-ttu-id="f8ae6-152">Para comenzar, consulte [Guía de inicio rápido: Creación de una aplicación web de .NET con Azure Cosmos DB y SQL API en Azure Portal](https://docs.microsoft.com/azure/cosmos-db/create-sql-api-dotnet).</span><span class="sxs-lookup"><span data-stu-id="f8ae6-152">To get started, see [Quickstart: Build a .NET web app with Azure Cosmos DB using the SQL API and the Azure portal](https://docs.microsoft.com/azure/cosmos-db/create-sql-api-dotnet).</span></span>
+
+* <span data-ttu-id="f8ae6-153">[Azure Blob Storage](https://docs.microsoft.com/azure/storage/): Azure Blob Storage está optimizado para almacenar y recuperar objetos binarios grandes, como imágenes, archivos y secuencias.</span><span class="sxs-lookup"><span data-stu-id="f8ae6-153">[Azure Blob Storage](https://docs.microsoft.com/azure/storage/): Azure Blob Storage is optimized for storing and retrieving large binary objects, such as images, files, and streams.</span></span> <span data-ttu-id="f8ae6-154">Los almacenes de objetos permiten la administración de cantidades enormes de datos no estructurados.</span><span class="sxs-lookup"><span data-stu-id="f8ae6-154">Object stores enable the management of extremely large amounts of unstructured data.</span></span> <span data-ttu-id="f8ae6-155">Para empezar, consulte [Guía de inicio rápido: Uso de .NET para crear un blob en el almacenamiento de objetos](https://docs.microsoft.com/azure/storage/blobs/storage-quickstart-blobs-dotnet).</span><span class="sxs-lookup"><span data-stu-id="f8ae6-155">To get started, see [Quickstart: Use .NET to create a blob in object storage](https://docs.microsoft.com/azure/storage/blobs/storage-quickstart-blobs-dotnet).</span></span>
+
+> [!TIP]
+> <span data-ttu-id="f8ae6-156">Para más información, consulte [Elección del almacén de datos apropiado](https://docs.microsoft.com/azure/architecture/guide/technology-choices/data-store-overview).</span><span class="sxs-lookup"><span data-stu-id="f8ae6-156">For more information, see [Choose the right data store](https://docs.microsoft.com/azure/architecture/guide/technology-choices/data-store-overview).</span></span>
+
+## <a name="diagnosing-problems-in-the-cloud"></a><span data-ttu-id="f8ae6-157">Diagnóstico de problemas en la nube</span><span class="sxs-lookup"><span data-stu-id="f8ae6-157">Diagnosing problems in the Cloud</span></span>
+
+<span data-ttu-id="f8ae6-158">Una vez que se implementa la aplicación en Azure, es posible encontrar casos en los que funciona en desarrollo, pero no en Azure.</span><span class="sxs-lookup"><span data-stu-id="f8ae6-158">Once you deploy your application to Azure, you may run into cases where it worked in development but doesn't in Azure.</span></span> <span data-ttu-id="f8ae6-159">A continuación se muestran dos buenos lugares para empezar cuando se diagnostican problemas:</span><span class="sxs-lookup"><span data-stu-id="f8ae6-159">Below are two good places to start when diagnosing issues:</span></span>
+
+* <span data-ttu-id="f8ae6-160">**Depuración remota desde Visual Studio**: la mayoría de los servicios de proceso de Azure (incluidos los servicios que se describen en este documento) admiten la depuración remota con Visual Studio y la adquisición de registros.</span><span class="sxs-lookup"><span data-stu-id="f8ae6-160">**Remote debug from Visual Studio**: Most Azure compute services (including the services discussed in this document) support remote debugging with Visual Studio and acquiring logs.</span></span> <span data-ttu-id="f8ae6-161">Para explorar las funcionalidades de Visual Studio con la aplicación, abra la ventana de herramientas de Cloud Explorer escribiendo "Cloud Explorer" en la barra de herramientas de inicio rápido de Visual Studio (en la esquina superior derecha) y, a continuación, busque la aplicación en el árbol.</span><span class="sxs-lookup"><span data-stu-id="f8ae6-161">To explore Visual Studio's capabilities with your application, open the Cloud Explorer tool window by typing 'Cloud Explorer' into Visual Studio's quick launch toolbar (in the upper-right corner), and then locate your application in the tree.</span></span> <span data-ttu-id="f8ae6-162">Para más información, consulte [Solución de problemas de una aplicación web en Azure App Service con Visual Studio](https://docs.microsoft.com/azure/app-service/web-sites-dotnet-troubleshoot-visual-studio#remotedebug).</span><span class="sxs-lookup"><span data-stu-id="f8ae6-162">For details, see [Troubleshoot a web app in Azure App Service using Visual Studio](https://docs.microsoft.com/azure/app-service/web-sites-dotnet-troubleshoot-visual-studio#remotedebug).</span></span>
+
+* <span data-ttu-id="f8ae6-163">**Application Insights**: [Application Insights](https://docs.microsoft.com/azure/application-insights/) es una solución de supervisión de rendimiento de aplicaciones (APM) completa que captura datos de diagnóstico, datos de telemetría y datos de rendimiento de las aplicaciones automáticamente.</span><span class="sxs-lookup"><span data-stu-id="f8ae6-163">**Application Insights**: [Application Insights](https://docs.microsoft.com/azure/application-insights/) is a complete application performance monitoring (APM) solution that captures diagnostic data, telemetry, and performance data from applications automatically.</span></span> <span data-ttu-id="f8ae6-164">Para empezar a recopilar datos de diagnóstico de la aplicación, consulte [Inicio de la supervisión de la aplicación web ASP.NET](https://docs.microsoft.com/azure/application-insights/quick-monitor-portal).</span><span class="sxs-lookup"><span data-stu-id="f8ae6-164">To get started collecting diagnostic data for your app, see [Start monitoring your ASP.NET Web Application](https://docs.microsoft.com/azure/application-insights/quick-monitor-portal).</span></span>
+
+## <a name="next-steps"></a><span data-ttu-id="f8ae6-165">Pasos siguientes</span><span class="sxs-lookup"><span data-stu-id="f8ae6-165">Next steps</span></span>
+
+* [<span data-ttu-id="f8ae6-166">Creación de una aplicación web ASP.NET Core en Azure</span><span class="sxs-lookup"><span data-stu-id="f8ae6-166">Deploy your first ASP.NET Core web app to Azure</span></span>](https://docs.microsoft.com/azure/app-service/app-service-web-get-started-dotnet)
+* [<span data-ttu-id="f8ae6-167">Obtenga información sobre la autenticación en las API de Azure para .NET</span><span class="sxs-lookup"><span data-stu-id="f8ae6-167">Learn about authentication in Azure APIs for .NET</span></span>](dotnet-sdk-azure-authenticate.md)
+* [<span data-ttu-id="f8ae6-168">Diagnóstico de errores en las aplicaciones en la nube</span><span class="sxs-lookup"><span data-stu-id="f8ae6-168">Diagnose errors in your cloud apps</span></span>](https://blogs.msdn.microsoft.com/webdev/2018/02/07/diagnosing-errors-on-your-cloud-apps)
+* <span data-ttu-id="f8ae6-169">Descargue el libro electrónico gratuito [Guía de inicio rápido de Azure para desarrolladores de .NET](https://www.microsoft.com/net/download/thank-you/azure-quick-start-ebook).</span><span class="sxs-lookup"><span data-stu-id="f8ae6-169">Download the free e-book [Azure Quick Start Guide for .NET Developers](https://www.microsoft.com/net/download/thank-you/azure-quick-start-ebook)</span></span>
