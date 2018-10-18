@@ -2,12 +2,12 @@
 title: Introducción a Azure y .NET
 description: Obtenga información sobre los conceptos básicos que necesita saber acerca de Azure y .NET.
 ms.date: 09/19/2018
-ms.openlocfilehash: 89fdae6afa5c040127975de43c79d837550a9fbc
-ms.sourcegitcommit: 5d9b713653b3d03e1d0a67f6e126ee399d1c2a60
+ms.openlocfilehash: 89586af18b816e24a7df5ce9d96f651995f02f01
+ms.sourcegitcommit: 1cf4550df8ed3236d838f561f6177d14d89b5e44
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47190598"
+ms.lasthandoff: 10/16/2018
+ms.locfileid: "49348147"
 ---
 # <a name="get-started-with-azure-and-net"></a>Introducción a Azure y .NET
 
@@ -63,7 +63,6 @@ Azure ofrece varios servicios para almacenar los datos según sus necesidades. L
 > Para más información, consulte [Elección del almacén de datos apropiado](https://docs.microsoft.com/azure/architecture/guide/technology-choices/data-store-overview).
 
 ## <a name="diagnosing-problems-in-the-cloud"></a>Diagnóstico de problemas en la nube
-
 Una vez que se implementa la aplicación en Azure, es posible encontrar casos en los que funciona en desarrollo, pero no en Azure. A continuación se muestran dos buenos lugares para empezar cuando se diagnostican problemas:
 
 * **Depuración remota desde Visual Studio**: la mayoría de los servicios de proceso de Azure (incluidos los servicios que se describen en este documento) admiten la depuración remota con Visual Studio y la adquisición de registros. Para explorar las funcionalidades de Visual Studio con la aplicación, abra la ventana de herramientas de Cloud Explorer escribiendo "Cloud Explorer" en la barra de herramientas de inicio rápido de Visual Studio (en la esquina superior derecha) y, a continuación, busque la aplicación en el árbol. Para más información, consulte [Solución de problemas de una aplicación web en Azure App Service con Visual Studio](https://docs.microsoft.com/azure/app-service/web-sites-dotnet-troubleshoot-visual-studio#remotedebug).
