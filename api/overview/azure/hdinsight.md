@@ -3,13 +3,13 @@ title: SDK de Azure HDInsight para .NET
 description: Referencia del SDK de Azure HDInsight para .NET
 ms.date: 9/19/2018
 ms.topic: reference
-ms.service: hd-insight
-ms.openlocfilehash: d25bdb1c9086cd93190b97f519654f2c193b9dc3
-ms.sourcegitcommit: 5d9b713653b3d03e1d0a67f6e126ee399d1c2a60
+ms.service: hdinsight
+ms.openlocfilehash: 35e2c8c07fb2b86b2d0ae9be4f855e369c1aa86d
+ms.sourcegitcommit: 1cf4550df8ed3236d838f561f6177d14d89b5e44
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47190688"
+ms.lasthandoff: 10/16/2018
+ms.locfileid: "49348207"
 ---
 # <a name="azure-hdinsight-net-sdk"></a>SDK de Azure HDInsight para .NET
 
@@ -122,7 +122,7 @@ Vea la [lista completa](https://azure.microsoft.com/resources/samples/?platform=
 
 ## <a name="overview"></a>Información general
 
-El SDK de HDInsight para .NET proporciona clases y métodos que permiten administrar los clústeres de HDInsight. Incluye operaciones para crear, eliminar, actualizar, enumerar, escalar, ejecutar acciones de script, supervisar y obtener propiedades de clústeres de HDInsight y mucho más.
+El SDK de HDInsight para .NET proporciona clases y métodos que permiten administrar los clústeres de HDInsight. Incluye operaciones para crear, eliminar, actualizar, enumerar, cambiar tamaño, ejecutar acciones de script, supervisar y obtener propiedades de clústeres de HDInsight, entre otras.
 
 ## <a name="prerequisites"></a>Requisitos previos
 
@@ -463,9 +463,9 @@ client.Clusters.Update("<Resource Group Name>", "<Cluster Name>", new ClusterPat
 client.Clusters.Update("<Resource Group Name>", "<Cluster Name>", new ClusterPatchParameters(new Dictionary<string, string> { { "tag1Name", "tag1Value" }, { "tag2Name", "tag2Value" } }));
 ```
 
-### <a name="scale-cluster"></a>Escalado de clústeres
+### <a name="resize-cluster"></a>Cambio del tamaño de clúster
 
-Para escalar el número de nodos de trabajo de un clúster determinado, puede especificar un nuevo tamaño:
+Para cambiar el tamaño de un número de nodos de trabajo de un clúster determinado, puede especificar un nuevo tamaño como sigue:
 
 ```csharp
 client.Clusters.Resize("<Resource Group Name>", "<Cluster Name>", <Num of Worker Nodes (int)>)
