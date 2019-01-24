@@ -4,12 +4,12 @@ description: Referencia de las bibliotecas de Azure Container Instances para .NE
 ms.date: 06/11/2018
 ms.topic: reference
 ms.service: container-instances
-ms.openlocfilehash: 8642fc654546edde81aeaa520f52b2aff9720e55
-ms.sourcegitcommit: 1cf4550df8ed3236d838f561f6177d14d89b5e44
+ms.openlocfilehash: 552746b316f1ba80adce5f55bb22412749fd93bc
+ms.sourcegitcommit: 4f7bc5c5cd333e41446a3ebe5639a211d8ac9b90
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "49348107"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54841282"
 ---
 # <a name="azure-container-instances-libraries-for-net"></a>Bibliotecas de Azure Container Instances para .NET
 
@@ -55,11 +55,13 @@ Una de las maneras más fáciles de autenticar clientes de SDK es con la [autent
 
 Después de crear el archivo de credenciales y rellenar la entorno variable `AZURE_AUTH_LOCATION`, use el método [Azure.Authenticate][iazure-authenticate] para inicializar el objeto de cliente [IAzure][iazure]. El proyecto de ejemplo obtiene en primer lugar el valor `AZURE_AUTH_LOCATION` y, después, llama a un método que devuelve un objeto de cliente `IAzure` inicializado:
 
-<!-- SOURCE REPO: https://github.com/Azure-Samples/aci-docs-sample-dotnet --> [!code-csharp[authenticate](~/aci-docs-sample-dotnet/Program.cs#L29-L35 "Get environment variable")]
+<!-- SOURCE REPO: https://github.com/Azure-Samples/aci-docs-sample-dotnet -->  
+[!code-csharp[authenticate](~/aci-docs-sample-dotnet/Program.cs#L29-L35 "Get environment variable")]
 
 Este método de la aplicación de ejemplo devuelve la instancia de [IAzure][iazure] inicializada que, a continuación, se pasa como primer parámetro a todos los otros métodos del ejemplo:
 
-<!-- SOURCE REPO: https://github.com/Azure-Samples/aci-docs-sample-dotnet --> [!code-csharp[authenticate](~/aci-docs-sample-dotnet/Program.cs#azure_auth "Authenticate IAzure client object")]
+<!-- SOURCE REPO: https://github.com/Azure-Samples/aci-docs-sample-dotnet -->  
+[!code-csharp[authenticate](~/aci-docs-sample-dotnet/Program.cs#azure_auth "Authenticate IAzure client object")]
 
 Para más información acerca de los métodos de autenticación disponibles en las bibliotecas de administración de .NET para Azure, consulte [Autenticación con las bibliotecas de administración de Azure para .NET][sdk-auth].
 
@@ -67,19 +69,22 @@ Para más información acerca de los métodos de autenticación disponibles en l
 
 En este ejemplo se crea un grupo de contenedores con un solo contenedor.
 
-<!-- SOURCE REPO: https://github.com/Azure-Samples/aci-docs-sample-dotnet --> [!code-csharp[create_container_group](~/aci-docs-sample-dotnet/Program.cs#create_container_group "Create single-container group")]
+<!-- SOURCE REPO: https://github.com/Azure-Samples/aci-docs-sample-dotnet -->  
+[!code-csharp[create_container_group](~/aci-docs-sample-dotnet/Program.cs#create_container_group "Create single-container group")]
 
 ## <a name="create-container-group---multiple-containers"></a>Creación de un grupo de contenedores: varios contenedores
 
 En este ejemplo se crea un grupo de contenedores con dos contenedores: un contenedor de aplicaciones y un contenedor asociado.
 
-<!-- SOURCE REPO: https://github.com/Azure-Samples/aci-docs-sample-dotnet --> [!code-csharp[create_container_group_multi](~/aci-docs-sample-dotnet/Program.cs#create_container_group_multi "Create multi-container group")]
+<!-- SOURCE REPO: https://github.com/Azure-Samples/aci-docs-sample-dotnet -->  
+[!code-csharp[create_container_group_multi](~/aci-docs-sample-dotnet/Program.cs#create_container_group_multi "Create multi-container group")]
 
 ## <a name="asynchronous-container-create-with-polling"></a>Creación asincrónica de un contenedor con sondeo
 
 En este ejemplo se crea un grupo de contenedores con un solo contenedor con el método de creación asincrónica. Después, sondea el grupo de contenedores en Azure y proporciona el estado del grupo de contenedores hasta que el estado es "En ejecución".
 
-<!-- SOURCE REPO: https://github.com/Azure-Samples/aci-docs-sample-dotnet --> [!code-csharp[create_container_group_polling](~/aci-docs-sample-dotnet/Program.cs#create_container_group_polling "Create single-container group with async and polling")]
+<!-- SOURCE REPO: https://github.com/Azure-Samples/aci-docs-sample-dotnet -->  
+[!code-csharp[create_container_group_polling](~/aci-docs-sample-dotnet/Program.cs#create_container_group_polling "Create single-container group with async and polling")]
 
 ## <a name="create-task-based-container-group"></a>Creación de un grupo de contenedores basado en tareas
 
@@ -93,25 +98,29 @@ En cambio, si desea ejecutar varios comandos con varios argumentos posibles, deb
 
 `WithStartingCommandLines("/bin/sh", "-c", "echo FOO BAR && tail -f /dev/null")`
 
-<!-- SOURCE REPO: https://github.com/Azure-Samples/aci-docs-sample-dotnet --> [!code-csharp[create_container_group_task](~/aci-docs-sample-dotnet/Program.cs#create_container_group_task "Run a task-based container")]
+<!-- SOURCE REPO: https://github.com/Azure-Samples/aci-docs-sample-dotnet -->  
+[!code-csharp[create_container_group_task](~/aci-docs-sample-dotnet/Program.cs#create_container_group_task "Run a task-based container")]
 
 ## <a name="list-container-groups"></a>Enumeración de grupos de contenedores
 
 En este ejemplo se enumeran los grupos de contenedores de un grupo de recursos.
 
-<!-- SOURCE REPO: https://github.com/Azure-Samples/aci-docs-sample-dotnet --> [!code-csharp[list_container_groups](~/aci-docs-sample-dotnet/Program.cs#list_container_groups "List container groups")]
+<!-- SOURCE REPO: https://github.com/Azure-Samples/aci-docs-sample-dotnet -->  
+[!code-csharp[list_container_groups](~/aci-docs-sample-dotnet/Program.cs#list_container_groups "List container groups")]
 
 ## <a name="get-an-existing-container-group"></a>Obtención de un grupo de contenedores existente
 
 En este ejemplo se obtiene un grupo de contenedores específico que reside en un grupo de recursos y, a continuación, se imprimen algunas de sus propiedades y sus valores.
 
-<!-- SOURCE REPO: https://github.com/Azure-Samples/aci-docs-sample-dotnet --> [!code-csharp[get_container_group](~/aci-docs-sample-dotnet/Program.cs#get_container_group "Get container group")]
+<!-- SOURCE REPO: https://github.com/Azure-Samples/aci-docs-sample-dotnet -->  
+[!code-csharp[get_container_group](~/aci-docs-sample-dotnet/Program.cs#get_container_group "Get container group")]
 
-## <a name="delete-a-container-group"></a>Eliminación de un grupo de contenedores
+## <a name="delete-a-container-group"></a>Eliminación de grupo de contenedores
 
 En este ejemplo se elimina un grupo de contenedores de un grupo de recursos.
 
-<!-- SOURCE REPO: https://github.com/Azure-Samples/aci-docs-sample-dotnet --> [!code-csharp[delete_container_group](~/aci-docs-sample-dotnet/Program.cs#delete_container_group "Delete container group")]
+<!-- SOURCE REPO: https://github.com/Azure-Samples/aci-docs-sample-dotnet -->  
+[!code-csharp[delete_container_group](~/aci-docs-sample-dotnet/Program.cs#delete_container_group "Delete container group")]
 
 ## <a name="api-reference"></a>Referencia de API
 
