@@ -18,7 +18,7 @@ Para el código fuente de ejemplo, consulte la lista de [ejemplos de servicios d
 | | |
 |---|---|
 | **SQL Database** ||
-| [Uso de .NET para conectarse a los datos y consultarlos][1] | Use ADO.NET para conectarse a una instancia de Azure SQL Database, para después usar las instrucciones Transact-SQL para consultar, insertar, actualizar y eliminar datos en la base de datos. | 
+| [Uso de .NET para conectarse a los datos y consultarlos][1] | Use ADO.NET para conectarse a una base de datos de Azure SQL, para después usar las instrucciones Transact-SQL para consultar, insertar, actualizar y eliminar datos en la base de datos. | 
 | **Azure Database para PostgreSQL** ||
 | [Uso de .NET para conectarse a los datos y consultarlos][2] | Use instrucciones SQL para consultar, insertar, actualizar y eliminar datos en la base de datos. | 
 | **Azure Cosmos DB** ||
