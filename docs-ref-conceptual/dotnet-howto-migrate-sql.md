@@ -58,7 +58,7 @@ Al evaluar dónde desea migrar la base de datos, debe determinar qué es lo más
 
 En la tabla siguiente se describen las diferencias entre cada servicio según los distintos escenarios.
 
-| Escenario | SQL Server en máquinas virtuales de Azure | Azure SQL Database |
+| Escenario | SQL Server en máquinas virtuales de Azure | Azure SQL Database |
 |----------|-------------------------|--------------------|
 | Migración | Requiere cambios mínimos en la base de datos. | Puede requerir cambios en la base de datos si usa características no disponibles en Azure SQL, según determine el [Asistente para la migración de datos](https://www.microsoft.com/download/details.aspx?id=53595), o si tiene otras dependencias tales como archivos ejecutables instalados localmente.|
 | Administración de la disponibilidad, la recuperación y las actualizaciones | La disponibilidad y la recuperación se configuran manualmente. Las actualizaciones se pueden automatizar con [VM Scale Sets](https://docs.microsoft.com/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-automatic-upgrade). | Se administra automáticamente. |
@@ -66,13 +66,13 @@ En la tabla siguiente se describen las diferencias entre cada servicio según lo
 | Administración del tamaño de base de datos | Admite hasta 64 TB de almacenamiento por cada instancia de SQL Server. | Admite 4 TB de almacenamiento antes de necesitar una partición horizontal. |
 | Administración de los costos | Debe administrar los costos de las licencias de SQL Server, los costos de las licencias de Windows Server y los costos de las máquinas virtuales (en función del número de núcleos, la memoria RAM y el almacenamiento). | Debe administrar los costos del servicio (en función del número de [eDTU o DTU](https://docs.microsoft.com/azure/sql-database/sql-database-what-is-a-dtu), el almacenamiento y el número de bases de datos si usa un grupo elástico).  También debe administrar el costo de los SLA. |
 
-Para más información acerca de las diferencias entre los dos, lea [Selección de una opción de SQL Server en la nube: Azure SQL Database (PaaS) o SQL Server en máquinas virtuales de Azure (IaaS)](https://docs.microsoft.com/azure/sql-database/sql-database-paas-vs-sql-server-iaas).
+Para más información acerca de las diferencias entre los dos, lea [Selección de una opción de SQL Server en la nube: Azure SQL Database (PaaS) o SQL Server on Azure VMs (IaaS)](https://docs.microsoft.com/azure/sql-database/sql-database-paas-vs-sql-server-iaas).
 
 ## <a name="faq"></a>Preguntas más frecuentes
 
 * **¿Puedo seguir usando herramientas como SQL Server Management Studio y SQL Server Reporting Services (SSRS) con SQL Server en máquinas virtuales de Azure o con Azure SQL Database?**
 
-    Sí. Todas las herramientas de Microsoft SQL funcionan con ambos servicios. Sin embargo, SSRS no forma parte de Azure SQL Database. Se recomienda ejecutarlo en una máquina virtual de Azure y, a continuación, hacer que apunte a la instancia de base de datos.
+     Sí. Todas las herramientas de Microsoft SQL funcionan con ambos servicios. Sin embargo, SSRS no forma parte de Azure SQL Database. Se recomienda ejecutarlo en una máquina virtual de Azure y, a continuación, hacer que apunte a la instancia de base de datos.
     
 * **Quiero cambiar a PaaS pero no estoy seguro de si mi base de datos es compatible. ¿Hay alguna herramienta que pueda ayudar?**
 
